@@ -1,0 +1,558 @@
+text_id,entity
+1,anaplastic astrocytoma of the spine
+1,lower extremity weakness
+1,urinary retention
+1,hypertension
+1,chronic pain
+1,tumor
+1,anaplastic astrocytoma
+1,RLE
+1,difficulty walking
+1,numbness
+1,spinal cord conus mass
+2,HTN
+2,hyperlipidemia
+2,bicuspid aortic valve
+2,tobacco abuse
+2,SOB
+2,edema
+2,aortic stenosis
+2,biatrial enlargement
+2,aortic insufficiency
+2,left ventricular hypertrophy
+2,hypokinesis
+2,aortic valve stenosis
+2,pulmonary artery systolic hypertension
+2,plaque
+2,ICA stenosis
+2,coronary artery disease
+3,headache
+3,intraventricular hemorrhage
+3,vascular malformation
+3,AVM
+3,headaches
+3,pain
+4,PCOS
+4,Obesity
+4,HTN
+4,cholecystitis
+4,pericardial effusion
+4,Burkitt's lymphoma
+4,cardiac lymphoma
+4,migraines2
+4,HTN3
+4,Obesity4
+4,infertility5
+4,Viral encephalitis
+4,meningitis
+4,ICH
+4,seizure
+4,stroke
+4,sinus infxn
+4,leak
+5,CVA
+5,HTN
+5,PVD
+5,carotid bruits
+5,dizziness
+5,syncope
+5,SOB
+5,sensory or motor defects
+5,stroke
+5,chest pain
+5,dyspnea
+5,paroxysmal nocturnal dyspnea
+5,orthopnea
+5,palpitations
+5,presyncope
+5,bilateral carotid stenosis
+5,stenosis of the R ICA
+5,L ICA stenosis
+5,CVA
+5,Bilateral carotid artery disease
+5,Anemia
+5,PVD
+5,Hypertension
+5,Diabetes
+5,retinopathy
+5,peripheral neuropathy
+5,Cataractshyroid nodule
+5,polyps
+5,back pain
+5,Proteinurias
+5,elbow fracture
+5,Arthritis
+6,ESRD
+6,diarrhea
+6,weakness
+6,C diff infections
+6,septic
+6,leukocytosis
+6,fever
+6,C diff
+7,cirrhosis
+7,esophageal varices
+7,gastritis
+7,ischemic infart
+7,hepatic encephalopathy
+7,HCV Cirrhosis
+7,GastropathyGrade
+7,Esophageal varices
+7,HTN
+7,induced gastritis
+8,CLL
+8,splenomegaly
+8,cytopenias
+8,lymphadenopathy
+8,lymphocytosis
+8,Richter's
+9,intellectual disability
+9,CHF
+9,epilepsy
+9,facial twitching
+9,seizure
+9,focal epilepsy
+9,anoxic brain injury
+9,atrophic
+9,seizures
+9,convulsion
+9,depression
+10,systemic mastocytosis
+10,flushing
+10,tachycardia
+10,PCP
+11,papillary thyroid cancer
+11,dysphagia
+11,weight loss
+11,lethargy
+11,bleed
+11,tumor
+11,hernia
+11,tonsillectomy
+12,Marfan's syndrome
+12,mitral valve prolapse
+12,Marfans SyndromeMVP
+12,mitral regurgitation
+12,Gastric reflux disease
+12,gestational diabetes mellitus
+12,Hypertension
+13,CVA
+13,neurogenic bladder
+13,UTIs
+13,urosepsis
+13,urethral strictures
+13,Lymphoma
+13,Hypertension
+13,Partial Bowel obstruction
+13,colostomy
+13,Hepatitis
+13,SLE
+13,transverse myelitis
+13,Urinary Tract Infections
+13,pseudomonas
+13,enterococcus
+14,COPD
+14,OSA
+14,obesity hypoventilation syndrome
+14,dCHF
+14,agitation
+14,hypoxia
+14,edema
+14,weight gain
+14,decreased appetite
+14,fever
+14,cough
+14,chills
+14,sputum
+14,pain
+14,CAD
+14,CHF
+14,obstructive sleep apnea
+14,DM2
+14,ventricular tachycardia
+14,ICD
+14,hypothyroidism
+14,schizophrenia
+14,COPD
+15,CAD
+15,abdominal mass
+15,fevers
+15,rigors
+15,bandemia
+15,abdominal pain
+15,vomiting
+15,pancreatic adenocarcinoma
+15,diverticular abscess
+15,diverticulitis
+15,abscess
+15,Coronary artery disease
+15,Mitral valve prolapse
+15,Atrial fibrillation
+15,Hyperlipemia5
+15,Hypertension6
+15,Chronic kidney disease
+15,Hypothyroidism
+15,Anemia
+16,hypoxemia
+16,dyspnea
+16,diastolic CHF
+16,pulmonary hypertension
+16,ASD
+16,COPD
+16,shortness of breath
+16,dyspneic
+16,hypotension
+16,Atrial septal defect
+16,sinus arrest
+16,PPM
+16,CHF
+16,HTN
+16,OSA
+16,mitral regurgitation
+16,Microcytic anemia
+16,Hypothyroidism
+16,Gallstone pancreatitis
+17,multiple myeloma
+17,systemic amyloidosis
+17,ESRD
+17,weakness
+17,body aching
+17,hypercalcemia
+17,myeloma
+17,edema
+18,low urine output
+18,bulbar urethral stricture
+18,stricture
+19,CAD
+19,HLD
+19,HTN
+19,ventricular tachycardia
+19,syncope
+19,ventricular arrhythmias
+19,bradycardia
+19,presyncope
+19,nausea
+19,chest pain
+19,EPS
+20,acne
+20,hirsutism
+20,nipple discharge
+20,snoring
+20,headache
+20,acromegaly
+20,prognathism
+20,macroadenoma
+21,abdominal pain
+21,vomiting
+21,pain
+21,allergies
+21,type 2 diabetes
+21,leukocytosis
+21,pancreatitis
+22,abdominal pain
+22,pain
+22,abdominal discomfort
+22,poor appetite
+22,tenderness
+22,leukocytosis
+22,perforation
+22,abscess
+22,gangrene
+23,cough
+23,shortness of breath
+23,asthma
+23,wheezing
+23,chest tightness
+23,seasonal allergic rhinitis
+25,masses
+25,breast carcinoma
+25,tumor
+26,abdominal pain
+26,nausea
+26,vomiting
+26,pain
+26,hypercholesterolemia
+26,febrile
+26,tenderness
+26,leukocytosis
+26,gallstones
+26,gallstone
+27,HCV infection
+27,hepatocellular carcinoma
+27,inflammation
+27,viral hepatitis
+27,alcoholic liver disease
+27,bleeding
+27,esophageal varices
+27,hemochromatosis
+27,autoimmune hepatitis
+27,metabolic liver disease
+27,ascites
+27,tenderness
+27,edema
+28,shortness of breath
+28,COPD
+28,BPH
+28,HTN
+28,obese
+29,type 1 diabetes
+29,hyperglycemia
+29,diabetic ketoacidosis
+29,polyuria
+29,polydipsia
+29,polyphagia
+29,diabetes
+29,nausea
+29,vomiting
+30,fatigue
+30,weight gain
+30,abnormal
+30,hirsutism
+30,nipple discharge
+30,Hashimoto's thyroiditis
+30,overweight
+31,cervical cancer
+32,vomiting
+32,diarrhea
+32,abdominal pain
+32,fever
+32,chills
+32,loss of appetite
+32,pallor
+32,jaundice
+32,abdominal tenderness
+33,allergies
+34,sadness
+34,depressed
+34,weight loss
+34,loss of energy
+34,colon cancer
+35,headache
+35,pain
+35,nausea
+35,photophobia
+35,migraine headache
+36,obese
+36,sleep apnea
+36,PCO
+37,one - sided vision lost
+37,facial weakness
+37,dysarthria
+37,numbness
+37,lower extremities weakness
+37,balance problem
+37,Relapsing Remitting Multiple Sclerosis
+37,RRMS
+38,myasthenia gravis
+38,diplopia
+38,fatigue
+38,weakness
+38,hypertension
+39,jaundice
+39,neonatal jaundice
+40,headaches
+40,bone pain
+40,swellings
+40,lesions
+40,hypertension
+40,DM type 2
+40,Paget's Disease of Bone
+41,Parkinson's disease
+41,slowness of movement
+41,tremors
+41,hypertension
+41,hypercholesterolemia
+41,shaking and slow movement
+41,dementia
+42,headache
+42,leg swelling
+42,fatigue
+42,fever
+42,chills
+42,headaches
+42,shortness of breath
+42,cough
+42,chest pain
+42,orthopnea
+42,palpitations
+42,skin rash
+42,abdominal pain
+42,nausea
+42,vomiting
+42,dysuria
+42,hematuria
+42,arthralgia
+42,back pain
+42,DM type 2
+42,HTN
+43,stroke
+43,aspiration pneumonia
+43,febrile
+43,abdominal pain
+43,diarrhea
+43,hyperactive bowel sounds
+43,tachycardic
+43,hypotensive
+44,scoliosis
+44,back pain
+44,pain
+44,shoulder imbalance
+44,scoliotic curve
+45,Sickle cell disease
+45,bone pain
+45,pain
+45,sickle cell crises
+45,splenomegaly
+45,drug allergy
+46,cough
+46,loss of appetite
+46,febrile
+46,cavitation
+47,numbness
+47,facial drop
+47,dyspnea
+47,headache
+47,palpitations
+47,chest pain
+47,fever
+47,dizziness
+47,bowel or
+47,urinary incontinence
+47,loss of consciousness
+47,hypertension
+47,hyperlipidemia
+47,hypothyroidism
+47,facial droop
+47,dysarthria
+47,hemiplegia
+47,Stroke
+47,infarct
+48,itchy foot
+48,fissuring
+48,pus
+48,tearing
+48,hyperlipidemia
+48,Tinea pedis infection
+49,short stature
+49,delayed in puberty
+49,developmental delay
+49,Turner syndrome
+49,obese
+49,mentally retarded
+50,NVD
+50,developmental delay
+51,fever
+51,chills
+51,nausea
+51,vomiting
+51,dysuria
+51,pain
+51,tenderness
+51,UTI
+52,dizziness
+52,diarrhea
+52,abdominal pain
+52,bloating
+52,nausea
+52,fever
+52,Vecal occult blood
+53,bones and joints
+53,pain
+54,weight loss
+54,dry cough
+54,necrotic granulomas
+54,Wegener's granulomatosis
+54,Vasculitis
+55,tremors
+55,tremor
+55,jaundice
+55,hepatosplenomegaly
+55,hypotonia
+55,aggressive behavior
+55,Wilson disease
+56,Acromegaly
+56,pituitary tumor
+56,pituitary adenoma
+57,obese
+57,abdominal pain
+57,vomiting
+57,pain
+57,allergies
+57,hypertension
+57,leukocytosis
+57,edematous
+57,interstitial pancreatitis
+57,gall stone pancreatitis
+58,pain
+58,nausea
+58,vomiting
+58,febrile
+58,tenderness
+58,appendicitis
+58,phlegmon
+58,abdominal abnormalities
+59,asthma
+59,shortness of breath
+59,chest tightening
+59,cough
+60,urinary retention
+61,breast cancer
+61,breast carcinoma
+61,tumor
+62,dizziness
+62,headaches
+62,CAD
+62,diabetes mellitus
+63,obese
+63,abdominal pain
+63,nausea
+63,vomiting
+63,epigastric pain
+63,pain
+63,hypercholesterolemia
+63,NVDs
+63,febrile
+63,tenderness
+63,leukocytosis
+63,gallstones
+64,HCV
+64,hepatocellular carcinoma
+64,inflammation
+64,viral hepatitis
+64,alcoholic liver disease
+64,bleeding
+64,esophageal varices
+64,hemochromatosis
+64,autoimmune hepatitis
+64,metabolic liver disease
+64,ascites
+64,tenderness
+64,edema
+65,type 1 diabetes
+65,shortness of breath
+65,fatigue
+65,dyspnea
+65,angina
+65,cardiomyopathy
+65,DM type 1
+66,weight gain
+66,abnormal menstrual cycles
+66,Hashimoto disease
+67,abnormal cervical squamous intraepithelial
+67,glandular lesion
+68,high blood pressure
+68,septicemia
+68,respiratory failure
+68,renal failure
+68,microangiopathic hemolytic anemia
+68,thrombocytopenia
+68,hemolytic uremic syndrome
+68,meningococcal
+68,meningococcal group B
+69,hypertensive
+69,allergies
+70,MDD
+70,loss of interest
+70,depressed
+70,loss of energy
+70,colon cancer

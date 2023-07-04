@@ -1,0 +1,27 @@
+text_id,entity,begin,end,chunk
+71,DISEASE,29,34,obese
+71,DISEASE,188,195,obesity
+71,DISEASE,252,263,sleep apnea
+71,DISEASE,265,268,PCO
+72,DISEASE,58,75,myasthenia gravis
+72,DISEASE,105,113,diplopia
+72,DISEASE,118,126,weakness
+73,DISEASE,46,54,jaundice
+73,DISEASE,799,807,jaundice
+73,DISEASE,408,421,yellow sclera
+73,DISEASE,426,438,icteric body
+73,DISEASE,790,807,neonatal jaundice
+74,DISEASE,57,66,headaches
+74,DISEASE,80,89,bone pain
+74,DISEASE,190,199,swellings
+74,DISEASE,223,232,swellings
+74,DISEASE,342,351,swellings
+74,DISEASE,295,323,lesions of the head and face
+74,DISEASE,666,689,Paget's disease of bone
+75,DISEASE,65,84,Parkinson's disease
+75,DISEASE,107,127,slowness of movement
+75,DISEASE,132,139,tremors
+75,DISEASE,172,190,Hoehn-Yahr Stage I
+75,DISEASE,236,248,hypertension
+75,DISEASE,253,273,hypercholesterolemia
+75,DISEASE,667,675,dementia

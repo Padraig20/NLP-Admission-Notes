@@ -1,0 +1,100 @@
+Name of the selected graph: /home/patrickstyll/Private_Projects/NLP_diseases/./ner_graphs/blstm_3_768_20_62.pb
+Training started - total epochs: 7 - lr: 0.003 - batch size: 32 - labels: 3 - chars: 60 - training examples: 394
+
+
+Epoch 1/7 started, lr: 0.003, dataset size: 394
+
+
+Epoch 1/7 - 2.66s - loss: 251.1731 - batches: 15
+Quality on validation dataset (20.0%), validation examples = 78
+time to finish evaluation: 0.53s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+B-DISEASE	 4	 5	 91	 0.44444445	 0.042105265	 0.07692309
+I-DISEASE	 4	 0	 51	 1.0	 0.07272727	 0.1355932
+tp: 8 fp: 5 fn: 142 labels: 2
+Macro-average	 prec: 0.7222222, rec: 0.057416268, f1: 0.10637573
+Micro-average	 prec: 0.61538464, rec: 0.053333335, f1: 0.098159514
+
+
+Epoch 2/7 started, lr: 0.0029850747, dataset size: 394
+
+
+Epoch 2/7 - 1.34s - loss: 152.78741 - batches: 15
+Quality on validation dataset (20.0%), validation examples = 78
+time to finish evaluation: 0.14s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+B-DISEASE	 0	 0	 95	 0.0	 0.0	 0.0
+I-DISEASE	 0	 0	 55	 0.0	 0.0	 0.0
+tp: 0 fp: 0 fn: 150 labels: 2
+Macro-average	 prec: 0.0, rec: 0.0, f1: NaN
+Micro-average	 prec: 0.0, rec: 0.0, f1: 0.0
+
+
+Epoch 3/7 started, lr: 0.0029702971, dataset size: 394
+
+
+Epoch 3/7 - 1.30s - loss: 133.13098 - batches: 15
+Quality on validation dataset (20.0%), validation examples = 78
+time to finish evaluation: 0.14s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+B-DISEASE	 3	 0	 92	 1.0	 0.031578947	 0.06122449
+I-DISEASE	 3	 0	 52	 1.0	 0.054545455	 0.10344828
+tp: 6 fp: 0 fn: 144 labels: 2
+Macro-average	 prec: 1.0, rec: 0.043062203, f1: 0.08256881
+Micro-average	 prec: 1.0, rec: 0.04, f1: 0.07692308
+
+
+Epoch 4/7 started, lr: 0.002955665, dataset size: 394
+
+
+Epoch 4/7 - 1.25s - loss: 113.4514 - batches: 15
+Quality on validation dataset (20.0%), validation examples = 78
+time to finish evaluation: 0.13s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+B-DISEASE	 14	 18	 81	 0.4375	 0.14736842	 0.22047243
+I-DISEASE	 10	 11	 45	 0.47619048	 0.18181819	 0.2631579
+tp: 24 fp: 29 fn: 126 labels: 2
+Macro-average	 prec: 0.45684522, rec: 0.16459331, f1: 0.24199873
+Micro-average	 prec: 0.4528302, rec: 0.16, f1: 0.2364532
+
+
+Epoch 5/7 started, lr: 0.0029411765, dataset size: 394
+
+
+Epoch 5/7 - 1.24s - loss: 102.6485 - batches: 15
+Quality on validation dataset (20.0%), validation examples = 78
+time to finish evaluation: 0.14s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+B-DISEASE	 9	 8	 86	 0.5294118	 0.094736844	 0.1607143
+I-DISEASE	 4	 4	 51	 0.5	 0.07272727	 0.12698412
+tp: 13 fp: 12 fn: 137 labels: 2
+Macro-average	 prec: 0.5147059, rec: 0.08373205, f1: 0.14403291
+Micro-average	 prec: 0.52, rec: 0.086666666, f1: 0.14857143
+
+
+Epoch 6/7 started, lr: 0.0029268293, dataset size: 394
+
+
+Epoch 6/7 - 1.25s - loss: 105.55908 - batches: 15
+Quality on validation dataset (20.0%), validation examples = 78
+time to finish evaluation: 0.14s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+B-DISEASE	 5	 4	 90	 0.5555556	 0.05263158	 0.096153855
+I-DISEASE	 2	 2	 53	 0.5	 0.036363635	 0.0677966
+tp: 7 fp: 6 fn: 143 labels: 2
+Macro-average	 prec: 0.5277778, rec: 0.04449761, f1: 0.08207534
+Micro-average	 prec: 0.53846157, rec: 0.046666667, f1: 0.08588957
+
+
+Epoch 7/7 started, lr: 0.0029126215, dataset size: 394
+
+
+Epoch 7/7 - 1.24s - loss: 102.2738 - batches: 15
+Quality on validation dataset (20.0%), validation examples = 78
+time to finish evaluation: 0.14s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+B-DISEASE	 23	 32	 72	 0.4181818	 0.24210526	 0.30666667
+I-DISEASE	 13	 21	 42	 0.38235295	 0.23636363	 0.29213482
+tp: 36 fp: 53 fn: 114 labels: 2
+Macro-average	 prec: 0.40026736, rec: 0.23923445, f1: 0.29947606
+Micro-average	 prec: 0.40449437, rec: 0.24, f1: 0.30125526
