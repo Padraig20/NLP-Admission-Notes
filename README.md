@@ -109,5 +109,7 @@ The first training session took place with 7 epochs, a learning rate of 0.004, a
 
 
 B-DISEASE -> beginning of disease entity
+
 I-DISEASE -> inside of disease entity
+
 O -> no entity
