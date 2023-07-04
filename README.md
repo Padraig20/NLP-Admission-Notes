@@ -113,3 +113,9 @@ B-DISEASE -> beginning of disease entity
 I-DISEASE -> inside of disease entity
 
 O -> no entity
+
+### Future
+
+-> Stemming
+
+-> Hyperparameter Optimization
