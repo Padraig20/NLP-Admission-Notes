@@ -609,10 +609,7 @@ A model trained with these parameters yields surprisingly good results with the 
 |diagnosed           |O           |O         |
 |with                |O           |O         |
 |neonatal            |B-DISEASE   |B-DISEASE |
-|<START_             |I-DISEASE   |I-DISEASE |
-|NER:DISEASE>        |O           |O         |
-|jaundice            |O           |O         |
-|</END_NER:DISEASE>  |O           |O         |
+|jaundice            |I-DISEASE   |I-DISEASE |
 |that                |O           |O         |
 |may                 |O           |O         |
 |require             |O           |O         |
