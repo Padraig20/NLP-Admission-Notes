@@ -893,6 +893,19 @@ A model trained with these parameters yields surprisingly good results with the 
 
 As we can see, hyperparameter tuning is extremely important - we achieved an f1-score of about 95%, while in our first model we had an f1-score of about 60%.
 
+### Stemming
+
+Stemming might prove useful for us since it can dramatically enhance our model's vocabulary, despite us having quite little training data.
+
+Here's a good use-case. We got the diagnosis "seasonal allergy" and "seasonal allergies". Via stemming, we reduce these words to their stem. Our model would only have to memorize
+"allergi".
+
+The implementation is relatively straightforward: https://sparknlp.org/api/python/reference/autosummary/sparknlp/annotator/stemmer/
+
+In testing the new model's performance, I realized that stemming might not even be the best choice - the f1-score slightly decreased. Hyperparameter Tuning might have to be repeated.
+
+The training algorithm where stemming is added to the pipeline can be found here: ./scripts/training/nlp_train_stemming.py
+
 ### Future
 
--> Stemming
+-> ???
