@@ -1,5 +1,5 @@
 # NLP_admissionNotes
-The goal of the project is to train an NLP model which can extract diagnoses and diseases from admission notes. The dataset is publicly available here: http://trec-cds.org/topics2021.xml
+The objective of this project is to develop an NLP model capable of extracting diagnoses and diseases from admission notes. Admission notes are created by doctors when a patient is newly admitted to a hospital and typically contain personal information such as age, gender, and various medical conditions. However, the process of entering this information into the hospital's medical system, such as the Hospital Information System (HIS), can be time-consuming and challenging. Therefore, the aim is to train an advanced NLP model that can efficiently and accurately extract relevant diagnoses and diseases from these admission notes. The dataset containing pseudonymized admission notes is publicly available here: http://trec-cds.org/topics2021.xml
 
 ## Explanation
 
