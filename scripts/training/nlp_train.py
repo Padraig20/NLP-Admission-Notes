@@ -9,7 +9,7 @@ training_path = sys.argv[1]
 testing_path = sys.argv[2]
 output_name = sys.argv[3]
 
-if not input_file1.endswith(".conll") or not input_file2.endswith(".conll"):
+if not training_path.endswith(".conll") or not testing_path.endswith(".conll"):
     print("Input files must have the extension '.conll'")
     sys.exit(1)
 
@@ -74,6 +74,7 @@ from sparknlp.annotator import NerDLApproach
 nerTagger = NerDLApproach()\
               .setInputCols(["sentence", "token", "embeddings"])\
               .setLabelColumn("label")\
+              .setUseBestModel(True)\
               .setOutputCol("ner")\
               .setMaxEpochs(7)\
               .setLr(0.004)\
@@ -86,6 +87,7 @@ nerTagger = NerDLApproach()\
               .setIncludeConfidence(True)\
               .setGraphFolder(graph_folder)\
               .setOutputLogsPath('ner_logs') 
+
 # Define the pipeline            
 ner_pipeline = Pipeline(stages=[embeddings,
                                 graph_builder,

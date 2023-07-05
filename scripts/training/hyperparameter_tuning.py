@@ -36,6 +36,12 @@ training_data.select(F.explode(F.arrays_zip(training_data.token.result,
 
 graph_folder = "./ner_graphs"
 
+def calculate_f1_score(ground_truth, predictions):
+    from sklearn.metrics import precision_recall_fscore_support
+    # Calculate precision, recall, and F1 score
+    precision, recall, f1_score, _ = precision_recall_fscore_support(ground_truth, predictions, average='weighted')
+    return f1_score # judge performance according to f1-score
+
 def pipeline_tuning(lr, hiddenLayers, batchSize, maxEpochs):
 
     from sparknlp.annotator import TFNerDLGraphBuilder
@@ -82,9 +88,6 @@ def pipeline_tuning(lr, hiddenLayers, batchSize, maxEpochs):
                   .setLr(lr)\
                   .setBatchSize(batchSize)\
                   .setRandomSeed(0)\
-                  .setValidationSplit(0.2)\
-                  .setEvaluationLogExtended(True)\
-                  .setEnableOutputLogs(True)\
                   .setIncludeConfidence(True)\
                   .setGraphFolder(graph_folder)\
                   .setOutputLogsPath('ner_logs') 
@@ -94,47 +97,61 @@ def pipeline_tuning(lr, hiddenLayers, batchSize, maxEpochs):
                                     graph_builder,
                                     nerTagger])
 
-    ner_model = ner_pipeline.fit(training_data)
+    from sklearn.model_selection import KFold
 
-    #ner_model.save(output_name)
+    kf = KFold(n_splits=5, shuffle=True, random_state=42)
 
-    ## TESTING THE MODEL
+    cv_results = []
 
-    test_data = CoNLL().readDataset(spark, testing_path)
+    training_data_pd = training_data.toPandas()
+    schema = training_data.schema
 
-    predictions = ner_model.transform(test_data)
+    for train_index, val_index in kf.split(training_data_pd):
+        split_train_data_pd = training_data_pd.iloc[train_index]
+        split_val_data_pd = training_data_pd.iloc[val_index]
 
-    tb_analyzed = predictions.select(F.explode(F.arrays_zip(predictions.token.result,
-                                              predictions.label.result,
-                                              predictions.ner.result)).alias("cols"))\
-                .select(F.expr("cols['1']").alias("ground_truth"),
-                        F.expr("cols['2']").alias("prediction"))
+        split_train_data = spark.createDataFrame(split_train_data_pd, schema)
+        split_val_data = spark.createDataFrame(split_val_data_pd, schema)
 
-    from sklearn.metrics import precision_recall_fscore_support
+        model = ner_pipeline.fit(split_train_data)
 
-    def calculate_f1_score(ground_truth, predictions):
-        # Calculate precision, recall, and F1 score
-        precision, recall, f1_score, _ = precision_recall_fscore_support(ground_truth, predictions, average='weighted')
-        return f1_score
+        predictions = model.transform(split_val_data)
 
-    # Convert Spark DataFrame to Pandas DataFrame
-    ground_truth_df = tb_analyzed.select("ground_truth").toPandas()
-    predictions_df = tb_analyzed.select("prediction").toPandas()
+        tb_analyzed = predictions.select(F.explode(F.arrays_zip(predictions.token.result,
+                                                  predictions.label.result,
+                                                  predictions.ner.result)).alias("cols"))\
+                    .select(F.expr("cols['1']").alias("ground_truth"),
+                            F.expr("cols['2']").alias("prediction"))
 
-    # Extract the required columns as arrays
-    ground_truth = ground_truth_df['ground_truth'].values.tolist()
-    predictions = predictions_df['prediction'].values.tolist()
+        from sklearn.metrics import precision_recall_fscore_support
 
-    f1_score = calculate_f1_score(ground_truth, predictions)
+        # Convert Spark DataFrame to Pandas DataFrame
+        ground_truth_df = tb_analyzed.select("ground_truth").toPandas()
+        predictions_df = tb_analyzed.select("prediction").toPandas()
+
+        # Extract the required columns as arrays
+        ground_truth = ground_truth_df['ground_truth'].values.tolist()
+        predictions = predictions_df['prediction'].values.tolist()
+
+        f1_score = calculate_f1_score(ground_truth, predictions)
+
+        cv_results.append(f1_score)
+
+    avg_f1_score = sum(cv_results) / 5
 
     print("---------------------------------------------------------------------------------------------")
-    print("Got f1-score of ", f1_score)
+    print("---------------------------------------------------------------------------------------------")
+    print("---------------------------------------------------------------------------------------------")
+    print("f1-score of ", avg_f1_score)
     print("Learning Rate: ", lr)
     print("Hidden Layers: ", hiddenLayers)
     print("Batch Size: ", batchSize)
     print("Maximum Epochs: ", maxEpochs)
     print("---------------------------------------------------------------------------------------------")
-    return f1_score
+    print("---------------------------------------------------------------------------------------------")
+    print("---------------------------------------------------------------------------------------------")
+
+    return avg_f1_score
 
 maxScore = 0
 bestLr = 0
@@ -163,6 +180,36 @@ print("Learning Rate: ", bestLr)
 print("Hidden Layers: ", bestHiddenLayers)
 print("Batch Size: ", bestBatchSize)
 print("Maximum Epochs: ", bestMaxEpochs)
+print("---------------------------------------------------------------------------------------------")
+print("---------------------------------------------------------------------------------------------")
+print("---------------------------------------------------------------------------------------------")
+
+## TESTING THE MODEL
+
+test_data = CoNLL().readDataset(spark, testing_path)
+
+predictions = ner_model.transform(test_data)
+
+tb_analyzed = predictions.select(F.explode(F.arrays_zip(predictions.token.result,
+                                          predictions.label.result,
+                                          predictions.ner.result)).alias("cols"))\
+            .select(F.expr("cols['1']").alias("ground_truth"),
+                    F.expr("cols['2']").alias("prediction"))
+
+# Convert Spark DataFrame to Pandas DataFrame
+ground_truth_df = tb_analyzed.select("ground_truth").toPandas()
+predictions_df = tb_analyzed.select("prediction").toPandas()
+
+# Extract the required columns as arrays
+ground_truth = ground_truth_df['ground_truth'].values.tolist()
+predictions = predictions_df['prediction'].values.tolist()
+
+f1_score = calculate_f1_score(ground_truth, predictions)
+
+print("---------------------------------------------------------------------------------------------")
+print("---------------------------------------------------------------------------------------------")
+print("---------------------------------------------------------------------------------------------")
+print("Got f1-score from testing data of ", f1_score)
 print("---------------------------------------------------------------------------------------------")
 print("---------------------------------------------------------------------------------------------")
 print("---------------------------------------------------------------------------------------------")
