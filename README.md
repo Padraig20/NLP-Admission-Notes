@@ -26,6 +26,8 @@ The objective of this project is to develop an NLP model capable of extracting d
 
 ./scripts/training/nlp_train.py generates an nlp model and automatically tests it. Saves the model to specified folder. Test and training data must be in .conll format.
 
+./scripts/training/nlp_train_stemming.py is the same as ./scripts/training/nlp_train.py, but includes stemming in the preprocessing steps of the pipeline.
+
 ./scripts/training/hyperparameter_tuning.py is used for hyperparameter optimization. Implemented Grid Search through a pre-defined search space. Cross-Validation is used for
 the generated models - evaluated by f1-score. Report is automatically generated.
 
