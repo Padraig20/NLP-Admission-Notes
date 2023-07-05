@@ -135,6 +135,16 @@ Normally, we would split the original dataset into three subsets: training, vali
 is really small, however. We need the data for training, since diagnoses are of rather subjective nature. We don't even have a subset for validation, so we are really prone to
 overfitting our model. Rather than going with the holdout approach, cross-validation would be much more suitable, altough more complicated to implement from scratch.
 
+But that's exactly what we're doing, using Pandas and KFold from the sk-learn package: https://towardsdatascience.com/effortless-hyperparameters-tuning-with-apache-spark-20ff93019ef2
+
+Now we need to define a search space for our hyperparameters. From experience, I found the following helpful: 
+
+learning rate: [0.005, 0.01, 0.1], hidden layers: [10, 20], batch size: [16, 32], maximum epochs: [5, 7, 10]
+
+Finally, we iterate through the search space via the grid search approach - "fuck around and find out"
+
+Run the script ./scripts/training/hyperparameter_tuning.py, grab a coffee, take a walk, maybe even start a family... it's gonna take forever to finish.
+
 ### Future
 
 -> Stemming
