@@ -3,6 +3,8 @@ The goal of the project is to train an NLP model which can extract diagnoses and
 
 ## Explanation
 
+./hyperparameter_tuning_results.txt contains results from hyperparameter exploration.
+
 ./datasets contains all the data I used for testing and training.
 
 ./datasets/origin contains all raw data. It is publicly available in http://trec-cds.org/topics2021.xml
@@ -23,6 +25,9 @@ The goal of the project is to train an NLP model which can extract diagnoses and
 ./scripts/nlp_apply.py takes a pretrained model and applies it to the input text. Represents the result in readable manner.
 
 ./scripts/training/nlp_train.py generates an nlp model and automatically tests it. Saves the model to specified folder. Test and training data must be in .conll format.
+
+./scripts/training/hyperparameter_tuning.py is used for hyperparameter optimization. Implemented Grid Search through a pre-defined search space. Cross-Validation is used for
+the generated models - evaluated by f1-score. Report is automatically generated.
 
 ./scripts/training/*.conll are used for training and testing respectively. These files have been generated from conll_prep.py
 
