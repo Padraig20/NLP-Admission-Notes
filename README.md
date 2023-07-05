@@ -114,8 +114,27 @@ I-DISEASE -> inside of disease entity
 
 O -> no entity
 
+### Hyperparameter Tuning and Optimization
+
+Turns out, this is a little more tricky with spark-nlp than previously thought. Although the NerDLApproach class offerst automatic percentile folds for cross validation
+(with f1-score, recall etc being logged in every epoch!!), there is no way to automatically perform hyperparameter tuning with this method. We cannot even extract the f1-score.
+That's kinda disappointing :(
+
+I thought that the CrossValidator-class would be of help for that. However, it doesn't work with our predefined pipeline! It seems to not be built for NER-models after all... 
+Which is unfortunate, and I think that the spark-nlp developer team should take this into consideration for future development. We need both embeddings and graph_builder before
+our nerTagger. However, as soon as we use the CrossValidator, the vocabulary is not yet ready for validation. 
+
+We are in need for a different approach!!
+
+When testing with out test-dataset, we have both ground_truth and prediction columns. We can use the "positive-positive"'s, the "positive-negative"'s, and so on, for manually
+calculating the f1-score: https://towardsdatascience.com/the-f1-score-bec2bbc38aa6
+
+But we got a function for that! Saves us at least some work.
+
+Normally, we would split the original dataset into three subsets: training, validation (for hyperparameter tuning) and testing (for evaluation of the final model). Our dataset
+is really small, however. We need the data for training, since diagnoses are of rather subjective nature. We don't even have a subset for validation, so we are really prone to
+overfitting our model. Rather than going with the holdout approach, cross-validation would be much more suitable, altough more complicated to implement from scratch.
+
 ### Future
 
 -> Stemming
-
--> Hyperparameter Optimization
