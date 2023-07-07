@@ -3,39 +3,41 @@ The objective of this project is to develop an NLP model capable of extracting d
 
 ## Explanation
 
-./hyperparameter_tuning_results.txt contains results from hyperparameter exploration.
+`./hyperparameter_tuning_results.txt` contains results from hyperparameter exploration.
 
-./datasets contains all the data I used for testing and training.
+`./datasets` contains all the data I used for testing and training.
 
-./datasets/origin contains all raw data. It is publicly available in http://trec-cds.org/topics2021.xml
+`./datasets/origin` contains all raw data. It is publicly available in http://trec-cds.org/topics2021.xml
 
-./datasets/testing contains all preprocessed data I used for testing the models.
+`./datasets/testing` contains all preprocessed data I used for testing the models.
 
-./datasets/training contains all preprocessed data I used for training the models.
+`./datasets/training` contains all preprocessed data I used for training the models.
 
 
-./scripts contains all scripts (in Python) which I use for data processing, analysis, training and using the pretrained models.
+`./scripts` contains all scripts (in Python) which I use for data processing, analysis, training and using the pretrained models.
 
-./scripts/text_extractor.py is used for converting the original .xml file into a csv file with columns: text_id, text
+`./scripts/text_extractor.py` is used for converting the original .xml file into a csv file with columns: `text_id, text`
 
-./scripts/entity_extractor.py is used for knitting together two .csv files into one, which can then be used for .conll file preparation.
+`./scripts/entity_extractor.py` is used for knitting together two .csv files into one, which can then be used for .conll file preparation.
 
-./scripts/conll_prep.py is used for knitting together two .csv files, one with annotated entities and one generated from text_extractor.py
+`./scripts/conll_prep.py` is used for knitting together two .csv files, one with annotated entities and one generated from text_extractor.py
 
-./scripts/nlp_apply.py takes a pretrained model and applies it to the input text. Represents the result in readable manner.
+`./scripts/nlp_apply.py` takes a pretrained model and applies it to the input text. Represents the result in readable manner.
 
-./scripts/training/nlp_train.py generates an nlp model and automatically tests it. Saves the model to specified folder. Test and training data must be in .conll format.
+`./scripts/training/nlp_train.py` generates an nlp model and automatically tests it. Saves the model to specified folder. Test and training data must be in .conll format.
 
-./scripts/training/nlp_train_stemming.py is the same as ./scripts/training/nlp_train.py, but includes stemming in the preprocessing steps of the pipeline.
+`./scripts/training/nlp_train_stemming.py` is the same as `./scripts/training/nlp_train.py`, but includes stemming in the preprocessing steps of the pipeline.
 
-./scripts/training/hyperparameter_tuning.py is used for hyperparameter optimization. Implemented Grid Search through a pre-defined search space. Cross-Validation is used for
+`./scripts/training/hyperparameter_tuning.py` is used for hyperparameter optimization. Implemented Grid Search through a pre-defined search space. Cross-Validation is used for
 the generated models - evaluated by f1-score. Report is automatically generated.
 
-./scripts/training/*.conll are used for training and testing respectively. These files have been generated from conll_prep.py
+`./scripts/training/hyperparameter_tuning_stemming.py` is used for hyperparameter optimization, includes stemming.
 
-./scripts/training/ner_graphs is used for storing the graphs generated during training the model.
+`./scripts/training/*.conll` are used for training and testing respectively. These files have been generated from conll_prep.py
 
-./scripts/training/ner_logs is used for storing the logs generated during training the model.
+`./scripts/training/ner_graphs` is used for storing the graphs generated during training the model.
+
+`./scripts/training/ner_logs` is used for storing the logs generated during training the model.
 
 
 Here are some great tutorials I used:
@@ -85,7 +87,7 @@ Since we only have a small dataset (75 entries), I used the first 70 entries for
 
 ### Fourth step: .conll file preparation
 
-For that, I used the ./scripts/conll_prep.py script, inspired from https://github.com/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/Certification_Trainings/Healthcare/1.3.prepare_CoNLL_from_annotations_for_NER.ipynb
+For that, I used the `./scripts/conll_prep.py` script, inspired from https://github.com/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/Certification_Trainings/Healthcare/1.3.prepare_CoNLL_from_annotations_for_NER.ipynb
 
 ### First Training Session
 
@@ -102,24 +104,24 @@ The first training session took place with 7 epochs, a learning rate of 0.004, a
 |        O|   recently|
 |        O|  diagnosed|
 |        O|       with|
-|B-DISEASE|       type|
-|I-DISEASE|          2|
-|I-DISEASE|   diabetes|
-|I-DISEASE|   mellitus|
+|B-DIAGNOSIS|       type|
+|I-DIAGNOSIS|          2|
+|I-DIAGNOSIS|   diabetes|
+|I-DIAGNOSIS|   mellitus|
 |        O|          .|
 |        O|    Suffers|
 |        O|       from|
-|B-DISEASE|proteinuria|
+|B-DIAGNOSIS|proteinuria|
 |        O|        and|
-|B-DISEASE|      liver|
-|I-DISEASE|  cirrhosis|
+|B-DIAGNOSIS|      liver|
+|I-DIAGNOSIS|  cirrhosis|
 
 
-B-DISEASE -> beginning of disease entity
+`B-DIAGNOSIS` -> beginning of disease entity
 
-I-DISEASE -> inside of disease entity
+`I-DIAGNOSIS` -> inside of disease entity
 
-O -> no entity
+`O` -> no entity
 
 ### Hyperparameter Tuning and Optimization
 
@@ -146,11 +148,11 @@ But that's exactly what we're doing, using Pandas and KFold from the sk-learn pa
 
 Now we need to define a search space for our hyperparameters. From experience, I found the following grid to make sense: 
 
-learning rate: [0.001, 0.003, 0.005, 0.01, 0.1], hidden layers: [10, 20], batch size: [8, 16, 32], maximum epochs: [7, 10]
+`learning rate: [0.001, 0.003, 0.005, 0.01, 0.1], hidden layers: [10, 20], batch size: [8, 16, 32], maximum epochs: [7, 10]`
 
 Finally, we iterate through the search space via the grid search approach - "fuck around and find out"
 
-Run the script ./scripts/training/hyperparameter_tuning.py, grab a coffee, take a walk, maybe even start a family... it's gonna take forever to finish.
+Run the script `./scripts/training/hyperparameter_tuning.py`, grab a coffee, take a walk, maybe even start a family... it's gonna take forever to finish.
 
 Analysis took about 3h, and once aborted due to a network error. The results can be seen in "./hyperparameter_tuning_results.txt". I was able to make a few observations during training, 
 which has allowed me to skip a few extra iterations.
@@ -164,7 +166,7 @@ Another interesting observation was that with a higher learning rate, the f1-sco
 
 The final hyperparameters is:
 
-f1-score: 0.9506947550389957 | Learning Rate: 0.003 | Hidden Layers: 10 | Batch Size: 8 | Maximum Epochs: 10
+`f1-score: 0.9506947550389957 | Learning Rate: 0.003 | Hidden Layers: 10 | Batch Size: 8 | Maximum Epochs: 10`
 
 A model trained with these parameters yields surprisingly good results with the test data - it even recognizes diagnoses which I forgot to include in data preprocessing...
 
@@ -175,7 +177,7 @@ A model trained with these parameters yields surprisingly good results with the 
 |is                  |O           |O         |
 |a                   |O           |O         |
 |34-year-old         |O           |O         |
-|obese               |B-DISEASE   |B-DISEASE |
+|obese               |B-DIAGNOSIS   |B-DIAGNOSIS |
 |woman               |O           |O         |
 |who                 |O           |O         |
 |comes               |O           |O         |
@@ -211,7 +213,7 @@ A model trained with these parameters yields surprisingly good results with the 
 |unsuccessfully      |O           |O         |
 |used                |O           |O         |
 |anti                |O           |O         |
-|obesity             |B-DISEASE   |O         |
+|obesity             |B-DIAGNOSIS   |O         |
 |agents              |O           |O         |
 |and                 |O           |O         |
 |appetite            |O           |O         |
@@ -221,10 +223,10 @@ A model trained with these parameters yields surprisingly good results with the 
 |is                  |O           |O         |
 |complaining         |O           |O         |
 |of                  |O           |O         |
-|sleep               |B-DISEASE   |B-DISEASE |
-|apnea               |I-DISEASE   |I-DISEASE |
+|sleep               |B-DIAGNOSIS   |B-DIAGNOSIS |
+|apnea               |I-DIAGNOSIS   |I-DIAGNOSIS |
 |,                   |O           |O         |
-|PCO                 |B-DISEASE   |B-DISEASE |
+|PCO                 |B-DIAGNOSIS   |B-DIAGNOSIS |
 |and                 |O           |O         |
 |dissatisfaction     |O           |O         |
 |with                |O           |O         |
@@ -337,8 +339,8 @@ A model trained with these parameters yields surprisingly good results with the 
 |considering         |O           |O         |
 |a                   |O           |O         |
 |laparoscopic        |O           |O         |
-|gastric             |O           |B-DISEASE |
-|bypass              |O           |I-DISEASE |
+|gastric             |O           |B-DIAGNOSIS |
+|bypass              |O           |I-DIAGNOSIS |
 |.                   |O           |O         |
 |The                 |O           |O         |
 |patient             |O           |O         |
@@ -349,18 +351,18 @@ A model trained with these parameters yields surprisingly good results with the 
 |recently            |O           |O         |
 |diagnosed           |O           |O         |
 |with                |O           |O         |
-|myasthenia          |B-DISEASE   |B-DISEASE |
-|gravis              |I-DISEASE   |I-DISEASE |
+|myasthenia          |B-DIAGNOSIS   |B-DIAGNOSIS |
+|gravis              |I-DIAGNOSIS   |I-DIAGNOSIS |
 |,                   |O           |O         |
-|class               |O           |B-DISEASE |
-|IIa                 |O           |I-DISEASE |
+|class               |O           |B-DIAGNOSIS |
+|IIa                 |O           |I-DIAGNOSIS |
 |.                   |O           |O         |
 |She                 |O           |O         |
 |complains           |O           |O         |
 |of                  |O           |O         |
-|diplopia            |B-DISEASE   |B-DISEASE |
+|diplopia            |B-DIAGNOSIS   |B-DIAGNOSIS |
 |and                 |O           |O         |
-|weakness            |B-DISEASE   |B-DISEASE |
+|weakness            |B-DIAGNOSIS   |B-DIAGNOSIS |
 |affecting           |O           |O         |
 |in                  |O           |O         |
 |her                 |O           |O         |
@@ -467,7 +469,7 @@ A model trained with these parameters yields surprisingly good results with the 
 |female              |O           |O         |
 |infant              |O           |O         |
 |with                |O           |O         |
-|jaundice            |B-DISEASE   |B-DISEASE |
+|jaundice            |B-DIAGNOSIS   |B-DIAGNOSIS |
 |that                |O           |O         |
 |started             |O           |O         |
 |one                 |O           |O         |
@@ -489,8 +491,8 @@ A model trained with these parameters yields surprisingly good results with the 
 |due                 |O           |O         |
 |to                  |O           |O         |
 |her                 |O           |O         |
-|gestational         |O           |B-DISEASE |
-|age                 |O           |I-DISEASE |
+|gestational         |O           |B-DIAGNOSIS |
+|age                 |O           |I-DIAGNOSIS |
 |.                   |O           |O         |
 |Vital               |O           |O         |
 |signs               |O           |O         |
@@ -543,11 +545,11 @@ A model trained with these parameters yields surprisingly good results with the 
 |She                 |O           |O         |
 |presents            |O           |O         |
 |with                |O           |O         |
-|yellow              |B-DISEASE   |O         |
-|sclera              |I-DISEASE   |O         |
+|yellow              |B-DIAGNOSIS   |O         |
+|sclera              |I-DIAGNOSIS   |O         |
 |and                 |O           |O         |
-|icteric             |B-DISEASE   |B-DISEASE |
-|body                |I-DISEASE   |I-DISEASE |
+|icteric             |B-DIAGNOSIS   |B-DIAGNOSIS |
+|body                |I-DIAGNOSIS   |I-DIAGNOSIS |
 |.                   |O           |O         |
 |Her                 |O           |O         |
 |liver               |O           |O         |
@@ -610,8 +612,8 @@ A model trained with these parameters yields surprisingly good results with the 
 |is                  |O           |O         |
 |diagnosed           |O           |O         |
 |with                |O           |O         |
-|neonatal            |B-DISEASE   |B-DISEASE |
-|jaundice            |I-DISEASE   |I-DISEASE |
+|neonatal            |B-DIAGNOSIS   |B-DIAGNOSIS |
+|jaundice            |I-DIAGNOSIS   |I-DIAGNOSIS |
 |that                |O           |O         |
 |may                 |O           |O         |
 |require             |O           |O         |
@@ -626,11 +628,11 @@ A model trained with these parameters yields surprisingly good results with the 
 |complaining         |O           |O         |
 |of                  |O           |O         |
 |frequent            |O           |O         |
-|headaches           |B-DISEASE   |B-DISEASE |
+|headaches           |B-DIAGNOSIS   |B-DIAGNOSIS |
 |,                   |O           |O         |
 |generalized         |O           |O         |
-|bone                |B-DISEASE   |B-DISEASE |
-|pain                |I-DISEASE   |I-DISEASE |
+|bone                |B-DIAGNOSIS   |B-DIAGNOSIS |
+|pain                |I-DIAGNOSIS   |I-DIAGNOSIS |
 |and                 |O           |O         |
 |difficulty          |O           |O         |
 |chewing             |O           |O         |
@@ -646,14 +648,14 @@ A model trained with these parameters yields surprisingly good results with the 
 |.                   |O           |O         |
 |Examination         |O           |O         |
 |shows               |O           |O         |
-|bilateral           |O           |B-DISEASE |
-|swellings           |B-DISEASE   |I-DISEASE |
+|bilateral           |O           |B-DIAGNOSIS |
+|swellings           |B-DIAGNOSIS   |I-DIAGNOSIS |
 |around              |O           |O         |
 |the                 |O           |O         |
 |molars              |O           |O         |
 |.                   |O           |O         |
 |The                 |O           |O         |
-|swellings           |B-DISEASE   |B-DISEASE |
+|swellings           |B-DIAGNOSIS   |B-DIAGNOSIS |
 |have                |O           |O         |
 |increased           |O           |O         |
 |since               |O           |O         |
@@ -663,17 +665,17 @@ A model trained with these parameters yields surprisingly good results with the 
 |.                   |O           |O         |
 |Several             |O           |O         |
 |extraoral           |O           |O         |
-|lesions             |B-DISEASE   |O         |
-|of                  |I-DISEASE   |O         |
-|the                 |I-DISEASE   |O         |
-|head                |I-DISEASE   |O         |
-|and                 |I-DISEASE   |O         |
-|face                |I-DISEASE   |O         |
+|lesions             |B-DIAGNOSIS   |O         |
+|of                  |I-DIAGNOSIS   |O         |
+|the                 |I-DIAGNOSIS   |O         |
+|head                |I-DIAGNOSIS   |O         |
+|and                 |I-DIAGNOSIS   |O         |
+|face                |I-DIAGNOSIS   |O         |
 |are                 |O           |O         |
 |detected            |O           |O         |
 |.                   |O           |O         |
 |The                 |O           |O         |
-|swellings           |B-DISEASE   |O         |
+|swellings           |B-DIAGNOSIS   |O         |
 |are                 |O           |O         |
 |non-tender          |O           |O         |
 |and                 |O           |O         |
@@ -729,10 +731,10 @@ A model trained with these parameters yields surprisingly good results with the 
 |was                 |O           |O         |
 |diagnosed           |O           |O         |
 |with                |O           |O         |
-|Paget's             |B-DISEASE   |B-DISEASE |
-|disease             |I-DISEASE   |I-DISEASE |
-|of                  |I-DISEASE   |I-DISEASE |
-|bone                |I-DISEASE   |I-DISEASE |
+|Paget's             |B-DIAGNOSIS   |B-DIAGNOSIS |
+|disease             |I-DIAGNOSIS   |I-DIAGNOSIS |
+|of                  |I-DIAGNOSIS   |I-DIAGNOSIS |
+|bone                |I-DIAGNOSIS   |I-DIAGNOSIS |
 |when                |O           |O         |
 |she                 |O           |O         |
 |was                 |O           |O         |
@@ -743,10 +745,10 @@ A model trained with these parameters yields surprisingly good results with the 
 |The                 |O           |O         |
 |diagnosis           |O           |O         |
 |of                  |O           |O         |
-|Paget's             |O           |B-DISEASE |
-|Disease             |O           |I-DISEASE |
-|of                  |O           |I-DISEASE |
-|Bone                |O           |I-DISEASE |
+|Paget's             |O           |B-DIAGNOSIS |
+|Disease             |O           |I-DIAGNOSIS |
+|of                  |O           |I-DIAGNOSIS |
+|Bone                |O           |I-DIAGNOSIS |
 |is                  |O           |O         |
 |confirmed           |O           |O         |
 |and                 |O           |O         |
@@ -769,18 +771,18 @@ A model trained with these parameters yields surprisingly good results with the 
 |recently            |O           |O         |
 |diagnosed           |O           |O         |
 |with                |O           |O         |
-|Parkinson's         |B-DISEASE   |B-DISEASE |
-|disease             |I-DISEASE   |I-DISEASE |
+|Parkinson's         |B-DIAGNOSIS   |B-DIAGNOSIS |
+|disease             |I-DIAGNOSIS   |I-DIAGNOSIS |
 |.                   |O           |O         |
 |He                  |O           |O         |
 |is                  |O           |O         |
 |complaining         |O           |O         |
 |of                  |O           |O         |
-|slowness            |B-DISEASE   |B-DISEASE |
-|of                  |I-DISEASE   |I-DISEASE |
-|movement            |I-DISEASE   |I-DISEASE |
+|slowness            |B-DIAGNOSIS   |B-DIAGNOSIS |
+|of                  |I-DIAGNOSIS   |I-DIAGNOSIS |
+|movement            |I-DIAGNOSIS   |I-DIAGNOSIS |
 |and                 |O           |O         |
-|tremors             |B-DISEASE   |B-DISEASE |
+|tremors             |B-DIAGNOSIS   |B-DIAGNOSIS |
 |.                   |O           |O         |
 |His                 |O           |O         |
 |disease             |O           |O         |
@@ -789,9 +791,9 @@ A model trained with these parameters yields surprisingly good results with the 
 |as                  |O           |O         |
 |mild                |O           |O         |
 |,                   |O           |O         |
-|Hoehn-Yahr          |B-DISEASE   |B-DISEASE |
-|Stage               |I-DISEASE   |I-DISEASE |
-|I                   |I-DISEASE   |I-DISEASE |
+|Hoehn-Yahr          |B-DIAGNOSIS   |B-DIAGNOSIS |
+|Stage               |I-DIAGNOSIS   |I-DIAGNOSIS |
+|I                   |I-DIAGNOSIS   |I-DIAGNOSIS |
 |.                   |O           |O         |
 |His                 |O           |O         |
 |past                |O           |O         |
@@ -800,9 +802,9 @@ A model trained with these parameters yields surprisingly good results with the 
 |is                  |O           |O         |
 |significant         |O           |O         |
 |for                 |O           |O         |
-|hypertension        |B-DISEASE   |B-DISEASE |
+|hypertension        |B-DIAGNOSIS   |B-DIAGNOSIS |
 |and                 |O           |O         |
-|hypercholesterolemia|B-DISEASE   |B-DISEASE |
+|hypercholesterolemia|B-DIAGNOSIS   |B-DIAGNOSIS |
 |.                   |O           |O         |
 |He                  |O           |O         |
 |lives               |O           |O         |
@@ -829,10 +831,10 @@ A model trained with these parameters yields surprisingly good results with the 
 |He                  |O           |O         |
 |complains           |O           |O         |
 |of                  |O           |O         |
-|shaking             |O           |B-DISEASE |
-|and                 |O           |I-DISEASE |
-|slow                |O           |I-DISEASE |
-|movement            |O           |I-DISEASE |
+|shaking             |O           |B-DIAGNOSIS |
+|and                 |O           |I-DIAGNOSIS |
+|slow                |O           |I-DIAGNOSIS |
+|movement            |O           |I-DIAGNOSIS |
 |.                   |O           |O         |
 |He                  |O           |O         |
 |had                 |O           |O         |
@@ -880,7 +882,7 @@ A model trained with these parameters yields surprisingly good results with the 
 |any                 |O           |O         |
 |signs               |O           |O         |
 |of                  |O           |O         |
-|dementia            |B-DISEASE   |B-DISEASE |
+|dementia            |B-DIAGNOSIS   |B-DIAGNOSIS |
 |.                   |O           |O         |
 |He                  |O           |O         |
 |does                |O           |O         |
@@ -906,7 +908,13 @@ The implementation is relatively straightforward: https://sparknlp.org/api/pytho
 
 In testing the new model's performance, I realized that stemming might not even be the best choice - the f1-score slightly decreased. Hyperparameter Tuning might have to be repeated.
 
-The training algorithm where stemming is added to the pipeline can be found here: ./scripts/training/nlp_train_stemming.py
+The training algorithm where stemming is added to the pipeline can be found here: `./scripts/training/nlp_train_stemming.py`
+
+### Hyperparameter Optimization cont'd
+
+I added a new script which should perform the same Grid Search etc. for our stemming algorithm. Unfortunately, it got the same optimal hyperparameters, but with worse f1-score:
+
+`f1-score: 0.939280697131209 | Learning Rate: 0.003 | Hidden Layers: 10 | Batch Size: 8 | Maximum Epochs: 10`
 
 ### Future
 
