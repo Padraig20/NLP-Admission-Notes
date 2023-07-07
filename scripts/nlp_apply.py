@@ -7,16 +7,21 @@ from pyspark.ml import Pipeline
 import sparknlp
 import sys
 
-if len(sys.argv) > 1:
-    string_param = sys.argv[1]
+if len(sys.argv) == 3:
+    model_path = sys.argv[1]
+    string_param = sys.argv[2]
 else:
-    print("No input provided.")
+    print("Usage: python nlp_apply.py model_path \"Admission Note Text\"")
+    sys.exit(1)
 
 spark = sparknlp.start()
 
-loaded_model = PipelineModel.load("bert_diseases")
+loaded_model = PipelineModel.load(model_path)
 
 data = spark.createDataFrame([[string_param]]).toDF("text")
+
+import pyspark.sql.functions as F
+data = data.withColumn("text", F.lower(data["text"]))
 
 documentAssembler = DocumentAssembler().setInputCol("text").setOutputCol("document")
 sentence = SentenceDetector()\

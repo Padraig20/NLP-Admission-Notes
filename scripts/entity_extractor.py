@@ -25,7 +25,7 @@ def extract_entities(text_csv_file, entity_csv_file, output_csv_file):
                     if begin != -1:
                         end = begin + len(entity)
                         chunk = text[begin:end]
-                        extracted_data.append([text_id, 'DISEASE', begin, end, chunk])
+                        extracted_data.append([text_id, 'DIAGNOSIS', begin, end, chunk])
                         begin = end
     
     # Write the extracted data to a new CSV file

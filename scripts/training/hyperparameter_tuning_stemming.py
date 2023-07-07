@@ -33,6 +33,8 @@ training_data.select(F.explode(F.arrays_zip(training_data.token.result,
              .select(F.expr("cols['0']").alias("token"),
                      F.expr("cols['1']").alias("ground_truth")).groupBy('ground_truth').count().orderBy('count', ascending=False).show(100,truncate=False)
 
+training_data = training_data.withColumn("text", F.lower(training_data["text"]))
+
 graph_folder = "./ner_graphs"
 
 def calculate_f1_score(ground_truth, predictions):

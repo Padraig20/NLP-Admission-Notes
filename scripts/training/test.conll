@@ -5,7 +5,7 @@ patient NN NN O
 is NN NN O
 a NN NN O
 34-year-old NN NN O
-obese NNP NNP B-DISEASE
+obese NNP NNP B-DIAGNOSIS
 woman NN NN O
 who NN NN O
 comes NN NN O
@@ -43,7 +43,7 @@ she NN NN O
 unsuccessfully NN NN O
 used NN NN O
 anti NN NN O
-obesity NNP NNP B-DISEASE
+obesity NNP NNP B-DIAGNOSIS
 agents NN NN O
 and NN NN O
 appetite NN NN O
@@ -54,10 +54,10 @@ She NN NN O
 is NN NN O
 complaining NN NN O
 of NN NN O
-sleep NNP NNP B-DISEASE
-apnea NNP NNP I-DISEASE
+sleep NNP NNP B-DIAGNOSIS
+apnea NNP NNP I-DIAGNOSIS
 , NN NN O
-PCO NNP NNP B-DISEASE
+PCO NNP NNP B-DIAGNOSIS
 and NN NN O
 dissatisfaction NN NN O
 with NN NN O
@@ -191,19 +191,18 @@ girl NN NN O
 recently NN NN O
 diagnosed NN NN O
 with NN NN O
-myasthenia NNP NNP B-DISEASE
-gravis NNP NNP I-DISEASE
-, NN NN O
-class NN NN O
-IIa NN NN O
+myasthenia NNP NNP B-DIAGNOSIS
+gravis NNP NNP I-DIAGNOSIS
+class NN NN I-DIAGNOSIS
+IIa NN NN I-DIAGNOSIS
 . NN NN O
 
 She NN NN O
 complains NN NN O
 of NN NN O
-diplopia NNP NNP B-DISEASE
+diplopia NNP NNP B-DIAGNOSIS
 and NN NN O
-weakness NNP NNP B-DISEASE
+weakness NNP NNP B-DIAGNOSIS
 affecting NN NN O
 in NN NN O
 her NN NN O
@@ -317,7 +316,7 @@ a NN NN O
 female NN NN O
 infant NN NN O
 with NN NN O
-jaundice NNP NNP B-DISEASE
+jaundice NNP NNP B-DIAGNOSIS
 that NN NN O
 started NN NN O
 one NN NN O
@@ -397,11 +396,11 @@ cm NN NN O
 She NN NN O
 presents NN NN O
 with NN NN O
-yellow NNP NNP B-DISEASE
-sclera NNP NNP I-DISEASE
+yellow NNP NNP B-DIAGNOSIS
+sclera NNP NNP I-DIAGNOSIS
 and NN NN O
-icteric NNP NNP B-DISEASE
-body NNP NNP I-DISEASE
+icteric NNP NNP B-DIAGNOSIS
+body NNP NNP I-DIAGNOSIS
 . NN NN O
 
 Her NN NN O
@@ -465,11 +464,11 @@ range.She NN NN O
 is NN NN O
 diagnosed NN NN O
 with NN NN O
-neonatal NNP NNP B-DISEASE
-<START_ NNP NNP I-DISEASE
-NER:DISEASE> NN NN O
+neonatal NNP NNP B-DIAGNOSIS
+<START_ NNP NNP I-DIAGNOSIS
+NER:DIAGNOSIS> NN NN O
 jaundice NN NN O
-</END_NER:DISEASE> NN NN O
+</END_NER:DIAGNOSIS> NN NN O
 that NN NN O
 may NN NN O
 require NN NN O
@@ -485,11 +484,11 @@ man NN NN O
 complaining NN NN O
 of NN NN O
 frequent NN NN O
-headaches NNP NNP B-DISEASE
+headaches NNP NNP B-DIAGNOSIS
 , NN NN O
 generalized NN NN O
-bone NNP NNP B-DISEASE
-pain NNP NNP I-DISEASE
+bone NNP NNP B-DIAGNOSIS
+pain NNP NNP I-DIAGNOSIS
 and NN NN O
 difficulty NN NN O
 chewing NN NN O
@@ -507,14 +506,14 @@ worse NN NN O
 Examination NN NN O
 shows NN NN O
 bilateral NN NN O
-swellings NNP NNP B-DISEASE
+swellings NNP NNP B-DIAGNOSIS
 around NN NN O
 the NN NN O
 molars NN NN O
 . NN NN O
 
 The NN NN O
-swellings NNP NNP B-DISEASE
+swellings NNP NNP B-DIAGNOSIS
 have NN NN O
 increased NN NN O
 since NN NN O
@@ -525,18 +524,18 @@ examination NN NN O
 
 Several NN NN O
 extraoral NN NN O
-lesions NNP NNP B-DISEASE
-of NNP NNP I-DISEASE
-the NNP NNP I-DISEASE
-head NNP NNP I-DISEASE
-and NNP NNP I-DISEASE
-face NNP NNP I-DISEASE
+lesions NNP NNP B-DIAGNOSIS
+of NNP NNP I-DIAGNOSIS
+the NNP NNP I-DIAGNOSIS
+head NNP NNP I-DIAGNOSIS
+and NNP NNP I-DIAGNOSIS
+face NNP NNP I-DIAGNOSIS
 are NN NN O
 detected NN NN O
 . NN NN O
 
 The NN NN O
-swellings NNP NNP B-DISEASE
+swellings NNP NNP B-DIAGNOSIS
 are NN NN O
 non-tender NN NN O
 and NN NN O
@@ -596,10 +595,10 @@ She NN NN O
 was NN NN O
 diagnosed NN NN O
 with NN NN O
-Paget's NNP NNP B-DISEASE
-disease NNP NNP I-DISEASE
-of NNP NNP I-DISEASE
-bone NNP NNP I-DISEASE
+Paget's NNP NNP B-DIAGNOSIS
+disease NNP NNP I-DIAGNOSIS
+of NNP NNP I-DIAGNOSIS
+bone NNP NNP I-DIAGNOSIS
 when NN NN O
 she NN NN O
 was NN NN O
@@ -638,19 +637,19 @@ was NN NN O
 recently NN NN O
 diagnosed NN NN O
 with NN NN O
-Parkinson's NNP NNP B-DISEASE
-disease NNP NNP I-DISEASE
+Parkinson's NNP NNP B-DIAGNOSIS
+disease NNP NNP I-DIAGNOSIS
 . NN NN O
 
 He NN NN O
 is NN NN O
 complaining NN NN O
 of NN NN O
-slowness NNP NNP B-DISEASE
-of NNP NNP I-DISEASE
-movement NNP NNP I-DISEASE
+slowness NNP NNP B-DIAGNOSIS
+of NNP NNP I-DIAGNOSIS
+movement NNP NNP I-DIAGNOSIS
 and NN NN O
-tremors NNP NNP B-DISEASE
+tremors NNP NNP B-DIAGNOSIS
 . NN NN O
 
 His NN NN O
@@ -660,9 +659,9 @@ ranked NN NN O
 as NN NN O
 mild NN NN O
 , NN NN O
-Hoehn-Yahr NNP NNP B-DISEASE
-Stage NNP NNP I-DISEASE
-I NNP NNP I-DISEASE
+Hoehn-Yahr NNP NNP B-DIAGNOSIS
+Stage NNP NNP I-DIAGNOSIS
+I NNP NNP I-DIAGNOSIS
 . NN NN O
 
 His NN NN O
@@ -672,9 +671,9 @@ history NN NN O
 is NN NN O
 significant NN NN O
 for NN NN O
-hypertension NNP NNP B-DISEASE
+hypertension NNP NNP B-DIAGNOSIS
 and NN NN O
-hypercholesterolemia NNP NNP B-DISEASE
+hypercholesterolemia NNP NNP B-DIAGNOSIS
 . NN NN O
 
 He NN NN O
@@ -760,7 +759,7 @@ have NN NN O
 any NN NN O
 signs NN NN O
 of NN NN O
-dementia NNP NNP B-DISEASE
+dementia NNP NNP B-DIAGNOSIS
 . NN NN O
 
 He NN NN O

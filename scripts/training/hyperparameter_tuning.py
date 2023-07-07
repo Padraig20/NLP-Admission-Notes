@@ -1,20 +1,19 @@
 import sys
 import os
 
-if len(sys.argv) != 4:
-    print("Usage: python nlp_train.py training_data.conll testing_data.conll output_name")
+if len(sys.argv) != 3:
+    print("Usage: python hyperparameter_tuning.py training_data.conll output_name.txt")
     sys.exit(1)
 
 training_path = sys.argv[1]
-testing_path = sys.argv[2]
-output_name = sys.argv[3]
+output_name = sys.argv[2]
 
-if not training_path.endswith(".conll") or not testing_path.endswith(".conll"):
-    print("Input files must have the extension '.conll'")
+if not training_path.endswith(".conll"):
+    print("Input file must have the extension '.conll'")
     sys.exit(1)
 
-if '.' in output_name:
-    print("Output name cannot have an extension")
+if not '.txt' in output_name:
+    print("Output must be txt file")
     sys.exit(1)
 
 ##START SPARK-NLP LOGIC
@@ -33,6 +32,8 @@ training_data.select(F.explode(F.arrays_zip(training_data.token.result,
                                             training_data.label.result)).alias("cols")) \
              .select(F.expr("cols['0']").alias("token"),
                      F.expr("cols['1']").alias("ground_truth")).groupBy('ground_truth').count().orderBy('count', ascending=False).show(100,truncate=False)
+
+training_data = training_data.withColumn("text", F.lower(training_data["text"]))
 
 graph_folder = "./ner_graphs"
 
@@ -99,7 +100,7 @@ def pipeline_tuning(lr, hiddenLayers, batchSize, maxEpochs):
 
     from sklearn.model_selection import KFold
 
-    kf = KFold(n_splits=5, shuffle=True, random_state=42)
+    kf = KFold(n_splits=4, shuffle=True, random_state=42)
 
     cv_results = []
 
@@ -137,7 +138,17 @@ def pipeline_tuning(lr, hiddenLayers, batchSize, maxEpochs):
 
         cv_results.append(f1_score)
 
-    avg_f1_score = sum(cv_results) / 5
+    avg_f1_score = sum(cv_results) / 4
+
+    with open(output_name, 'a') as file:
+        file.write("--------------------------------------------------------------------------------------------\n")
+        file.write("f1-score of " + str(avg_f1_score) + "\n")
+        file.write("Learning Rate: " + str(lr) + "\n")
+        file.write("Hidden Layers: " + str(hiddenLayers) + "\n")
+        file.write("Batch Size: " + str(batchSize) + "\n")
+        file.write("Maximum Epochs: " + str(maxEpochs) + "\n")
+        file.write("--------------------------------------------------------------------------------------------\n\n")
+
 
     print("---------------------------------------------------------------------------------------------")
     print("---------------------------------------------------------------------------------------------")
@@ -160,10 +171,10 @@ bestBatchSize = 0
 bestMaxEpochs = 0
 
 # pre-defined search space
-for lr in [0.005, 0.01, 0.1]:
+for lr in [0.003, 0.001]:
     for hiddenLayers in [10, 20]:
-        for batchSize in [16, 32]:
-            for maxEpochs in [5, 7, 10]:
+        for batchSize in [8, 16]:
+            for maxEpochs in [7, 10]:
                 f1_score = pipeline_tuning(lr, hiddenLayers, batchSize, maxEpochs)
                 if maxScore < f1_score:
                     maxScore = f1_score
@@ -172,44 +183,14 @@ for lr in [0.005, 0.01, 0.1]:
                     bestBatchSize = batchSize
                     bestMaxEpochs = maxEpochs
 
-print("---------------------------------------------------------------------------------------------")
-print("---------------------------------------------------------------------------------------------")
-print("---------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------")
 print("f1-score of ", maxScore)
 print("Learning Rate: ", bestLr)
 print("Hidden Layers: ", bestHiddenLayers)
 print("Batch Size: ", bestBatchSize)
 print("Maximum Epochs: ", bestMaxEpochs)
-print("---------------------------------------------------------------------------------------------")
-print("---------------------------------------------------------------------------------------------")
-print("---------------------------------------------------------------------------------------------")
-
-## TESTING THE MODEL
-
-test_data = CoNLL().readDataset(spark, testing_path)
-
-predictions = ner_model.transform(test_data)
-
-tb_analyzed = predictions.select(F.explode(F.arrays_zip(predictions.token.result,
-                                          predictions.label.result,
-                                          predictions.ner.result)).alias("cols"))\
-            .select(F.expr("cols['1']").alias("ground_truth"),
-                    F.expr("cols['2']").alias("prediction"))
-
-# Convert Spark DataFrame to Pandas DataFrame
-ground_truth_df = tb_analyzed.select("ground_truth").toPandas()
-predictions_df = tb_analyzed.select("prediction").toPandas()
-
-# Extract the required columns as arrays
-ground_truth = ground_truth_df['ground_truth'].values.tolist()
-predictions = predictions_df['prediction'].values.tolist()
-
-f1_score = calculate_f1_score(ground_truth, predictions)
-
-print("---------------------------------------------------------------------------------------------")
-print("---------------------------------------------------------------------------------------------")
-print("---------------------------------------------------------------------------------------------")
-print("Got f1-score from testing data of ", f1_score)
-print("---------------------------------------------------------------------------------------------")
-print("---------------------------------------------------------------------------------------------")
-print("---------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------")

@@ -1,659 +1,659 @@
 text_id,entity,begin,end,chunk
-1,DISEASE,47,82,anaplastic astrocytoma of the spine
-1,DISEASE,105,129,lower extremity weakness
-1,DISEASE,341,365,lower extremity weakness
-1,DISEASE,134,151,urinary retention
-1,DISEASE,370,387,urinary retention
-1,DISEASE,192,204,hypertension
-1,DISEASE,210,222,chronic pain
-1,DISEASE,228,233,tumor
-1,DISEASE,276,298,anaplastic astrocytoma
-1,DISEASE,595,617,anaplastic astrocytoma
-1,DISEASE,422,425,RLE
-1,DISEASE,470,488,difficulty walking
-1,DISEASE,514,522,numbness
-1,DISEASE,537,559,spinal cord conus mass
-2,DISEASE,16,19,HTN
-2,DISEASE,20,34,hyperlipidemia
-2,DISEASE,36,57,bicuspid aortic valve
-2,DISEASE,719,740,bicuspid aortic valve
-2,DISEASE,63,76,tobacco abuse
-2,DISEASE,147,150,SOB
-2,DISEASE,457,460,SOB
-2,DISEASE,158,163,edema
-2,DISEASE,468,473,edema
-2,DISEASE,185,200,aortic stenosis
-2,DISEASE,569,584,aortic stenosis
-2,DISEASE,268,288,biatrial enlargement
-2,DISEASE,307,327,aortic insufficiency
-2,DISEASE,593,621,left ventricular hypertrophy
-2,DISEASE,661,672,hypokinesis
-2,DISEASE,681,702,aortic valve stenosis
-2,DISEASE,772,810,pulmonary artery systolic hypertension
-2,DISEASE,946,952,plaque
-2,DISEASE,974,986,ICA stenosis
-2,DISEASE,1135,1158,coronary artery disease
-3,DISEASE,58,66,headache
-3,DISEASE,243,251,headache
-3,DISEASE,662,670,headache
-3,DISEASE,388,415,intraventricular hemorrhage
-3,DISEASE,449,470,vascular malformation
-3,DISEASE,622,625,AVM
-3,DISEASE,662,671,headaches
-3,DISEASE,701,705,pain
-4,DISEASE,41,45,PCOS
-4,DISEASE,741,745,PCOS
-4,DISEASE,47,54,Obesity
-4,DISEASE,731,738,Obesity
-4,DISEASE,56,59,HTN
-4,DISEASE,725,728,HTN
-4,DISEASE,91,104,cholecystitis
-4,DISEASE,148,168,pericardial effusion
-4,DISEASE,248,266,Burkitt's lymphoma
-4,DISEASE,551,567,cardiac lymphoma
-4,DISEASE,713,723,migraines2
-4,DISEASE,725,729,HTN3
-4,DISEASE,731,739,Obesity4
-4,DISEASE,746,758,infertility5
-4,DISEASE,760,778,Viral encephalitis
-4,DISEASE,779,789,meningitis
-4,DISEASE,908,918,meningitis
-4,DISEASE,792,795,ICH
-4,DISEASE,798,805,seizure
-4,DISEASE,806,812,stroke
-4,DISEASE,841,852,sinus infxn
-4,DISEASE,900,904,leak
-5,DISEASE,37,40,CVA
-5,DISEASE,980,983,CVA
-5,DISEASE,65,68,HTN
-5,DISEASE,99,102,PVD
-5,DISEASE,148,151,PVD
-5,DISEASE,1021,1024,PVD
-5,DISEASE,198,212,carotid bruits
-5,DISEASE,274,283,dizziness
-5,DISEASE,294,301,syncope
-5,DISEASE,628,635,syncope
-5,DISEASE,642,649,syncope
-5,DISEASE,327,330,SOB
-5,DISEASE,335,359,sensory or motor defects
-5,DISEASE,397,403,stroke
-5,DISEASE,540,550,chest pain
-5,DISEASE,552,559,dyspnea
-5,DISEASE,594,601,dyspnea
-5,DISEASE,573,601,paroxysmal nocturnal dyspnea
-5,DISEASE,603,612,orthopnea
-5,DISEASE,614,626,palpitations
-5,DISEASE,639,649,presyncope
-5,DISEASE,700,726,bilateral carotid stenosis
-5,DISEASE,761,782,stenosis of the R ICA
-5,DISEASE,793,807,L ICA stenosis
-5,DISEASE,37,40,CVA
-5,DISEASE,980,983,CVA
-5,DISEASE,983,1015,Bilateral carotid artery disease
-5,DISEASE,1015,1021,Anemia
-5,DISEASE,99,102,PVD
-5,DISEASE,148,151,PVD
-5,DISEASE,1021,1024,PVD
-5,DISEASE,1024,1036,Hypertension
-5,DISEASE,1036,1044,Diabetes
-5,DISEASE,1049,1060,retinopathy
-5,DISEASE,1065,1086,peripheral neuropathy
-5,DISEASE,1127,1133,polyps
-5,DISEASE,1166,1175,back pain
-5,DISEASE,1175,1187,Proteinurias
-5,DISEASE,1196,1210,elbow fracture
-5,DISEASE,1221,1230,Arthritis
-6,DISEASE,33,37,ESRD
-6,DISEASE,106,114,diarrhea
-6,DISEASE,119,127,weakness
-6,DISEASE,158,175,C diff infections
-6,DISEASE,380,386,septic
-6,DISEASE,447,459,leukocytosis
-6,DISEASE,521,533,leukocytosis
-6,DISEASE,467,472,fever
-6,DISEASE,158,164,C diff
-6,DISEASE,474,480,C diff
-6,DISEASE,550,556,C diff
-6,DISEASE,802,808,C diff
-7,DISEASE,19,28,cirrhosis
-7,DISEASE,815,824,cirrhosis
-7,DISEASE,39,57,esophageal varices
-7,DISEASE,101,110,gastritis
-7,DISEASE,1099,1108,gastritis
-7,DISEASE,510,525,ischemic infart
-7,DISEASE,572,594,hepatic encephalopathy
-7,DISEASE,929,942,HCV Cirrhosis
-7,DISEASE,990,1006,GastropathyGrade
-7,DISEASE,1010,1028,Esophageal varices
-7,DISEASE,1028,1031,HTN
-8,DISEASE,37,40,CLL
-8,DISEASE,181,193,splenomegaly
-8,DISEASE,201,211,cytopenias
-8,DISEASE,249,264,lymphadenopathy
-8,DISEASE,616,631,lymphadenopathy
-8,DISEASE,1114,1129,lymphadenopathy
-8,DISEASE,981,994,lymphocytosis
-8,DISEASE,1237,1246,Richter's
-9,DISEASE,39,62,intellectual disability
-9,DISEASE,64,67,CHF
-9,DISEASE,1041,1044,CHF
-9,DISEASE,69,77,epilepsy
-9,DISEASE,267,275,epilepsy
-9,DISEASE,94,110,facial twitching
-9,DISEASE,198,205,seizure
-9,DISEASE,476,483,seizure
-9,DISEASE,561,568,seizure
-9,DISEASE,695,702,seizure
-9,DISEASE,817,824,seizure
-9,DISEASE,261,275,focal epilepsy
-9,DISEASE,321,340,anoxic brain injury
-9,DISEASE,379,387,atrophic
-9,DISEASE,476,484,seizures
-9,DISEASE,533,543,convulsion
-9,DISEASE,1046,1056,depression
-10,DISEASE,60,81,systemic mastocytosis
-10,DISEASE,128,136,flushing
-10,DISEASE,141,152,tachycardia
-10,DISEASE,893,896,PCP
-11,DISEASE,24,48,papillary thyroid cancer
-11,DISEASE,108,117,dysphagia
-11,DISEASE,148,159,weight loss
-11,DISEASE,203,211,lethargy
-11,DISEASE,323,328,bleed
-11,DISEASE,396,401,tumor
-11,DISEASE,494,500,hernia
-11,DISEASE,513,526,tonsillectomy
-12,DISEASE,23,40,Marfan's syndrome
-12,DISEASE,58,79,mitral valve prolapse
-12,DISEASE,294,313,Marfans SyndromeMVP
-12,DISEASE,326,346,mitral regurgitation
-12,DISEASE,346,368,Gastric reflux disease
-12,DISEASE,379,408,gestational diabetes mellitus
-12,DISEASE,408,420,Hypertension
-13,DISEASE,22,25,CVA
-13,DISEASE,506,509,CVA
-13,DISEASE,27,45,neurogenic bladder
-13,DISEASE,117,121,UTIs
-13,DISEASE,557,561,UTIs
-13,DISEASE,150,159,urosepsis
-13,DISEASE,188,197,urosepsis
-13,DISEASE,320,339,urethral strictures
-13,DISEASE,616,624,Lymphoma
-13,DISEASE,688,700,Hypertension
-13,DISEASE,700,725,Partial Bowel obstruction
-13,DISEASE,730,739,colostomy
-13,DISEASE,739,748,Hepatitis
-13,DISEASE,766,769,SLE
-13,DISEASE,775,794,transverse myelitis
-13,DISEASE,864,888,Urinary Tract Infections
-13,DISEASE,889,900,pseudomonas
-13,DISEASE,903,915,enterococcus
-14,DISEASE,12,16,COPD
-14,DISEASE,1104,1108,COPD
-14,DISEASE,45,48,OSA
-14,DISEASE,53,85,obesity hypoventilation syndrome
-14,DISEASE,961,993,obesity hypoventilation syndrome
-14,DISEASE,87,91,dCHF
-14,DISEASE,138,147,agitation
-14,DISEASE,301,310,agitation
-14,DISEASE,179,186,hypoxia
-14,DISEASE,415,420,edema
-14,DISEASE,559,564,edema
-14,DISEASE,425,436,weight gain
-14,DISEASE,578,596,decreased appetite
-14,DISEASE,678,683,fever
-14,DISEASE,685,690,cough
-14,DISEASE,692,698,chills
-14,DISEASE,700,706,sputum
-14,DISEASE,727,731,pain
-14,DISEASE,784,788,pain
-14,DISEASE,901,904,CAD
-14,DISEASE,88,91,CHF
-14,DISEASE,939,942,CHF
-14,DISEASE,995,1018,obstructive sleep apnea
-14,DISEASE,1020,1023,DM2
-14,DISEASE,1025,1048,ventricular tachycardia
-14,DISEASE,1054,1057,ICD
-14,DISEASE,1073,1087,hypothyroidism
-14,DISEASE,1089,1102,schizophrenia
-14,DISEASE,12,16,COPD
-14,DISEASE,1104,1108,COPD
-15,DISEASE,36,39,CAD
-15,DISEASE,55,69,abdominal mass
-15,DISEASE,483,497,abdominal mass
-15,DISEASE,88,94,fevers
-15,DISEASE,95,101,rigors
-15,DISEASE,106,114,bandemia
-15,DISEASE,195,209,abdominal pain
-15,DISEASE,322,330,vomiting
-15,DISEASE,583,608,pancreatic adenocarcinoma
-15,DISEASE,700,720,diverticular abscess
-15,DISEASE,765,779,diverticulitis
-15,DISEASE,713,720,abscess
-15,DISEASE,835,842,abscess
-15,DISEASE,1001,1024,Coronary artery disease
-15,DISEASE,1087,1108,Mitral valve prolapse
-15,DISEASE,1111,1130,Atrial fibrillation
-15,DISEASE,1133,1146,Hyperlipemia5
-15,DISEASE,1148,1161,Hypertension6
-15,DISEASE,1163,1185,Chronic kidney disease
-15,DISEASE,1212,1226,Hypothyroidism
-15,DISEASE,1253,1259,Anemia
-16,DISEASE,36,45,hypoxemia
-16,DISEASE,50,57,dyspnea
-16,DISEASE,73,86,diastolic CHF
-16,DISEASE,88,110,pulmonary hypertension
-16,DISEASE,142,145,ASD
-16,DISEASE,890,893,ASD
-16,DISEASE,150,154,COPD
-16,DISEASE,895,899,COPD
-16,DISEASE,211,230,shortness of breath
-16,DISEASE,435,443,dyspneic
-16,DISEASE,540,551,hypotension
-16,DISEASE,689,709,Atrial septal defect
-16,DISEASE,743,755,sinus arrest
-16,DISEASE,761,764,PPM
-16,DISEASE,83,86,CHF
-16,DISEASE,787,790,CHF
-16,DISEASE,827,830,HTN
-16,DISEASE,984,987,OSA
-16,DISEASE,1014,1034,mitral regurgitation
-16,DISEASE,1036,1053,Microcytic anemia
-16,DISEASE,1055,1069,Hypothyroidism
-16,DISEASE,1102,1124,Gallstone pancreatitis
-17,DISEASE,16,32,multiple myeloma
-17,DISEASE,92,112,systemic amyloidosis
-17,DISEASE,181,185,ESRD
-17,DISEASE,214,222,weakness
-17,DISEASE,240,251,body aching
-17,DISEASE,294,307,hypercalcemia
-17,DISEASE,25,32,myeloma
-17,DISEASE,512,519,myeloma
-17,DISEASE,620,625,edema
-18,DISEASE,137,153,low urine output
-18,DISEASE,326,351,bulbar urethral stricture
-18,DISEASE,342,351,stricture
-18,DISEASE,722,731,stricture
-19,DISEASE,26,29,CAD
-19,DISEASE,44,47,HLD
-19,DISEASE,49,52,HTN
-19,DISEASE,54,77,ventricular tachycardia
-19,DISEASE,83,90,syncope
-19,DISEASE,132,139,syncope
-19,DISEASE,225,232,syncope
-19,DISEASE,795,802,syncope
-19,DISEASE,144,167,ventricular arrhythmias
-19,DISEASE,402,413,bradycardia
-19,DISEASE,792,802,presyncope
-19,DISEASE,807,813,nausea
-19,DISEASE,826,836,chest pain
-19,DISEASE,902,905,EPS
-20,DISEASE,45,49,acne
-20,DISEASE,59,68,hirsutism
-20,DISEASE,323,339,nipple discharge
-20,DISEASE,375,382,snoring
-20,DISEASE,387,395,headache
-20,DISEASE,457,467,acromegaly
-20,DISEASE,472,483,prognathism
-20,DISEASE,725,737,macroadenoma
-21,DISEASE,38,52,abdominal pain
-21,DISEASE,57,65,vomiting
-21,DISEASE,48,52,pain
-21,DISEASE,71,75,pain
-21,DISEASE,294,303,allergies
-21,DISEASE,365,380,type 2 diabetes
-21,DISEASE,596,608,leukocytosis
-21,DISEASE,740,752,pancreatitis
-22,DISEASE,50,64,abdominal pain
-22,DISEASE,60,64,pain
-22,DISEASE,70,74,pain
-22,DISEASE,173,177,pain
-22,DISEASE,237,241,pain
-22,DISEASE,506,510,pain
-22,DISEASE,105,125,abdominal discomfort
-22,DISEASE,135,148,poor appetite
-22,DISEASE,378,388,tenderness
-22,DISEASE,556,568,leukocytosis
-22,DISEASE,701,712,perforation
-22,DISEASE,714,721,abscess
-22,DISEASE,725,733,gangrene
-23,DISEASE,42,47,cough
-23,DISEASE,299,304,cough
-23,DISEASE,52,71,shortness of breath
-23,DISEASE,320,339,shortness of breath
-23,DISEASE,255,261,asthma
-23,DISEASE,816,822,asthma
-23,DISEASE,306,314,wheezing
-23,DISEASE,344,359,chest tightness
-23,DISEASE,697,723,seasonal allergic rhinitis
-25,DISEASE,150,156,masses
-25,DISEASE,236,252,breast carcinoma
-25,DISEASE,348,353,tumor
-26,DISEASE,66,80,abdominal pain
-26,DISEASE,117,123,nausea
-26,DISEASE,142,150,vomiting
-26,DISEASE,76,80,pain
-26,DISEASE,156,160,pain
-26,DISEASE,245,249,pain
-26,DISEASE,320,324,pain
-26,DISEASE,392,412,hypercholesterolemia
-26,DISEASE,546,553,febrile
-26,DISEASE,653,663,tenderness
-26,DISEASE,670,680,tenderness
-26,DISEASE,806,818,leukocytosis
-26,DISEASE,870,880,gallstones
-26,DISEASE,870,879,gallstone
-26,DISEASE,913,922,gallstone
-27,DISEASE,40,53,HCV infection
-27,DISEASE,488,512,hepatocellular carcinoma
-27,DISEASE,549,561,inflammation
-27,DISEASE,588,603,viral hepatitis
-27,DISEASE,629,652,alcoholic liver disease
-27,DISEASE,654,662,bleeding
-27,DISEASE,668,686,esophageal varices
-27,DISEASE,688,703,hemochromatosis
-27,DISEASE,705,725,autoimmune hepatitis
-27,DISEASE,729,752,metabolic liver disease
-27,DISEASE,866,873,ascites
-27,DISEASE,877,887,tenderness
-27,DISEASE,930,935,edema
-28,DISEASE,57,76,shortness of breath
-28,DISEASE,174,178,COPD
-28,DISEASE,353,356,BPH
-28,DISEASE,425,428,HTN
-28,DISEASE,555,560,obese
-29,DISEASE,45,60,type 1 diabetes
-29,DISEASE,420,435,type 1 diabetes
-29,DISEASE,114,127,hyperglycemia
-29,DISEASE,938,951,hyperglycemia
-29,DISEASE,153,174,diabetic ketoacidosis
-29,DISEASE,863,884,diabetic ketoacidosis
-29,DISEASE,523,531,polyuria
-29,DISEASE,533,543,polydipsia
-29,DISEASE,549,559,polyphagia
-29,DISEASE,52,60,diabetes
-29,DISEASE,427,435,diabetes
-29,DISEASE,682,690,diabetes
-29,DISEASE,980,986,nausea
-29,DISEASE,988,996,vomiting
-30,DISEASE,49,56,fatigue
-30,DISEASE,58,69,weight gain
-30,DISEASE,74,82,abnormal
-30,DISEASE,111,120,hirsutism
-30,DISEASE,124,140,nipple discharge
-30,DISEASE,343,366,Hashimoto's thyroiditis
-30,DISEASE,544,554,overweight
-31,DISEASE,113,128,cervical cancer
-32,DISEASE,32,40,vomiting
-32,DISEASE,53,61,diarrhea
-32,DISEASE,179,187,diarrhea
-32,DISEASE,63,77,abdominal pain
-32,DISEASE,79,84,fever
-32,DISEASE,86,92,chills
-32,DISEASE,97,113,loss of appetite
-32,DISEASE,228,234,pallor
-32,DISEASE,236,244,jaundice
-32,DISEASE,258,278,abdominal tenderness
-33,DISEASE,444,453,allergies
-34,DISEASE,79,86,sadness
-34,DISEASE,174,183,depressed
-34,DISEASE,258,269,weight loss
-34,DISEASE,288,302,loss of energy
-34,DISEASE,686,698,colon cancer
-35,DISEASE,74,82,headache
-35,DISEASE,455,463,headache
-35,DISEASE,177,181,pain
-35,DISEASE,313,319,nausea
-35,DISEASE,324,335,photophobia
-35,DISEASE,446,463,migraine headache
-36,DISEASE,29,34,obese
-36,DISEASE,154,165,sleep apnea
-36,DISEASE,167,170,PCO
-37,DISEASE,100,115,facial weakness
-37,DISEASE,117,127,dysarthria
-37,DISEASE,132,140,numbness
-37,DISEASE,287,313,lower extremities weakness
-37,DISEASE,321,336,balance problem
-37,DISEASE,427,465,Relapsing Remitting Multiple Sclerosis
-37,DISEASE,467,471,RRMS
-37,DISEASE,885,889,RRMS
-38,DISEASE,40,57,myasthenia gravis
-38,DISEASE,87,95,diplopia
-38,DISEASE,100,107,fatigue
-38,DISEASE,112,120,weakness
-38,DISEASE,450,462,hypertension
-39,DISEASE,46,54,jaundice
-39,DISEASE,937,945,jaundice
-39,DISEASE,928,945,neonatal jaundice
-40,DISEASE,57,66,headaches
-40,DISEASE,80,89,bone pain
-40,DISEASE,186,195,swellings
-40,DISEASE,219,228,swellings
-40,DISEASE,337,346,swellings
-40,DISEASE,290,297,lesions
-40,DISEASE,636,648,hypertension
-40,DISEASE,667,676,DM type 2
-40,DISEASE,709,732,Paget's Disease of Bone
-41,DISEASE,40,59,Parkinson's disease
-41,DISEASE,87,107,slowness of movement
-41,DISEASE,112,119,tremors
-41,DISEASE,165,177,hypertension
-41,DISEASE,182,202,hypercholesterolemia
-41,DISEASE,374,399,shaking and slow movement
-41,DISEASE,604,629,shaking and slow movement
-41,DISEASE,781,789,dementia
-42,DISEASE,130,138,headache
-42,DISEASE,499,507,headache
-42,DISEASE,143,155,leg swelling
-42,DISEASE,442,449,fatigue
-42,DISEASE,457,462,fever
-42,DISEASE,466,472,chills
-42,DISEASE,499,508,headaches
-42,DISEASE,536,555,shortness of breath
-42,DISEASE,557,562,cough
-42,DISEASE,564,574,chest pain
-42,DISEASE,576,585,orthopnea
-42,DISEASE,590,602,palpitations
-42,DISEASE,606,615,skin rash
-42,DISEASE,666,680,abdominal pain
-42,DISEASE,706,712,nausea
-42,DISEASE,714,722,vomiting
-42,DISEASE,724,731,dysuria
-42,DISEASE,744,753,hematuria
-42,DISEASE,805,815,arthralgia
-42,DISEASE,819,828,back pain
-42,DISEASE,937,946,DM type 2
-42,DISEASE,951,954,HTN
-43,DISEASE,51,57,stroke
-43,DISEASE,141,161,aspiration pneumonia
-43,DISEASE,170,177,febrile
-43,DISEASE,408,415,febrile
-43,DISEASE,196,210,abdominal pain
-43,DISEASE,215,223,diarrhea
-43,DISEASE,375,399,hyperactive bowel sounds
-43,DISEASE,426,437,tachycardic
-43,DISEASE,452,463,hypotensive
-44,DISEASE,48,57,scoliosis
-44,DISEASE,671,680,scoliosis
-44,DISEASE,62,71,back pain
-44,DISEASE,67,71,pain
-44,DISEASE,234,238,pain
-44,DISEASE,396,414,shoulder imbalance
-44,DISEASE,599,614,scoliotic curve
-45,DISEASE,76,95,Sickle cell disease
-45,DISEASE,128,137,bone pain
-45,DISEASE,133,137,pain
-45,DISEASE,162,166,pain
-45,DISEASE,413,417,pain
-45,DISEASE,488,492,pain
-45,DISEASE,274,292,sickle cell crises
-45,DISEASE,566,578,splenomegaly
-45,DISEASE,644,656,drug allergy
-46,DISEASE,82,87,cough
-46,DISEASE,120,136,loss of appetite
-46,DISEASE,356,363,febrile
-46,DISEASE,557,567,cavitation
-47,DISEASE,151,159,numbness
-47,DISEASE,161,172,facial drop
-47,DISEASE,203,210,dyspnea
-47,DISEASE,212,220,headache
-47,DISEASE,222,234,palpitations
-47,DISEASE,236,246,chest pain
-47,DISEASE,248,253,fever
-47,DISEASE,255,264,dizziness
-47,DISEASE,266,274,bowel or
-47,DISEASE,275,295,urinary incontinence
-47,DISEASE,297,318,loss of consciousness
-47,DISEASE,360,372,hypertension
-47,DISEASE,374,388,hyperlipidemia
-47,DISEASE,393,407,hypothyroidism
-47,DISEASE,665,677,facial droop
-47,DISEASE,679,689,dysarthria
-47,DISEASE,706,716,hemiplegia
-47,DISEASE,783,789,Stroke
-47,DISEASE,1147,1154,infarct
-48,DISEASE,91,101,itchy foot
-48,DISEASE,245,254,fissuring
-48,DISEASE,316,319,pus
-48,DISEASE,323,330,tearing
-48,DISEASE,563,577,hyperlipidemia
-48,DISEASE,750,771,Tinea pedis infection
-49,DISEASE,70,83,short stature
-49,DISEASE,85,103,delayed in puberty
-49,DISEASE,108,127,developmental delay
-49,DISEASE,193,208,Turner syndrome
-49,DISEASE,334,339,obese
-49,DISEASE,341,358,mentally retarded
-50,DISEASE,187,190,NVD
-50,DISEASE,410,429,developmental delay
-51,DISEASE,112,117,fever
-51,DISEASE,122,128,chills
-51,DISEASE,145,151,nausea
-51,DISEASE,156,164,vomiting
-51,DISEASE,188,195,dysuria
-51,DISEASE,249,253,pain
-51,DISEASE,370,380,tenderness
-51,DISEASE,457,460,UTI
-52,DISEASE,53,62,dizziness
-52,DISEASE,74,82,diarrhea
-52,DISEASE,331,339,diarrhea
-52,DISEASE,216,230,abdominal pain
-52,DISEASE,243,251,bloating
-52,DISEASE,256,262,nausea
-52,DISEASE,407,412,fever
-53,DISEASE,98,114,bones and joints
-53,DISEASE,115,119,pain
-54,DISEASE,56,67,weight loss
-54,DISEASE,83,92,dry cough
-54,DISEASE,321,340,necrotic granulomas
-54,DISEASE,381,405,Wegener's granulomatosis
-54,DISEASE,521,531,Vasculitis
-55,DISEASE,65,72,tremors
-55,DISEASE,65,71,tremor
-55,DISEASE,95,101,tremor
-55,DISEASE,165,171,tremor
-55,DISEASE,339,347,jaundice
-55,DISEASE,349,367,hepatosplenomegaly
-55,DISEASE,372,381,hypotonia
-55,DISEASE,455,474,aggressive behavior
-55,DISEASE,653,667,Wilson disease
-56,DISEASE,53,63,Acromegaly
-56,DISEASE,352,367,pituitary tumor
-56,DISEASE,436,453,pituitary adenoma
-57,DISEASE,29,34,obese
-57,DISEASE,75,89,abdominal pain
-57,DISEASE,94,102,vomiting
-57,DISEASE,85,89,pain
-57,DISEASE,108,112,pain
-57,DISEASE,297,306,allergies
-57,DISEASE,377,389,hypertension
-57,DISEASE,605,617,leukocytosis
-57,DISEASE,737,746,edematous
-57,DISEASE,747,772,interstitial pancreatitis
-57,DISEASE,837,860,gall stone pancreatitis
-58,DISEASE,65,69,pain
-58,DISEASE,145,149,pain
-58,DISEASE,168,174,nausea
-58,DISEASE,179,187,vomiting
-58,DISEASE,196,203,febrile
-58,DISEASE,209,219,tenderness
-58,DISEASE,229,239,tenderness
-58,DISEASE,359,371,appendicitis
-58,DISEASE,435,443,phlegmon
-58,DISEASE,458,481,abdominal abnormalities
-59,DISEASE,38,44,asthma
-59,DISEASE,282,288,asthma
-59,DISEASE,539,545,asthma
-59,DISEASE,84,103,shortness of breath
-59,DISEASE,105,121,chest tightening
-59,DISEASE,126,131,cough
-60,DISEASE,96,113,urinary retention
-61,DISEASE,79,92,breast cancer
-61,DISEASE,140,156,breast carcinoma
-61,DISEASE,195,200,tumor
-61,DISEASE,500,505,tumor
-62,DISEASE,32,41,dizziness
-62,DISEASE,55,64,headaches
-62,DISEASE,93,96,CAD
-62,DISEASE,181,198,diabetes mellitus
-63,DISEASE,14,19,obese
-63,DISEASE,557,562,obese
-63,DISEASE,68,82,abdominal pain
-63,DISEASE,112,118,nausea
-63,DISEASE,123,131,vomiting
-63,DISEASE,137,152,epigastric pain
-63,DISEASE,78,82,pain
-63,DISEASE,148,152,pain
-63,DISEASE,262,266,pain
-63,DISEASE,334,354,hypercholesterolemia
-63,DISEASE,361,365,NVDs
-63,DISEASE,481,488,febrile
-63,DISEASE,634,644,tenderness
-63,DISEASE,649,659,tenderness
-63,DISEASE,785,797,leukocytosis
-63,DISEASE,849,859,gallstones
-64,DISEASE,48,51,HCV
-64,DISEASE,297,300,HCV
-64,DISEASE,354,357,HCV
-64,DISEASE,405,429,hepatocellular carcinoma
-64,DISEASE,466,478,inflammation
-64,DISEASE,505,520,viral hepatitis
-64,DISEASE,546,569,alcoholic liver disease
-64,DISEASE,571,579,bleeding
-64,DISEASE,585,603,esophageal varices
-64,DISEASE,605,620,hemochromatosis
-64,DISEASE,622,642,autoimmune hepatitis
-64,DISEASE,647,670,metabolic liver disease
-64,DISEASE,784,791,ascites
-64,DISEASE,795,805,tenderness
-64,DISEASE,848,853,edema
-65,DISEASE,38,53,type 1 diabetes
-65,DISEASE,132,151,shortness of breath
-65,DISEASE,156,163,fatigue
-65,DISEASE,198,205,dyspnea
-65,DISEASE,234,241,dyspnea
-65,DISEASE,257,263,angina
-65,DISEASE,323,337,cardiomyopathy
-65,DISEASE,558,567,DM type 1
-66,DISEASE,53,64,weight gain
-66,DISEASE,69,94,abnormal menstrual cycles
-66,DISEASE,422,439,Hashimoto disease
-67,DISEASE,44,86,abnormal cervical squamous intraepithelial
-67,DISEASE,87,103,glandular lesion
-68,DISEASE,63,82,high blood pressure
-68,DISEASE,110,120,septicemia
-68,DISEASE,135,154,respiratory failure
-68,DISEASE,192,205,renal failure
-68,DISEASE,253,286,microangiopathic hemolytic anemia
-68,DISEASE,291,307,thrombocytopenia
-68,DISEASE,470,495,hemolytic uremic syndrome
-68,DISEASE,593,606,meningococcal
-68,DISEASE,640,653,meningococcal
-68,DISEASE,640,661,meningococcal group B
-69,DISEASE,280,292,hypertensive
-69,DISEASE,380,389,allergies
-70,DISEASE,32,35,MDD
-70,DISEASE,85,101,loss of interest
-70,DISEASE,157,166,depressed
-70,DISEASE,202,216,loss of energy
-70,DISEASE,637,649,colon cancer
+1,DIAGNOSIS,47,82,anaplastic astrocytoma of the spine
+1,DIAGNOSIS,105,129,lower extremity weakness
+1,DIAGNOSIS,341,365,lower extremity weakness
+1,DIAGNOSIS,134,151,urinary retention
+1,DIAGNOSIS,370,387,urinary retention
+1,DIAGNOSIS,192,204,hypertension
+1,DIAGNOSIS,210,222,chronic pain
+1,DIAGNOSIS,228,233,tumor
+1,DIAGNOSIS,276,298,anaplastic astrocytoma
+1,DIAGNOSIS,595,617,anaplastic astrocytoma
+1,DIAGNOSIS,422,425,RLE
+1,DIAGNOSIS,470,488,difficulty walking
+1,DIAGNOSIS,514,522,numbness
+1,DIAGNOSIS,537,559,spinal cord conus mass
+2,DIAGNOSIS,16,19,HTN
+2,DIAGNOSIS,20,34,hyperlipidemia
+2,DIAGNOSIS,36,57,bicuspid aortic valve
+2,DIAGNOSIS,719,740,bicuspid aortic valve
+2,DIAGNOSIS,63,76,tobacco abuse
+2,DIAGNOSIS,147,150,SOB
+2,DIAGNOSIS,457,460,SOB
+2,DIAGNOSIS,158,163,edema
+2,DIAGNOSIS,468,473,edema
+2,DIAGNOSIS,185,200,aortic stenosis
+2,DIAGNOSIS,569,584,aortic stenosis
+2,DIAGNOSIS,268,288,biatrial enlargement
+2,DIAGNOSIS,307,327,aortic insufficiency
+2,DIAGNOSIS,593,621,left ventricular hypertrophy
+2,DIAGNOSIS,661,672,hypokinesis
+2,DIAGNOSIS,681,702,aortic valve stenosis
+2,DIAGNOSIS,772,810,pulmonary artery systolic hypertension
+2,DIAGNOSIS,946,952,plaque
+2,DIAGNOSIS,974,986,ICA stenosis
+2,DIAGNOSIS,1135,1158,coronary artery disease
+3,DIAGNOSIS,58,66,headache
+3,DIAGNOSIS,243,251,headache
+3,DIAGNOSIS,662,670,headache
+3,DIAGNOSIS,388,415,intraventricular hemorrhage
+3,DIAGNOSIS,449,470,vascular malformation
+3,DIAGNOSIS,622,625,AVM
+3,DIAGNOSIS,662,671,headaches
+3,DIAGNOSIS,701,705,pain
+4,DIAGNOSIS,41,45,PCOS
+4,DIAGNOSIS,741,745,PCOS
+4,DIAGNOSIS,47,54,Obesity
+4,DIAGNOSIS,731,738,Obesity
+4,DIAGNOSIS,56,59,HTN
+4,DIAGNOSIS,725,728,HTN
+4,DIAGNOSIS,91,104,cholecystitis
+4,DIAGNOSIS,148,168,pericardial effusion
+4,DIAGNOSIS,248,266,Burkitt's lymphoma
+4,DIAGNOSIS,551,567,cardiac lymphoma
+4,DIAGNOSIS,713,723,migraines2
+4,DIAGNOSIS,725,729,HTN3
+4,DIAGNOSIS,731,739,Obesity4
+4,DIAGNOSIS,746,758,infertility5
+4,DIAGNOSIS,760,778,Viral encephalitis
+4,DIAGNOSIS,779,789,meningitis
+4,DIAGNOSIS,908,918,meningitis
+4,DIAGNOSIS,792,795,ICH
+4,DIAGNOSIS,798,805,seizure
+4,DIAGNOSIS,806,812,stroke
+4,DIAGNOSIS,841,852,sinus infxn
+4,DIAGNOSIS,900,904,leak
+5,DIAGNOSIS,37,40,CVA
+5,DIAGNOSIS,980,983,CVA
+5,DIAGNOSIS,65,68,HTN
+5,DIAGNOSIS,99,102,PVD
+5,DIAGNOSIS,148,151,PVD
+5,DIAGNOSIS,1021,1024,PVD
+5,DIAGNOSIS,198,212,carotid bruits
+5,DIAGNOSIS,274,283,dizziness
+5,DIAGNOSIS,294,301,syncope
+5,DIAGNOSIS,628,635,syncope
+5,DIAGNOSIS,642,649,syncope
+5,DIAGNOSIS,327,330,SOB
+5,DIAGNOSIS,335,359,sensory or motor defects
+5,DIAGNOSIS,397,403,stroke
+5,DIAGNOSIS,540,550,chest pain
+5,DIAGNOSIS,552,559,dyspnea
+5,DIAGNOSIS,594,601,dyspnea
+5,DIAGNOSIS,573,601,paroxysmal nocturnal dyspnea
+5,DIAGNOSIS,603,612,orthopnea
+5,DIAGNOSIS,614,626,palpitations
+5,DIAGNOSIS,639,649,presyncope
+5,DIAGNOSIS,700,726,bilateral carotid stenosis
+5,DIAGNOSIS,761,782,stenosis of the R ICA
+5,DIAGNOSIS,793,807,L ICA stenosis
+5,DIAGNOSIS,37,40,CVA
+5,DIAGNOSIS,980,983,CVA
+5,DIAGNOSIS,983,1015,Bilateral carotid artery disease
+5,DIAGNOSIS,1015,1021,Anemia
+5,DIAGNOSIS,99,102,PVD
+5,DIAGNOSIS,148,151,PVD
+5,DIAGNOSIS,1021,1024,PVD
+5,DIAGNOSIS,1024,1036,Hypertension
+5,DIAGNOSIS,1036,1044,Diabetes
+5,DIAGNOSIS,1049,1060,retinopathy
+5,DIAGNOSIS,1065,1086,peripheral neuropathy
+5,DIAGNOSIS,1127,1133,polyps
+5,DIAGNOSIS,1166,1175,back pain
+5,DIAGNOSIS,1175,1187,Proteinurias
+5,DIAGNOSIS,1196,1210,elbow fracture
+5,DIAGNOSIS,1221,1230,Arthritis
+6,DIAGNOSIS,33,37,ESRD
+6,DIAGNOSIS,106,114,diarrhea
+6,DIAGNOSIS,119,127,weakness
+6,DIAGNOSIS,158,175,C diff infections
+6,DIAGNOSIS,380,386,septic
+6,DIAGNOSIS,447,459,leukocytosis
+6,DIAGNOSIS,521,533,leukocytosis
+6,DIAGNOSIS,467,472,fever
+6,DIAGNOSIS,158,164,C diff
+6,DIAGNOSIS,474,480,C diff
+6,DIAGNOSIS,550,556,C diff
+6,DIAGNOSIS,802,808,C diff
+7,DIAGNOSIS,19,28,cirrhosis
+7,DIAGNOSIS,815,824,cirrhosis
+7,DIAGNOSIS,39,57,esophageal varices
+7,DIAGNOSIS,101,110,gastritis
+7,DIAGNOSIS,1099,1108,gastritis
+7,DIAGNOSIS,510,525,ischemic infart
+7,DIAGNOSIS,572,594,hepatic encephalopathy
+7,DIAGNOSIS,929,942,HCV Cirrhosis
+7,DIAGNOSIS,990,1006,GastropathyGrade
+7,DIAGNOSIS,1010,1028,Esophageal varices
+7,DIAGNOSIS,1028,1031,HTN
+8,DIAGNOSIS,37,40,CLL
+8,DIAGNOSIS,181,193,splenomegaly
+8,DIAGNOSIS,201,211,cytopenias
+8,DIAGNOSIS,249,264,lymphadenopathy
+8,DIAGNOSIS,616,631,lymphadenopathy
+8,DIAGNOSIS,1114,1129,lymphadenopathy
+8,DIAGNOSIS,981,994,lymphocytosis
+8,DIAGNOSIS,1237,1246,Richter's
+9,DIAGNOSIS,39,62,intellectual disability
+9,DIAGNOSIS,64,67,CHF
+9,DIAGNOSIS,1041,1044,CHF
+9,DIAGNOSIS,69,77,epilepsy
+9,DIAGNOSIS,267,275,epilepsy
+9,DIAGNOSIS,94,110,facial twitching
+9,DIAGNOSIS,198,205,seizure
+9,DIAGNOSIS,476,483,seizure
+9,DIAGNOSIS,561,568,seizure
+9,DIAGNOSIS,695,702,seizure
+9,DIAGNOSIS,817,824,seizure
+9,DIAGNOSIS,261,275,focal epilepsy
+9,DIAGNOSIS,321,340,anoxic brain injury
+9,DIAGNOSIS,379,387,atrophic
+9,DIAGNOSIS,476,484,seizures
+9,DIAGNOSIS,533,543,convulsion
+9,DIAGNOSIS,1046,1056,depression
+10,DIAGNOSIS,60,81,systemic mastocytosis
+10,DIAGNOSIS,128,136,flushing
+10,DIAGNOSIS,141,152,tachycardia
+10,DIAGNOSIS,893,896,PCP
+11,DIAGNOSIS,24,48,papillary thyroid cancer
+11,DIAGNOSIS,108,117,dysphagia
+11,DIAGNOSIS,148,159,weight loss
+11,DIAGNOSIS,203,211,lethargy
+11,DIAGNOSIS,323,328,bleed
+11,DIAGNOSIS,396,401,tumor
+11,DIAGNOSIS,494,500,hernia
+11,DIAGNOSIS,513,526,tonsillectomy
+12,DIAGNOSIS,23,40,Marfan's syndrome
+12,DIAGNOSIS,58,79,mitral valve prolapse
+12,DIAGNOSIS,294,313,Marfans SyndromeMVP
+12,DIAGNOSIS,326,346,mitral regurgitation
+12,DIAGNOSIS,346,368,Gastric reflux disease
+12,DIAGNOSIS,379,408,gestational diabetes mellitus
+12,DIAGNOSIS,408,420,Hypertension
+13,DIAGNOSIS,22,25,CVA
+13,DIAGNOSIS,506,509,CVA
+13,DIAGNOSIS,27,45,neurogenic bladder
+13,DIAGNOSIS,117,121,UTIs
+13,DIAGNOSIS,557,561,UTIs
+13,DIAGNOSIS,150,159,urosepsis
+13,DIAGNOSIS,188,197,urosepsis
+13,DIAGNOSIS,320,339,urethral strictures
+13,DIAGNOSIS,616,624,Lymphoma
+13,DIAGNOSIS,688,700,Hypertension
+13,DIAGNOSIS,700,725,Partial Bowel obstruction
+13,DIAGNOSIS,730,739,colostomy
+13,DIAGNOSIS,739,748,Hepatitis
+13,DIAGNOSIS,766,769,SLE
+13,DIAGNOSIS,775,794,transverse myelitis
+13,DIAGNOSIS,864,888,Urinary Tract Infections
+13,DIAGNOSIS,889,900,pseudomonas
+13,DIAGNOSIS,903,915,enterococcus
+14,DIAGNOSIS,12,16,COPD
+14,DIAGNOSIS,1104,1108,COPD
+14,DIAGNOSIS,45,48,OSA
+14,DIAGNOSIS,53,85,obesity hypoventilation syndrome
+14,DIAGNOSIS,961,993,obesity hypoventilation syndrome
+14,DIAGNOSIS,87,91,dCHF
+14,DIAGNOSIS,138,147,agitation
+14,DIAGNOSIS,301,310,agitation
+14,DIAGNOSIS,179,186,hypoxia
+14,DIAGNOSIS,415,420,edema
+14,DIAGNOSIS,559,564,edema
+14,DIAGNOSIS,425,436,weight gain
+14,DIAGNOSIS,578,596,decreased appetite
+14,DIAGNOSIS,678,683,fever
+14,DIAGNOSIS,685,690,cough
+14,DIAGNOSIS,692,698,chills
+14,DIAGNOSIS,700,706,sputum
+14,DIAGNOSIS,727,731,pain
+14,DIAGNOSIS,784,788,pain
+14,DIAGNOSIS,901,904,CAD
+14,DIAGNOSIS,88,91,CHF
+14,DIAGNOSIS,939,942,CHF
+14,DIAGNOSIS,995,1018,obstructive sleep apnea
+14,DIAGNOSIS,1020,1023,DM2
+14,DIAGNOSIS,1025,1048,ventricular tachycardia
+14,DIAGNOSIS,1054,1057,ICD
+14,DIAGNOSIS,1073,1087,hypothyroidism
+14,DIAGNOSIS,1089,1102,schizophrenia
+14,DIAGNOSIS,12,16,COPD
+14,DIAGNOSIS,1104,1108,COPD
+15,DIAGNOSIS,36,39,CAD
+15,DIAGNOSIS,55,69,abdominal mass
+15,DIAGNOSIS,483,497,abdominal mass
+15,DIAGNOSIS,88,94,fevers
+15,DIAGNOSIS,95,101,rigors
+15,DIAGNOSIS,106,114,bandemia
+15,DIAGNOSIS,195,209,abdominal pain
+15,DIAGNOSIS,322,330,vomiting
+15,DIAGNOSIS,583,608,pancreatic adenocarcinoma
+15,DIAGNOSIS,700,720,diverticular abscess
+15,DIAGNOSIS,765,779,diverticulitis
+15,DIAGNOSIS,713,720,abscess
+15,DIAGNOSIS,835,842,abscess
+15,DIAGNOSIS,1001,1024,Coronary artery disease
+15,DIAGNOSIS,1087,1108,Mitral valve prolapse
+15,DIAGNOSIS,1111,1130,Atrial fibrillation
+15,DIAGNOSIS,1133,1146,Hyperlipemia5
+15,DIAGNOSIS,1148,1161,Hypertension6
+15,DIAGNOSIS,1163,1185,Chronic kidney disease
+15,DIAGNOSIS,1212,1226,Hypothyroidism
+15,DIAGNOSIS,1253,1259,Anemia
+16,DIAGNOSIS,36,45,hypoxemia
+16,DIAGNOSIS,50,57,dyspnea
+16,DIAGNOSIS,73,86,diastolic CHF
+16,DIAGNOSIS,88,110,pulmonary hypertension
+16,DIAGNOSIS,142,145,ASD
+16,DIAGNOSIS,890,893,ASD
+16,DIAGNOSIS,150,154,COPD
+16,DIAGNOSIS,895,899,COPD
+16,DIAGNOSIS,211,230,shortness of breath
+16,DIAGNOSIS,435,443,dyspneic
+16,DIAGNOSIS,540,551,hypotension
+16,DIAGNOSIS,689,709,Atrial septal defect
+16,DIAGNOSIS,743,755,sinus arrest
+16,DIAGNOSIS,761,764,PPM
+16,DIAGNOSIS,83,86,CHF
+16,DIAGNOSIS,787,790,CHF
+16,DIAGNOSIS,827,830,HTN
+16,DIAGNOSIS,984,987,OSA
+16,DIAGNOSIS,1014,1034,mitral regurgitation
+16,DIAGNOSIS,1036,1053,Microcytic anemia
+16,DIAGNOSIS,1055,1069,Hypothyroidism
+16,DIAGNOSIS,1102,1124,Gallstone pancreatitis
+17,DIAGNOSIS,16,32,multiple myeloma
+17,DIAGNOSIS,92,112,systemic amyloidosis
+17,DIAGNOSIS,181,185,ESRD
+17,DIAGNOSIS,214,222,weakness
+17,DIAGNOSIS,240,251,body aching
+17,DIAGNOSIS,294,307,hypercalcemia
+17,DIAGNOSIS,25,32,myeloma
+17,DIAGNOSIS,512,519,myeloma
+17,DIAGNOSIS,620,625,edema
+18,DIAGNOSIS,137,153,low urine output
+18,DIAGNOSIS,326,351,bulbar urethral stricture
+18,DIAGNOSIS,342,351,stricture
+18,DIAGNOSIS,722,731,stricture
+19,DIAGNOSIS,26,29,CAD
+19,DIAGNOSIS,44,47,HLD
+19,DIAGNOSIS,49,52,HTN
+19,DIAGNOSIS,54,77,ventricular tachycardia
+19,DIAGNOSIS,83,90,syncope
+19,DIAGNOSIS,132,139,syncope
+19,DIAGNOSIS,225,232,syncope
+19,DIAGNOSIS,795,802,syncope
+19,DIAGNOSIS,144,167,ventricular arrhythmias
+19,DIAGNOSIS,402,413,bradycardia
+19,DIAGNOSIS,792,802,presyncope
+19,DIAGNOSIS,807,813,nausea
+19,DIAGNOSIS,826,836,chest pain
+19,DIAGNOSIS,902,905,EPS
+20,DIAGNOSIS,45,49,acne
+20,DIAGNOSIS,59,68,hirsutism
+20,DIAGNOSIS,323,339,nipple discharge
+20,DIAGNOSIS,375,382,snoring
+20,DIAGNOSIS,387,395,headache
+20,DIAGNOSIS,457,467,acromegaly
+20,DIAGNOSIS,472,483,prognathism
+20,DIAGNOSIS,725,737,macroadenoma
+21,DIAGNOSIS,38,52,abdominal pain
+21,DIAGNOSIS,57,65,vomiting
+21,DIAGNOSIS,48,52,pain
+21,DIAGNOSIS,71,75,pain
+21,DIAGNOSIS,294,303,allergies
+21,DIAGNOSIS,365,380,type 2 diabetes
+21,DIAGNOSIS,596,608,leukocytosis
+21,DIAGNOSIS,740,752,pancreatitis
+22,DIAGNOSIS,50,64,abdominal pain
+22,DIAGNOSIS,60,64,pain
+22,DIAGNOSIS,70,74,pain
+22,DIAGNOSIS,173,177,pain
+22,DIAGNOSIS,237,241,pain
+22,DIAGNOSIS,506,510,pain
+22,DIAGNOSIS,105,125,abdominal discomfort
+22,DIAGNOSIS,135,148,poor appetite
+22,DIAGNOSIS,378,388,tenderness
+22,DIAGNOSIS,556,568,leukocytosis
+22,DIAGNOSIS,701,712,perforation
+22,DIAGNOSIS,714,721,abscess
+22,DIAGNOSIS,725,733,gangrene
+23,DIAGNOSIS,42,47,cough
+23,DIAGNOSIS,299,304,cough
+23,DIAGNOSIS,52,71,shortness of breath
+23,DIAGNOSIS,320,339,shortness of breath
+23,DIAGNOSIS,255,261,asthma
+23,DIAGNOSIS,816,822,asthma
+23,DIAGNOSIS,306,314,wheezing
+23,DIAGNOSIS,344,359,chest tightness
+23,DIAGNOSIS,697,723,seasonal allergic rhinitis
+25,DIAGNOSIS,150,156,masses
+25,DIAGNOSIS,236,252,breast carcinoma
+25,DIAGNOSIS,348,353,tumor
+26,DIAGNOSIS,66,80,abdominal pain
+26,DIAGNOSIS,117,123,nausea
+26,DIAGNOSIS,142,150,vomiting
+26,DIAGNOSIS,76,80,pain
+26,DIAGNOSIS,156,160,pain
+26,DIAGNOSIS,245,249,pain
+26,DIAGNOSIS,320,324,pain
+26,DIAGNOSIS,392,412,hypercholesterolemia
+26,DIAGNOSIS,546,553,febrile
+26,DIAGNOSIS,653,663,tenderness
+26,DIAGNOSIS,670,680,tenderness
+26,DIAGNOSIS,806,818,leukocytosis
+26,DIAGNOSIS,870,880,gallstones
+26,DIAGNOSIS,870,879,gallstone
+26,DIAGNOSIS,913,922,gallstone
+27,DIAGNOSIS,40,53,HCV infection
+27,DIAGNOSIS,488,512,hepatocellular carcinoma
+27,DIAGNOSIS,549,561,inflammation
+27,DIAGNOSIS,588,603,viral hepatitis
+27,DIAGNOSIS,629,652,alcoholic liver disease
+27,DIAGNOSIS,654,662,bleeding
+27,DIAGNOSIS,668,686,esophageal varices
+27,DIAGNOSIS,688,703,hemochromatosis
+27,DIAGNOSIS,705,725,autoimmune hepatitis
+27,DIAGNOSIS,729,752,metabolic liver disease
+27,DIAGNOSIS,866,873,ascites
+27,DIAGNOSIS,877,887,tenderness
+27,DIAGNOSIS,930,935,edema
+28,DIAGNOSIS,57,76,shortness of breath
+28,DIAGNOSIS,174,178,COPD
+28,DIAGNOSIS,353,356,BPH
+28,DIAGNOSIS,425,428,HTN
+28,DIAGNOSIS,555,560,obese
+29,DIAGNOSIS,45,60,type 1 diabetes
+29,DIAGNOSIS,420,435,type 1 diabetes
+29,DIAGNOSIS,114,127,hyperglycemia
+29,DIAGNOSIS,938,951,hyperglycemia
+29,DIAGNOSIS,153,174,diabetic ketoacidosis
+29,DIAGNOSIS,863,884,diabetic ketoacidosis
+29,DIAGNOSIS,523,531,polyuria
+29,DIAGNOSIS,533,543,polydipsia
+29,DIAGNOSIS,549,559,polyphagia
+29,DIAGNOSIS,52,60,diabetes
+29,DIAGNOSIS,427,435,diabetes
+29,DIAGNOSIS,682,690,diabetes
+29,DIAGNOSIS,980,986,nausea
+29,DIAGNOSIS,988,996,vomiting
+30,DIAGNOSIS,49,56,fatigue
+30,DIAGNOSIS,58,69,weight gain
+30,DIAGNOSIS,74,82,abnormal
+30,DIAGNOSIS,111,120,hirsutism
+30,DIAGNOSIS,124,140,nipple discharge
+30,DIAGNOSIS,343,366,Hashimoto's thyroiditis
+30,DIAGNOSIS,544,554,overweight
+31,DIAGNOSIS,113,128,cervical cancer
+32,DIAGNOSIS,32,40,vomiting
+32,DIAGNOSIS,53,61,diarrhea
+32,DIAGNOSIS,179,187,diarrhea
+32,DIAGNOSIS,63,77,abdominal pain
+32,DIAGNOSIS,79,84,fever
+32,DIAGNOSIS,86,92,chills
+32,DIAGNOSIS,97,113,loss of appetite
+32,DIAGNOSIS,228,234,pallor
+32,DIAGNOSIS,236,244,jaundice
+32,DIAGNOSIS,258,278,abdominal tenderness
+33,DIAGNOSIS,444,453,allergies
+34,DIAGNOSIS,79,86,sadness
+34,DIAGNOSIS,174,183,depressed
+34,DIAGNOSIS,258,269,weight loss
+34,DIAGNOSIS,288,302,loss of energy
+34,DIAGNOSIS,686,698,colon cancer
+35,DIAGNOSIS,74,82,headache
+35,DIAGNOSIS,455,463,headache
+35,DIAGNOSIS,177,181,pain
+35,DIAGNOSIS,313,319,nausea
+35,DIAGNOSIS,324,335,photophobia
+35,DIAGNOSIS,446,463,migraine headache
+36,DIAGNOSIS,29,34,obese
+36,DIAGNOSIS,154,165,sleep apnea
+36,DIAGNOSIS,167,170,PCO
+37,DIAGNOSIS,100,115,facial weakness
+37,DIAGNOSIS,117,127,dysarthria
+37,DIAGNOSIS,132,140,numbness
+37,DIAGNOSIS,287,313,lower extremities weakness
+37,DIAGNOSIS,321,336,balance problem
+37,DIAGNOSIS,427,465,Relapsing Remitting Multiple Sclerosis
+37,DIAGNOSIS,467,471,RRMS
+37,DIAGNOSIS,885,889,RRMS
+38,DIAGNOSIS,40,57,myasthenia gravis
+38,DIAGNOSIS,87,95,diplopia
+38,DIAGNOSIS,100,107,fatigue
+38,DIAGNOSIS,112,120,weakness
+38,DIAGNOSIS,450,462,hypertension
+39,DIAGNOSIS,46,54,jaundice
+39,DIAGNOSIS,937,945,jaundice
+39,DIAGNOSIS,928,945,neonatal jaundice
+40,DIAGNOSIS,57,66,headaches
+40,DIAGNOSIS,80,89,bone pain
+40,DIAGNOSIS,186,195,swellings
+40,DIAGNOSIS,219,228,swellings
+40,DIAGNOSIS,337,346,swellings
+40,DIAGNOSIS,290,297,lesions
+40,DIAGNOSIS,636,648,hypertension
+40,DIAGNOSIS,667,676,DM type 2
+40,DIAGNOSIS,709,732,Paget's Disease of Bone
+41,DIAGNOSIS,40,59,Parkinson's disease
+41,DIAGNOSIS,87,107,slowness of movement
+41,DIAGNOSIS,112,119,tremors
+41,DIAGNOSIS,165,177,hypertension
+41,DIAGNOSIS,182,202,hypercholesterolemia
+41,DIAGNOSIS,374,399,shaking and slow movement
+41,DIAGNOSIS,604,629,shaking and slow movement
+41,DIAGNOSIS,781,789,dementia
+42,DIAGNOSIS,130,138,headache
+42,DIAGNOSIS,499,507,headache
+42,DIAGNOSIS,143,155,leg swelling
+42,DIAGNOSIS,442,449,fatigue
+42,DIAGNOSIS,457,462,fever
+42,DIAGNOSIS,466,472,chills
+42,DIAGNOSIS,499,508,headaches
+42,DIAGNOSIS,536,555,shortness of breath
+42,DIAGNOSIS,557,562,cough
+42,DIAGNOSIS,564,574,chest pain
+42,DIAGNOSIS,576,585,orthopnea
+42,DIAGNOSIS,590,602,palpitations
+42,DIAGNOSIS,606,615,skin rash
+42,DIAGNOSIS,666,680,abdominal pain
+42,DIAGNOSIS,706,712,nausea
+42,DIAGNOSIS,714,722,vomiting
+42,DIAGNOSIS,724,731,dysuria
+42,DIAGNOSIS,744,753,hematuria
+42,DIAGNOSIS,805,815,arthralgia
+42,DIAGNOSIS,819,828,back pain
+42,DIAGNOSIS,937,946,DM type 2
+42,DIAGNOSIS,951,954,HTN
+43,DIAGNOSIS,51,57,stroke
+43,DIAGNOSIS,141,161,aspiration pneumonia
+43,DIAGNOSIS,170,177,febrile
+43,DIAGNOSIS,408,415,febrile
+43,DIAGNOSIS,196,210,abdominal pain
+43,DIAGNOSIS,215,223,diarrhea
+43,DIAGNOSIS,375,399,hyperactive bowel sounds
+43,DIAGNOSIS,426,437,tachycardic
+43,DIAGNOSIS,452,463,hypotensive
+44,DIAGNOSIS,48,57,scoliosis
+44,DIAGNOSIS,671,680,scoliosis
+44,DIAGNOSIS,62,71,back pain
+44,DIAGNOSIS,67,71,pain
+44,DIAGNOSIS,234,238,pain
+44,DIAGNOSIS,396,414,shoulder imbalance
+44,DIAGNOSIS,599,614,scoliotic curve
+45,DIAGNOSIS,76,95,Sickle cell disease
+45,DIAGNOSIS,128,137,bone pain
+45,DIAGNOSIS,133,137,pain
+45,DIAGNOSIS,162,166,pain
+45,DIAGNOSIS,413,417,pain
+45,DIAGNOSIS,488,492,pain
+45,DIAGNOSIS,274,292,sickle cell crises
+45,DIAGNOSIS,566,578,splenomegaly
+45,DIAGNOSIS,644,656,drug allergy
+46,DIAGNOSIS,82,87,cough
+46,DIAGNOSIS,120,136,loss of appetite
+46,DIAGNOSIS,356,363,febrile
+46,DIAGNOSIS,557,567,cavitation
+47,DIAGNOSIS,151,159,numbness
+47,DIAGNOSIS,161,172,facial drop
+47,DIAGNOSIS,203,210,dyspnea
+47,DIAGNOSIS,212,220,headache
+47,DIAGNOSIS,222,234,palpitations
+47,DIAGNOSIS,236,246,chest pain
+47,DIAGNOSIS,248,253,fever
+47,DIAGNOSIS,255,264,dizziness
+47,DIAGNOSIS,266,274,bowel or
+47,DIAGNOSIS,275,295,urinary incontinence
+47,DIAGNOSIS,297,318,loss of consciousness
+47,DIAGNOSIS,360,372,hypertension
+47,DIAGNOSIS,374,388,hyperlipidemia
+47,DIAGNOSIS,393,407,hypothyroidism
+47,DIAGNOSIS,665,677,facial droop
+47,DIAGNOSIS,679,689,dysarthria
+47,DIAGNOSIS,706,716,hemiplegia
+47,DIAGNOSIS,783,789,Stroke
+47,DIAGNOSIS,1147,1154,infarct
+48,DIAGNOSIS,91,101,itchy foot
+48,DIAGNOSIS,245,254,fissuring
+48,DIAGNOSIS,316,319,pus
+48,DIAGNOSIS,323,330,tearing
+48,DIAGNOSIS,563,577,hyperlipidemia
+48,DIAGNOSIS,750,771,Tinea pedis infection
+49,DIAGNOSIS,70,83,short stature
+49,DIAGNOSIS,85,103,delayed in puberty
+49,DIAGNOSIS,108,127,developmental delay
+49,DIAGNOSIS,193,208,Turner syndrome
+49,DIAGNOSIS,334,339,obese
+49,DIAGNOSIS,341,358,mentally retarded
+50,DIAGNOSIS,187,190,NVD
+50,DIAGNOSIS,410,429,developmental delay
+51,DIAGNOSIS,112,117,fever
+51,DIAGNOSIS,122,128,chills
+51,DIAGNOSIS,145,151,nausea
+51,DIAGNOSIS,156,164,vomiting
+51,DIAGNOSIS,188,195,dysuria
+51,DIAGNOSIS,249,253,pain
+51,DIAGNOSIS,370,380,tenderness
+51,DIAGNOSIS,457,460,UTI
+52,DIAGNOSIS,53,62,dizziness
+52,DIAGNOSIS,74,82,diarrhea
+52,DIAGNOSIS,331,339,diarrhea
+52,DIAGNOSIS,216,230,abdominal pain
+52,DIAGNOSIS,243,251,bloating
+52,DIAGNOSIS,256,262,nausea
+52,DIAGNOSIS,407,412,fever
+53,DIAGNOSIS,98,114,bones and joints
+53,DIAGNOSIS,115,119,pain
+54,DIAGNOSIS,56,67,weight loss
+54,DIAGNOSIS,83,92,dry cough
+54,DIAGNOSIS,321,340,necrotic granulomas
+54,DIAGNOSIS,381,405,Wegener's granulomatosis
+54,DIAGNOSIS,521,531,Vasculitis
+55,DIAGNOSIS,65,72,tremors
+55,DIAGNOSIS,65,71,tremor
+55,DIAGNOSIS,95,101,tremor
+55,DIAGNOSIS,165,171,tremor
+55,DIAGNOSIS,339,347,jaundice
+55,DIAGNOSIS,349,367,hepatosplenomegaly
+55,DIAGNOSIS,372,381,hypotonia
+55,DIAGNOSIS,455,474,aggressive behavior
+55,DIAGNOSIS,653,667,Wilson disease
+56,DIAGNOSIS,53,63,Acromegaly
+56,DIAGNOSIS,352,367,pituitary tumor
+56,DIAGNOSIS,436,453,pituitary adenoma
+57,DIAGNOSIS,29,34,obese
+57,DIAGNOSIS,75,89,abdominal pain
+57,DIAGNOSIS,94,102,vomiting
+57,DIAGNOSIS,85,89,pain
+57,DIAGNOSIS,108,112,pain
+57,DIAGNOSIS,297,306,allergies
+57,DIAGNOSIS,377,389,hypertension
+57,DIAGNOSIS,605,617,leukocytosis
+57,DIAGNOSIS,737,746,edematous
+57,DIAGNOSIS,747,772,interstitial pancreatitis
+57,DIAGNOSIS,837,860,gall stone pancreatitis
+58,DIAGNOSIS,65,69,pain
+58,DIAGNOSIS,145,149,pain
+58,DIAGNOSIS,168,174,nausea
+58,DIAGNOSIS,179,187,vomiting
+58,DIAGNOSIS,196,203,febrile
+58,DIAGNOSIS,209,219,tenderness
+58,DIAGNOSIS,229,239,tenderness
+58,DIAGNOSIS,359,371,appendicitis
+58,DIAGNOSIS,435,443,phlegmon
+58,DIAGNOSIS,458,481,abdominal abnormalities
+59,DIAGNOSIS,38,44,asthma
+59,DIAGNOSIS,282,288,asthma
+59,DIAGNOSIS,539,545,asthma
+59,DIAGNOSIS,84,103,shortness of breath
+59,DIAGNOSIS,105,121,chest tightening
+59,DIAGNOSIS,126,131,cough
+60,DIAGNOSIS,96,113,urinary retention
+61,DIAGNOSIS,79,92,breast cancer
+61,DIAGNOSIS,140,156,breast carcinoma
+61,DIAGNOSIS,195,200,tumor
+61,DIAGNOSIS,500,505,tumor
+62,DIAGNOSIS,32,41,dizziness
+62,DIAGNOSIS,55,64,headaches
+62,DIAGNOSIS,93,96,CAD
+62,DIAGNOSIS,181,198,diabetes mellitus
+63,DIAGNOSIS,14,19,obese
+63,DIAGNOSIS,557,562,obese
+63,DIAGNOSIS,68,82,abdominal pain
+63,DIAGNOSIS,112,118,nausea
+63,DIAGNOSIS,123,131,vomiting
+63,DIAGNOSIS,137,152,epigastric pain
+63,DIAGNOSIS,78,82,pain
+63,DIAGNOSIS,148,152,pain
+63,DIAGNOSIS,262,266,pain
+63,DIAGNOSIS,334,354,hypercholesterolemia
+63,DIAGNOSIS,361,365,NVDs
+63,DIAGNOSIS,481,488,febrile
+63,DIAGNOSIS,634,644,tenderness
+63,DIAGNOSIS,649,659,tenderness
+63,DIAGNOSIS,785,797,leukocytosis
+63,DIAGNOSIS,849,859,gallstones
+64,DIAGNOSIS,48,51,HCV
+64,DIAGNOSIS,297,300,HCV
+64,DIAGNOSIS,354,357,HCV
+64,DIAGNOSIS,405,429,hepatocellular carcinoma
+64,DIAGNOSIS,466,478,inflammation
+64,DIAGNOSIS,505,520,viral hepatitis
+64,DIAGNOSIS,546,569,alcoholic liver disease
+64,DIAGNOSIS,571,579,bleeding
+64,DIAGNOSIS,585,603,esophageal varices
+64,DIAGNOSIS,605,620,hemochromatosis
+64,DIAGNOSIS,622,642,autoimmune hepatitis
+64,DIAGNOSIS,647,670,metabolic liver disease
+64,DIAGNOSIS,784,791,ascites
+64,DIAGNOSIS,795,805,tenderness
+64,DIAGNOSIS,848,853,edema
+65,DIAGNOSIS,38,53,type 1 diabetes
+65,DIAGNOSIS,132,151,shortness of breath
+65,DIAGNOSIS,156,163,fatigue
+65,DIAGNOSIS,198,205,dyspnea
+65,DIAGNOSIS,234,241,dyspnea
+65,DIAGNOSIS,257,263,angina
+65,DIAGNOSIS,323,337,cardiomyopathy
+65,DIAGNOSIS,558,567,DM type 1
+66,DIAGNOSIS,53,64,weight gain
+66,DIAGNOSIS,69,94,abnormal menstrual cycles
+66,DIAGNOSIS,422,439,Hashimoto disease
+67,DIAGNOSIS,44,86,abnormal cervical squamous intraepithelial
+67,DIAGNOSIS,87,103,glandular lesion
+68,DIAGNOSIS,63,82,high blood pressure
+68,DIAGNOSIS,110,120,septicemia
+68,DIAGNOSIS,135,154,respiratory failure
+68,DIAGNOSIS,192,205,renal failure
+68,DIAGNOSIS,253,286,microangiopathic hemolytic anemia
+68,DIAGNOSIS,291,307,thrombocytopenia
+68,DIAGNOSIS,470,495,hemolytic uremic syndrome
+68,DIAGNOSIS,593,606,meningococcal
+68,DIAGNOSIS,640,653,meningococcal
+68,DIAGNOSIS,640,661,meningococcal group B
+69,DIAGNOSIS,280,292,hypertensive
+69,DIAGNOSIS,380,389,allergies
+70,DIAGNOSIS,32,35,MDD
+70,DIAGNOSIS,85,101,loss of interest
+70,DIAGNOSIS,157,166,depressed
+70,DIAGNOSIS,202,216,loss of energy
+70,DIAGNOSIS,637,649,colon cancer

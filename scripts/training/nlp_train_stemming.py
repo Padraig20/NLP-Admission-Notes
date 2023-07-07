@@ -34,6 +34,8 @@ training_data.select(F.explode(F.arrays_zip(training_data.token.result,
              .select(F.expr("cols['0']").alias("token"),
                      F.expr("cols['1']").alias("ground_truth")).groupBy('ground_truth').count().orderBy('count', ascending=False).show(100,truncate=False)
 
+training_data = training_data.withColumn("text", F.lower(training_data["text"]))
+
 graph_folder = "./ner_graphs"
 
 from sparknlp.annotator import TFNerDLGraphBuilder
@@ -65,14 +67,14 @@ sentence = SentenceDetector()\
 tokenizer = Tokenizer()\
     .setInputCols(["sentence"])\
     .setOutputCol("token")
-# Step 4: Bert Embeddings
-embeddings = BertEmbeddings.pretrained().\
-    setInputCols(["sentence", 'token']).\
-    setOutputCol("embeddings")
-# Step 5: Stemming 
+# Step 4: Stemming 
 stemmer = Stemmer()\
     .setInputCols(["token"])\
     .setOutputCol("stem")
+# Step 5: Bert Embeddings
+embeddings = BertEmbeddings.pretrained().\
+    setInputCols(["sentence", 'stem']).\
+    setOutputCol("embeddings")
 
 from sparknlp.annotator import NerDLApproach
 # Model training
@@ -94,9 +96,9 @@ nerTagger = NerDLApproach()\
               .setOutputLogsPath('ner_logs') 
 
 # Define the pipeline            
-ner_pipeline = Pipeline(stages=[embeddings,
+ner_pipeline = Pipeline(stages=[stemmer,
+                                embeddings,
                                 graph_builder,
-                                stemmer,
                                 nerTagger])
 
 ner_model = ner_pipeline.fit(training_data)
@@ -106,6 +108,8 @@ ner_model.save(output_name)
 ## TESTING THE MODEL
 
 test_data = CoNLL().readDataset(spark, testing_path)
+
+test_data = test_data.withColumn("text", F.lower(test_data["text"]))
 
 predictions = ner_model.transform(test_data)
 

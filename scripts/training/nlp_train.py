@@ -34,6 +34,8 @@ training_data.select(F.explode(F.arrays_zip(training_data.token.result,
              .select(F.expr("cols['0']").alias("token"),
                      F.expr("cols['1']").alias("ground_truth")).groupBy('ground_truth').count().orderBy('count', ascending=False).show(100,truncate=False)
 
+training_data = training_data.withColumn("text", F.lower(training_data["text"]))
+
 graph_folder = "./ner_graphs"
 
 from sparknlp.annotator import TFNerDLGraphBuilder
@@ -43,7 +45,7 @@ graph_builder = TFNerDLGraphBuilder()\
               .setLabelColumn("label")\
               .setGraphFile("auto")\
               .setGraphFolder(graph_folder)\
-              .setHiddenUnitsNumber(20)
+              .setHiddenUnitsNumber(10)
 
 from sparknlp.base import DocumentAssembler, Pipeline
 from sparknlp.annotator import (
@@ -76,9 +78,9 @@ nerTagger = NerDLApproach()\
               .setLabelColumn("label")\
               .setUseBestModel(True)\
               .setOutputCol("ner")\
-              .setMaxEpochs(7)\
-              .setLr(0.004)\
-              .setBatchSize(32)\
+              .setMaxEpochs(10)\
+              .setLr(0.003)\
+              .setBatchSize(8)\
               .setRandomSeed(0)\
               .setVerbose(1)\
               .setValidationSplit(0.2)\
@@ -100,6 +102,8 @@ ner_model.save(output_name)
 ## TESTING THE MODEL
 
 test_data = CoNLL().readDataset(spark, testing_path)
+
+test_data = test_data.withColumn("text", F.lower(test_data["text"]))
 
 predictions = ner_model.transform(test_data)
 
