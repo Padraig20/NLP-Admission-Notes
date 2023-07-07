@@ -65,6 +65,8 @@ The text file has following columns: text_id, text
 
 The entities file has following columns: text_id, entity, begin, end, chunk
 
+As a part of data-preprocessing, all text is converted to lower case.
+
 ### First step: Converting the .xml file
 
 For that, I used the script ./scripts/text_extractor.py - nothing interesting going on here.
