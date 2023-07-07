@@ -353,8 +353,7 @@ A model trained with these parameters yields surprisingly good results with the 
 |with                |O           |O         |
 |myasthenia          |B-DIAGNOSIS   |B-DIAGNOSIS |
 |gravis              |I-DIAGNOSIS   |I-DIAGNOSIS |
-|,                   |O           |O         |
-|class               |O           |B-DIAGNOSIS |
+|class               |O           |I-DIAGNOSIS |
 |IIa                 |O           |I-DIAGNOSIS |
 |.                   |O           |O         |
 |She                 |O           |O         |
