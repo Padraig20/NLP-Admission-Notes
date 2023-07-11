@@ -917,6 +917,63 @@ I added a new script which should perform the same Grid Search etc. for our stem
 
 `f1-score: 0.939280697131209 | Learning Rate: 0.003 | Hidden Layers: 10 | Batch Size: 8 | Maximum Epochs: 10`
 
+### Adding More Entities
+
+This time, I manually added 3 more entities to our training data. These include...
+
+AGE: This should extract the age of our patient.
+
+GENDER: ...gender of our patient.
+
+NEGATIVE: Sometimes, diseases are entered, but negated. We do not want "allergy" highlighted as a diagnosis if it is negated, e.g.
+as "Patient is 80yo and has no allergies.".
+
+First results already look somewhat promising:
+
+|     entity|    token|
+|----------:|---------|
+|          O|     this|
+|      B-AGE|       70|
+|      I-AGE|    years|
+|      I-AGE|      old|
+|   B-GENDER|gentleman|
+|          O|       is|
+|          O| positive|
+|          O|      for|
+|B-DIAGNOSIS| seasonal|
+|I-DIAGNOSIS|allergies|
+|          O|        .|
+|          O|      has|
+| B-NEGATIVE|       no|
+| I-NEGATIVE|  history|
+| I-NEGATIVE|       of|
+| I-NEGATIVE|       dm|
+
+Other input is just terrible:
+
+|entity|      token|
+|-----:|-----------|
+|     O|    patient|
+|     O|         is|
+|     O|80-year-old|
+|     O|      woman|
+|     O|        and|
+|     O|        has|
+|     O|     tested|
+|     O|   negative|
+|     O|         to|
+|     O|         dm|
+|     O|       type|
+|     O|          1|
+
+Next steps to polish our model:
+
+Cleaning up our training data. We need to make sure that it's safe and ready for training. Remember the "shit in, shit out" principle...
+
+And some more Hyperparameter Tuning!
+
+Maybe Stemming will make a good comeback?
+
 ### Future
 
 -> ???

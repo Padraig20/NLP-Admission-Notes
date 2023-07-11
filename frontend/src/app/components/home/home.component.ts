@@ -61,7 +61,7 @@ export class HomeComponent {
             }
           } else if (entity === 'I-DIAGNOSIS') {
             tmp = tmp + (' ' + token);
-            if ((i+1) < tokens.length && entities[i+1] !== 'I-DIAGNOSIS' || i === tokens.length) {
+            if ((i+1) < tokens.length && entities[i+1] !== 'I-DIAGNOSIS' || i === tokens.length-1) {
               this.analyzedText = this.analyzedText + '<span class="fw-bold bg-green-300 text-green-800 rounded px-1 py-1 m-1">' + (tmp) + '<span class="fw-light ml-2 text-green-950">DIAGNOSIS</span></span> ';
               tmp = '';
             }
@@ -74,7 +74,7 @@ export class HomeComponent {
             }
           } else if (entity === 'I-AGE') {
             tmp = tmp + (' ' + token);
-            if ((i+1) < tokens.length && entities[i+1] !== 'I-AGE' || i === tokens.length) {
+            if ((i+1) < tokens.length && entities[i+1] !== 'I-AGE' || i === tokens.length-1) {
               this.analyzedText = this.analyzedText + '<span class="fw-bold bg-blue-400 text-blue-900 rounded px-1 py-1 m-1">' + (tmp) + '<span class="fw-light ml-2 text-blue-950">AGE</span></span> ';
               tmp = '';
             }
@@ -87,7 +87,7 @@ export class HomeComponent {
             }
           } else if (entity === 'I-GENDER') {
             tmp = tmp + (' ' + token);
-            if ((i+1) < tokens.length && entities[i+1] !== 'I-GENDER' || i === tokens.length) {
+            if ((i+1) < tokens.length && entities[i+1] !== 'I-GENDER' || i === tokens.length-1) {
               this.analyzedText = this.analyzedText + '<span class="fw-bold bg-yellow-300 text-yellow-900 rounded px-1 py-1 m-1">' + (tmp) + '<span class="fw-light ml-2 text-yellow-950">GENDER</span></span> ';
               tmp = '';
             }
@@ -100,7 +100,7 @@ export class HomeComponent {
             }
           } else if (entity === 'I-NEGATIVE') {
             tmp = tmp + (' ' + token);
-            if ((i+1) < tokens.length && entities[i+1] !== 'I-NEGATIVE' || i === tokens.length) {
+            if ((i+1) < tokens.length && entities[i+1] !== 'I-NEGATIVE' || i === tokens.length-1) {
               this.analyzedText = this.analyzedText + '<span class="fw-bold bg-red-300 text-red-900 rounded px-1 py-1 m-1">' + (tmp) + '<span class="fw-light ml-2 text-red-950">NEGATIVE</span></span> ';
               tmp = '';
             }
@@ -113,6 +113,7 @@ export class HomeComponent {
       },
       error: error => {
         console.log('Error analyzing note: ' + error);
+        this.analyzing = false;
         this.notification.error(error.error.message, 'Error analyzing note');
       }
     });

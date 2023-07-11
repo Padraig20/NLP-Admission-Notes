@@ -3,8 +3,8 @@
 Patient NN NN O
 is NN NN O
 a NN NN O
-45-year-old NN NN O
-man NN NN O
+45-year-old NNP NNP B-AGE
+man NNP NNP B-GENDER
 with NN NN O
 a NN NN O
 history NN NN O
@@ -143,8 +143,8 @@ repeat NN NN O
 cycle NN NN O
 . NN NN O
 
-48 NN NN O
-M NN NN O
+48 NNP NNP B-AGE
+M NNP NNP B-GENDER
 with NN NN O
 a NN NN O
 h/o NN NN O
@@ -271,9 +271,9 @@ bicuspid NNP NNP B-DIAGNOSIS
 aortic NNP NNP I-DIAGNOSIS
 valve NNP NNP I-DIAGNOSIS
 , NN NN O
-dilated NN NN O
-ascending NN NN O
-aorta NN NN O
+dilated NNP NNP B-DIAGNOSIS
+ascending NNP NNP I-DIAGNOSIS
+aorta NNP NNP I-DIAGNOSIS
 , NN NN O
 mild NN NN O
 pulmonary NNP NNP B-DIAGNOSIS
@@ -329,19 +329,19 @@ art NN NN O
 pressures NN NN O
 which NN NN O
 showed NN NN O
-no NN NN O
-angiographically NN NN O
-apparent NN NN O
-flow-limiting NN NN O
-coronary NNP NNP B-DIAGNOSIS
-artery NNP NNP I-DIAGNOSIS
-disease NNP NNP I-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+angiographically NNP NNP I-NEGATIVE
+apparent NNP NNP I-NEGATIVE
+flow-limiting NNP NNP I-NEGATIVE
+coronary NNP NNP I-NEGATIVE
+artery NNP NNP I-NEGATIVE
+disease NNP NNP I-NEGATIVE
 . NN NN O
 
 A NN NN O
-32 NN NN O
-yo NN NN O
-woman NN NN O
+32 NNP NNP B-AGE
+yo NNP NNP I-AGE
+woman NNP NNP B-GENDER
 who NN NN O
 presents NN NN O
 following NN NN O
@@ -406,11 +406,11 @@ a NN NN O
 significant NN NN O
 amount NN NN O
 of NN NN O
-blood NN NN O
-in NN NN O
-her NN NN O
-right NN NN O
-ventricle NN NN O
+blood NNP NNP B-DIAGNOSIS
+in NNP NNP I-DIAGNOSIS
+her NNP NNP I-DIAGNOSIS
+right NNP NNP I-DIAGNOSIS
+ventricle NNP NNP I-DIAGNOSIS
 . NN NN O
 
 NSGY NN NN O
@@ -436,8 +436,8 @@ was NN NN O
 done NN NN O
 which NN NN O
 showed NN NN O
-abnormal NN NN O
-vasculature NN NN O
+abnormal NNP NNP B-DIAGNOSIS
+vasculature NNP NNP B-DIAGNOSIS
 with NN NN O
 a NN NN O
 draining NN NN O
@@ -462,17 +462,13 @@ continue NN NN O
 to NN NN O
 have NN NN O
 a NN NN O
-<START_N NNP NNP B-DIAGNOSIS
-ER:DIAGNOSIS> NN NN O
-headache NN NN O
-</END_NER:DIAGNOSIS> NN NN O
-s NN NN O
+headache NNP NNP B-DIAGNOSIS
 but NN NN O
 they NN NN O
 were NN NN O
 improving NN NN O
 with NN NN O
-pain NNP NNP B-DIAGNOSIS
+pain NN NN O
 medication NN NN O
 . NN NN O
 
@@ -504,14 +500,14 @@ on NN NN O
 This NN NN O
 is NN NN O
 a NN NN O
-44 NN NN O
-year NN NN O
-old NN NN O
-female NN NN O
+44 NNP NNP B-AGE
+year NNP NNP I-AGE
+old NNP NNP I-AGE
+female NNP NNP B-GENDER
 with NN NN O
-PMH NN NN O
-of NN NN O
-PCOS NNP NNP B-DIAGNOSIS
+PMH NNP NNP B-DIAGNOSIS
+of NNP NNP I-DIAGNOSIS
+PCOS NNP NNP I-DIAGNOSIS
 , NN NN O
 Obesity NNP NNP B-DIAGNOSIS
 , NN NN O
@@ -573,8 +569,8 @@ myc NN NN O
 rearrangement NN NN O
 consistent NN NN O
 with NN NN O
-Burkitt's NN NN O
-Lymphoma NN NN O
+Burkitt's NNP NNP B-DIAGNOSIS
+Lymphoma NNP NNP I-DIAGNOSIS
 . NN NN O
 
 A NN NN O
@@ -586,10 +582,10 @@ bone NN NN O
 marrow NN NN O
 biopsy NN NN O
 were NN NN O
-negative NN NN O
-for NN NN O
-any NN NN O
-involvement NN NN O
+negative NNP NNP B-NEGATIVE
+for NNP NNP I-NEGATIVE
+any NNP NNP I-NEGATIVE
+involvement NNP NNP I-NEGATIVE
 which NN NN O
 made NN NN O
 this NN NN O
@@ -621,31 +617,30 @@ atrium NN NN O
 adjacent NN NN O
 to NN NN O
 the NN NN O
-AV NN NN O
-junction.Past NN NN O
+AV NNP NNP B-DIAGNOSIS
+junction NNP NNP I-DIAGNOSIS
+. NN NN O
+Past NN NN O
 Medical NN NN O
-History:1 NN NN O
+History: NN NN O
+1 NN NN O
 . NN NN O
 
 Rare NN NN O
-migraines2 NNP NNP B-DIAGNOSIS
+migraines NNP NNP B-DIAGNOSIS
+2 NN NN O
 . NN NN O
 
-<S NNP NNP B-DIAGNOSIS
-TART_NER:DIAGNOSIS> NN NN O
-HTN3 NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+HTN NNP NNP B-DIAGNOSIS
 . NN NN O
 
-<START NNP NNP B-DIAGNOSIS
-_NER:DIAGNOSIS> NN NN O
-Obesity4 NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+Obesity NNP NNP B-DIAGNOSIS
 . NN NN O
 
 PCOS NNP NNP B-DIAGNOSIS
-/ NN NN O
-infertility5 NNP NNP B-DIAGNOSIS
+. NN NN O
+
+infertility NNP NNP B-DIAGNOSIS
 . NN NN O
 
 Viral NNP NNP B-DIAGNOSIS
@@ -673,18 +668,18 @@ infxn NNP NNP I-DIAGNOSIS
 caused NN NN O
 mild NN NN O
 non-focal NN NN O
-residual NN NN O
-deficits6 NN NN O
+residual NNP NNP B-DIAGNOSIS
+deficits6 NNP NNP B-DIAGNOSIS
 . NN NN O
 
-CSF NN NN O
-leak NNP NNP B-DIAGNOSIS
-w/ NN NN O
-meningitis NNP NNP B-DIAGNOSIS
+CSF NNP NNP B-DIAGNOSIS
+leak NNP NNP I-DIAGNOSIS
+w/ NNP NNP I-DIAGNOSIS
+meningitis NNP NNP I-DIAGNOSIS
 s/p NN NN O
 lumbar NN NN O
 drain NN NN O
-placement7 NN NN O
+placement NN NN O
 . NN NN O
 
 R NN NN O
@@ -693,13 +688,14 @@ DVT NN NN O
 s/p NN NN O
 IVC NN NN O
 filter NN NN O
-placement8 NN NN O
+placement NN NN O
 . NN NN O
 
-Knee NN NN O
-surgery NN NN O
+Knee NNP NNP B-DIAGNOSIS
+surgery NNP NNP I-DIAGNOSIS
 
-74M NN NN O
+74 NNP NNP B-AGE
+M NNP NNP B-GENDER
 hx NN NN O
 of NN NN O
 CAD NN NN O
@@ -709,10 +705,7 @@ CABG NN NN O
 EF NN NN O
 60% NN NN O
 prior NN NN O
-<S NNP NNP B-DIAGNOSIS
-TART_NER:DIAGNOSIS> NN NN O
-CVA NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+CVA NNP NNP B-DIAGNOSIS
 ( NN NN O
 no NN NN O
 residual NN NN O
@@ -720,17 +713,14 @@ deficits NN NN O
 ), NN NN O
 HTN NNP NNP B-DIAGNOSIS
 , NN NN O
-HL NN NN O
+HL NNP NNP B-DIAGNOSIS
 , NN NN O
-DMII NN NN O
+DMII NNP NNP B-DIAGNOSIS
 , NN NN O
 Moderate NN NN O
 to NN NN O
 Severe NN NN O
-<S NNP NNP B-DIAGNOSIS
-TART_NER:DIAGNOSIS> NN NN O
-PVD NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+PVD NNP NNP B-DIAGNOSIS
 was NN NN O
 referred NN NN O
 to NN NN O
@@ -738,10 +728,7 @@ cardiology NN NN O
 for NN NN O
 evaluation NN NN O
 of NN NN O
-<S NNP NNP B-DIAGNOSIS
-TART_NER:DIAGNOSIS> NN NN O
-PVD NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+PVD NNP NNP B-DIAGNOSIS
 , NN NN O
 and NN NN O
 on NN NN O
@@ -767,22 +754,22 @@ reports NN NN O
 Occasional NN NN O
 dizziness NNP NNP B-DIAGNOSIS
 , NN NN O
-no NN NN O
-prior NN NN O
-syncope NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+prior NNP NNP I-NEGATIVE
+syncope NNP NNP I-NEGATIVE
 occasional NN NN O
-HA NN NN O
+HA NNP NNP B-DIAGNOSIS
 , NN NN O
-Denies NN NN O
-CP/ NN NN O
-SOB NNP NNP B-DIAGNOSIS
+Denies NNP NNP B-NEGATIVE
+CP/ NNP NNP I-NEGATIVE
+SOB NNP NNP I-NEGATIVE
 . NN NN O
 
-No NN NN O
-sensory NNP NNP B-DIAGNOSIS
-or NNP NNP I-DIAGNOSIS
-motor NNP NNP I-DIAGNOSIS
-defects NNP NNP I-DIAGNOSIS
+No NNP NNP B-NEGATIVE
+sensory NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+motor NNP NNP I-NEGATIVE
+defects NNP NNP I-NEGATIVE
 . NN NN O
 
 He NN NN O
@@ -805,11 +792,13 @@ deficit NN NN O
 
 Prior NN NN O
 to NN NN O
-CABG NN NN O
+CABG NNP NNP B-DIAGNOSIS
 he NN NN O
 only NN NN O
 had NN NN O
-diaphoresis.Further NN NN O
+diaphoresis NNP NNP B-DIAGNOSIS
+. NN NN O
+Further NN NN O
 review NN NN O
 of NN NN O
 systems NN NN O
@@ -827,10 +816,7 @@ exertion NN NN O
 , NN NN O
 paroxysmal NNP NNP B-DIAGNOSIS
 nocturnal NNP NNP I-DIAGNOSIS
-<START NNP NNP I-DIAGNOSIS
-_NER:DIAGNOSIS> NN NN O
-dyspnea NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+dyspnea NNP NNP I-DIAGNOSIS
 , NN NN O
 orthopnea NNP NNP B-DIAGNOSIS
 , NN NN O
@@ -839,10 +825,7 @@ palpitations NNP NNP B-DIAGNOSIS
 syncope NNP NNP B-DIAGNOSIS
 or NN NN O
 pre NNP NNP B-DIAGNOSIS
-<START NNP NNP I-DIAGNOSIS
-_NER:DIAGNOSIS> NN NN O
-syncope NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+syncope NNP NNP I-DIAGNOSIS
 . NN NN O
 
 He NN NN O
@@ -891,29 +874,26 @@ left NN NN O
 ACA NN NN O
 and NN NN O
 left NN NN O
-MCA.Past NN NN O
+MCA NN NN O
+. NN NN O
+Past NN NN O
 Medical NN NN O
-History:CAD NN NN O
+History: NN NN O
+CAD NNP NNP B-DIAGNOSIS
 s/p NN NN O
-CABG NN NN O
+CABG NNP NNP B-DIAGNOSIS
 in NN NN O
 [**2154**] NN NN O
 ( NN NN O
 [**Hospital1 NN NN O
 112**])Prior NN NN O
-<S NNP NNP B-DIAGNOSIS
-TART_NER:DIAGNOSIS> NN NN O
-CVA NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+CVA NNP NNP B-DIAGNOSIS
 Bilateral NNP NNP B-DIAGNOSIS
 carotid NNP NNP I-DIAGNOSIS
 artery NNP NNP I-DIAGNOSIS
 disease NNP NNP I-DIAGNOSIS
 Anemia NNP NNP B-DIAGNOSIS
-<S NNP NNP B-DIAGNOSIS
-TART_NER:DIAGNOSIS> NN NN O
-PVD NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+PVD NNP NNP B-DIAGNOSIS
 Hypertension NNP NNP B-DIAGNOSIS
 Diabetes NNP NNP B-DIAGNOSIS
 c/b NN NN O
@@ -927,12 +907,13 @@ surgeryThyroid NN NN O
 noduleColon NN NN O
 polyps NNP NNP B-DIAGNOSIS
 s/p NN NN O
-resectionIntermittent NN NN O
+resection NN NN O
+Intermittent NN NN O
 Lower NN NN O
 back NNP NNP B-DIAGNOSIS
 pain NNP NNP I-DIAGNOSIS
-Proteinurias NNP NNP B-DIAGNOSIS
-/p NN NN O
+Proteinuria NNP NNP B-DIAGNOSIS
+s/p NN NN O
 right NN NN O
 elbow NNP NNP B-DIAGNOSIS
 fracture NNP NNP I-DIAGNOSIS
@@ -944,16 +925,16 @@ Arthritis NNP NNP B-DIAGNOSIS
 Patient NN NN O
 is NN NN O
 a NN NN O
-55yo NN NN O
-woman NN NN O
+55yo NNP NNP B-AGE
+woman NNP NNP B-GENDER
 with NN NN O
 h/o NN NN O
 ESRD NNP NNP B-DIAGNOSIS
 on NN NN O
 HD NN NN O
 and NN NN O
-peritoneal NN NN O
-dialysis NN NN O
+peritoneal NNP NNP B-DIAGNOSIS
+dialysis NNP NNP I-DIAGNOSIS
 who NN NN O
 presented NN NN O
 with NN NN O
@@ -973,12 +954,9 @@ history NN NN O
 of NN NN O
 2 NN NN O
 prior NN NN O
-<STAR NNP NNP B-DIAGNOSIS
-T_NER:DIAGNOSIS> NN NN O
-C NN NN O
-diff NN NN O
-infections NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+C NNP NNP B-DIAGNOSIS
+diff NNP NNP I-DIAGNOSIS
+infections NNP NNP I-DIAGNOSIS
 , NN NN O
 the NN NN O
 most NN NN O
@@ -1005,7 +983,7 @@ Was NN NN O
 also NN NN O
 txd NN NN O
 for NN NN O
-Cdiff NN NN O
+Cdiff NNP NNP B-DIAGNOSIS
 at NN NN O
 that NN NN O
 time NN NN O
@@ -1044,8 +1022,8 @@ of NN NN O
 with NN NN O
 leukocytosis NNP NNP B-DIAGNOSIS
 but NN NN O
-no NN NN O
-fever NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+fever NNP NNP I-NEGATIVE
 . NN NN O
 
 C NNP NNP B-DIAGNOSIS
@@ -1133,17 +1111,17 @@ was NN NN O
 discharged NN NN O
 . NN NN O
 
-60 NN NN O
-yo NN NN O
-M NN NN O
+60 NNP NNP B-AGE
+yo NNP NNP I-AGE
+M NNP NNP B-GENDER
 with NN NN O
 Hep NN NN O
-C NN NN O
-cirrhosis NNP NNP B-DIAGNOSIS
+C NNP NNP B-DIAGNOSIS
+cirrhosis NNP NNP I-DIAGNOSIS
 , NN NN O
-grade NN NN O
-II NN NN O
-esophageal NNP NNP B-DIAGNOSIS
+grade NN NN B-DIAGNOSIS
+II NNP NNP I-DIAGNOSIS
+esophageal NNP NNP I-DIAGNOSIS
 varices NNP NNP I-DIAGNOSIS
 , NN NN O
 recent NN NN O
@@ -1165,19 +1143,19 @@ hepatology NN NN O
 clinic NN NN O
 for NN NN O
 new NN NN O
-slurred NN NN O
-speech NN NN O
+slurred NNO NNP B-DIAGNOSIS
+speech NNP NNP I-DIAGNOSIS
 and NN NN O
-tangential NN NN O
-thought NN NN O
-process NN NN O
+tangential NNP NNP B-DIAGNOSIS
+thought NNP NNP I-DIAGNOSIS
+process NNP NNP I-DIAGNOSIS
 . NN NN O
 
 Patient NN NN O
 also NN NN O
 describes NN NN O
 new NN NN O
-imbalance NN NN O
+imbalance NNP NNP B-DIAGNOSIS
 leading NN NN O
 to NN NN O
 a NN NN O
@@ -1212,9 +1190,9 @@ pt NN NN O
 ), NN NN O
 utox NN NN O
 was NN NN O
-negative NN NN O
-for NN NN O
-alocohol NN NN O
+negative NN NN B-NEGATIVE
+for NNP NNP I-NEGATIVE
+alocohol NNP NNP I-NEGATIVE
 . NN NN O
 
 CT NN NN O
@@ -1229,9 +1207,9 @@ evaluation NN NN O
 determined NN NN O
 this NN NN O
 was NN NN O
-not NN NN O
-ischemic NNP NNP B-DIAGNOSIS
-infart NNP NNP I-DIAGNOSIS
+not NNP NNP B-NEGATIVE
+ischemic NNP NNP I-NEGATIVE
+infart NNP NNP I-NEGATIVE
 . NN NN O
 
 Patient NN NN O
@@ -1255,13 +1233,13 @@ tests NN NN O
 showed NN NN O
 a NN NN O
 striking NN NN O
-increase NN NN O
-in NN NN O
+increase NNP NNP B-DIAGNOSIS
+in NNP NNP I-DIAGNOSIS
 his NN NN O
 total NN NN O
 and NN NN O
 direct NN NN O
-bilirubin NN NN O
+bilirubin NNP NNP I-DIAGNOSIS
 since NN NN O
 last NN NN O
 visit NN NN O
@@ -1272,11 +1250,11 @@ worrisome NN NN O
 feature NN NN O
 was NN NN O
 the NN NN O
-increase NN NN O
-in NN NN O
+increase NN NN B-DIAGNOSIS
+in NN NN I-DIAGNOSIS
 the NN NN O
 patient's NN NN O
-AFP NN NN O
+AFP NN NN I-DIAGNOSIS
 . NN NN O
 
 This NN NN O
@@ -1316,8 +1294,9 @@ x2 NN NN O
 with NN NN O
 no NN NN O
 response)Portal NN NN O
-GastropathyGrade NNP NNP B-DIAGNOSIS
-II NN NN O
+Gastropathy NNP NNP B-DIAGNOSIS
+Grade NNP NNP I-DIAGNOSIS
+II NNP NNP I-DIAGNOSIS
 Esophageal NNP NNP B-DIAGNOSIS
 varices NNP NNP I-DIAGNOSIS
 HTN NNP NNP B-DIAGNOSIS
@@ -1334,14 +1313,14 @@ gastritis NNP NNP B-DIAGNOSIS
 This NN NN O
 is NN NN O
 a NN NN O
-57-year-old NN NN O
-gentleman NN NN O
+57-year-old NNP NNP B-AGE
+gentleman NNP NNP B-GENDER
 with NN NN O
 CLL NNP NNP B-DIAGNOSIS
 and NN NN O
-large NN NN O
-cell NN NN O
-transformation NN NN O
+large NNP NNP B-DIAGNOSIS
+cell NNP NNP I-DIAGNOSIS
+transformation NNP NNP I-DIAGNOSIS
 . NN NN O
 
 He NN NN O
@@ -1354,11 +1333,11 @@ in NN NN O
 [**10/2119**] NN NN O
 with NN NN O
 an NN NN O
-elevated NN NN O
-white NN NN O
-count NN NN O
+elevated NNP NNP B-DIAGNOSIS
+white NNP NNP I-DIAGNOSIS
+count NNP NNP I-DIAGNOSIS
 and NN NN O
-LDH NN NN O
+LDH NNP NNP B-DIAGNOSIS
 . NN NN O
 
 He NN NN O
@@ -1424,29 +1403,29 @@ in NN NN O
 [**7-/2122**] NN NN O
 with NN NN O
 a NN NN O
-rising NN NN O
-white NN NN O
-count NN NN O
+rising NNP NNP B-DIAGNOSIS
+white NNP NNP I-DIAGNOSIS
+count NNP NNP I-DIAGNOSIS
 , NN NN O
 approximately NN NN O
-50% NN NN O
-lymphocytes NN NN O
+50% NNP NNP B-DIAGNOSIS
+lymphocytes NNP NNP I-DIAGNOSIS
 , NN NN O
 and NN NN O
 a NN NN O
-mildly NN NN O
-elevated NN NN O
-LDH NN NN O
+mildly NNP NNP B-DIAGNOSIS
+elevated NNP NNP I-DIAGNOSIS
+LDH NNP NNP I-DIAGNOSIS
 . NN NN O
 
 He NN NN O
 also NN NN O
 had NN NN O
 some NN NN O
-mild NN NN O
-worsening NN NN O
-palpable NN NN O
-lymphadenopathy NNP NNP B-DIAGNOSIS
+mild NNP NNP B-DIAGNOSIS
+worsening NNP NNP I-DIAGNOSIS
+palpable NNP NNP I-DIAGNOSIS
+lymphadenopathy NNP NNP I-DIAGNOSIS
 . NN NN O
 
 He NN NN O
@@ -1553,10 +1532,10 @@ eventually NN NN O
 had NN NN O
 developed NN NN O
 an NN NN O
-enlarging NN NN O
-left NN NN O
-cervical NN NN O
-node NN NN O
+enlarging NNP NNP B-DIAGNOSIS
+left NNP NNP I-DIAGNOSIS
+cervical NNP NNP I-DIAGNOSIS
+node NNP NNP I-DIAGNOSIS
 which NN NN O
 was NN NN O
 biopsied NN NN O
@@ -1566,13 +1545,13 @@ found NN NN O
 to NN NN O
 have NN NN O
 Richter's NNP NNP B-DIAGNOSIS
-transformation NN NN O
+transformation NNP NNP I-DIAGNOSIS
 . NN NN O
 
-41 NN NN O
-year NN NN O
-old NN NN O
-man NN NN O
+41 NNP NNP B-AGE
+year NNP NNP I-AGE
+old NNP NNP I-AGE
+man NNP NNP B-GENDER
 with NN NN O
 history NN NN O
 of NN NN O
@@ -1592,7 +1571,7 @@ the NN NN O
 right NN NN O
 and NN NN O
 generalized NN NN O
-shaking NN NN O
+shaking NNP NNP B-DIAGNOSIS
 in NN NN O
 at NN NN O
 his NN NN O
@@ -1617,10 +1596,7 @@ felt NN NN O
 to NN NN O
 have NN NN O
 focal NNP NNP B-DIAGNOSIS
-<START_ NNP NNP I-DIAGNOSIS
-NER:DIAGNOSIS> NN NN O
-epilepsy NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+epilepsy NNP NNP I-DIAGNOSIS
 with NN NN O
 secondary NN NN O
 generalization NN NN O
@@ -1640,7 +1616,7 @@ related NN NN O
 to NN NN O
 the NN NN O
 atrophic NNP NNP B-DIAGNOSIS
-changes NN NN O
+changes NNP NNP I-DIAGNOSIS
 seen NN NN O
 on NN NN O
 MRI NN NN O
@@ -1654,11 +1630,7 @@ lobe.The NN NN O
 patient NN NN O
 first NN NN O
 developed NN NN O
-<START_ NNP NNP B-DIAGNOSIS
-NER:DIAGNOSIS> NN NN O
-seizure NN NN O
-</END_NER:DIAGNOSIS> NN NN O
-s NN NN O
+seizures NNP NNP B-DIAGNOSIS
 at NN NN O
 age NN NN O
 13 NN NN O
@@ -1724,7 +1696,7 @@ necessary NN NN O
 to NN NN O
 maintain NN NN O
 him NN NN O
-seizure NNP NNP B-DIAGNOSIS
+seizure NN NN O
 free NN NN O
 . NN NN O
 
@@ -1762,7 +1734,8 @@ time NN NN O
 of NN NN O
 dictation.Past NN NN O
 Medical NN NN O
-History:Epilepsy NN NN O
+History: NN NN O
+Epilepsy NNP NNP B-DIAGNOSIS
 as NN NN O
 above NN NN O
 , NN NN O
@@ -1773,8 +1746,8 @@ depression NNP NNP B-DIAGNOSIS
 Pt NN NN O
 is NN NN O
 a NN NN O
-22yo NN NN O
-F NN NN O
+22yo NNP NNP B-AGE
+F NNP NNP B-GENDER
 otherwise NN NN O
 healthy NN NN O
 with NN NN O
@@ -1864,7 +1837,6 @@ a NN NN O
 high NN NN O
 value NN NN O
 at NN NN O
-
 84 NN NN O
 . NN NN O
 The NN NN O
@@ -1946,12 +1918,12 @@ PCP NNP NNP B-DIAGNOSIS
 . NN NN O
 
 A NN NN O
-75 NN NN O
-yo NN NN O
-M NN NN O
+75 NNP NNP B-AGE
+yo NNP NNP I-AGE
+M NNP NNP B-GENDER
 w/ NN NN O
-metastatic NN NN O
-papillary NNP NNP B-DIAGNOSIS
+metastatic NNP NNP B-DIAGNOSIS
+papillary NNP NNP I-DIAGNOSIS
 thyroid NNP NNP I-DIAGNOSIS
 cancer NNP NNP I-DIAGNOSIS
 s/p NN NN O
@@ -1969,9 +1941,9 @@ dysphagia NNP NNP B-DIAGNOSIS
 for NN NN O
 solids NN NN O
 , NN NN O
-poor NN NN O
-oral NN NN O
-intake NN NN O
+poor NNP NNP B-DIAGNOSIS
+oral NNP NNP I-DIAGNOSIS
+intake NNP NNP I-DIAGNOSIS
 , NN NN O
 weight NNP NNP B-DIAGNOSIS
 loss NNP NNP I-DIAGNOSIS
@@ -1986,9 +1958,9 @@ some NN NN O
 lethargy NNP NNP B-DIAGNOSIS
 . NN NN O
 
-Papillary NN NN O
-thyroid NN NN O
-cancer NN NN O
+Papillary NNP NNP B-DIAGNOSIS
+thyroid NNP NNP I-DIAGNOSIS
+cancer NNP NNP I-DIAGNOSIS
 dx NN NN O
 w/ NN NN O
 right NN NN O
@@ -2038,10 +2010,10 @@ repair NN NN O
 s/p NN NN O
 tonsillectomy NNP NNP B-DIAGNOSIS
 
-34 NN NN O
-year NN NN O
-old NN NN O
-woman NN NN O
+34 NNP NNP B-AGE
+year NNP NNP I-AGE
+old NNP NNP I-AGE
+woman NNP NNP B-GENDER
 with NN NN O
 Marfan's NNP NNP B-DIAGNOSIS
 syndrome NNP NNP I-DIAGNOSIS
@@ -2095,7 +2067,7 @@ Medical NN NN O
 History NN NN O
 : NN NN O
 Marfans NNP NNP B-DIAGNOSIS
-SyndromeMVP NNP NNP I-DIAGNOSIS
+Syndrome NNP NNP I-DIAGNOSIS
 with NN NN O
 severe NN NN O
 mitral NNP NNP B-DIAGNOSIS
@@ -2110,7 +2082,9 @@ diabetes NNP NNP I-DIAGNOSIS
 mellitus NNP NNP I-DIAGNOSIS
 Hypertension NNP NNP B-DIAGNOSIS
 with NN NN O
-pregnancyObesityc-section NN NN O
+pregnancy NNP NNP B-DIAGNOSIS
+Obesity NNP NNP B-DIAGNOSIS
+c-section NN NN O
 x NN NN O
 2laser NN NN O
 eye NN NN O
@@ -2123,9 +2097,9 @@ bone NN NN O
 length NN NN O
 ) NN NN O
 
-62 NN NN O
-yo NN NN O
-male NN NN O
+62 NNP NNP B-AGE
+yo NNP NNP I-AGE
+male NNP NNP B-GENDER
 with NN NN O
 hx NN NN O
 of NN NN O
@@ -2135,8 +2109,8 @@ neurogenic NNP NNP B-DIAGNOSIS
 bladder NNP NNP I-DIAGNOSIS
 with NN NN O
 indwelling NN NN O
-suprapubic NN NN O
-catheter NN NN O
+suprapubic NNP NNP B-DIAGNOSIS
+catheter NNP NNP I-DIAGNOSIS
 with NN NN O
 multiple NN NN O
 prior NN NN O
@@ -2144,9 +2118,9 @@ admissions NN NN O
 for NN NN O
 UTIs NNP NNP B-DIAGNOSIS
 , NN NN O
-altered NN NN O
-mental NN NN O
-status NN NN O
+altered NN NN B-DIAGNOSIS
+mental NNP NNP I-DIAGNOSIS
+status NNP NNP I-DIAGNOSIS
 , NN NN O
 and NN NN O
 urosepsis NNP NNP B-DIAGNOSIS
@@ -2176,15 +2150,15 @@ the NN NN O
 L NN NN O
 ureter NN NN O
 , NN NN O
-no NN NN O
-evidence NN NN O
-of NN NN O
-urethral NNP NNP B-DIAGNOSIS
-strictures NNP NNP I-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+evidence NNP NNP I-NEGATIVE
+of NNP NNP I-NEGATIVE
+urethral NNP NNP I-NEGATIVE
+strictures NNP NNP I-NEGATIVE
 . NN NN O
 
 Significant NN NN O
-leaking NN NN O
+leaking NNP NNP B-DIAGNOSIS
 around NN NN O
 suprapubic NN NN O
 cath NN NN O
@@ -2213,16 +2187,19 @@ pt NN NN O
 next NN NN O
 week.s/p NN NN O
 CVA NNP NNP B-DIAGNOSIS
-Neurogenic NN NN O
-bladder NN NN O
+Neurogenic NNP NNP B-DIAGNOSIS
+bladder NNP NNP I-DIAGNOSIS
 s/p NN NN O
 suprapubic NN NN O
 cathRecurrent NN NN O
 UTIs NNP NNP B-DIAGNOSIS
 with NN NN O
-Klebsiella/PseudomonasNon-hodgkins NN NN O
-Marginal NN NN O
-Zone NN NN O
+Klebsiella NNP NNP B-DIAGNOSIS
+/ NN NN O
+Pseudomonas NNP NNP B-DIAGNOSIS
+Non-hodgkins NNP NNP I-DIAGNOSIS
+Marginal NNP NNP I-DIAGNOSIS
+Zone NNP NNP I-DIAGNOSIS
 Lymphoma NNP NNP B-DIAGNOSIS
 of NN NN O
 the NN NN O
@@ -2234,8 +2211,10 @@ in NN NN O
 R-CHOP NN NN O
 x NN NN O
 6 NN NN O
-cycles)Bells NN NN O
-PalsyBPH NN NN O
+cycles)
+Bells NNP NNP B-DIAGNOSIS
+Palsy NNP NNP I-DIAGNOSIS
+BPH NNP NNP B-DIAGNOSIS
 Hypertension NNP NNP B-DIAGNOSIS
 Partial NNP NNP B-DIAGNOSIS
 Bowel NNP NNP I-DIAGNOSIS
@@ -2243,7 +2222,7 @@ obstruction NNP NNP I-DIAGNOSIS
 s/p NN NN O
 colostomy NNP NNP B-DIAGNOSIS
 Hepatitis NNP NNP B-DIAGNOSIS
-CCryoglobulinemia NN NN O
+Cryoglobulinemia NNP NNP B-DIAGNOSIS
 SLE NNP NNP B-DIAGNOSIS
 with NN NN O
 transverse NNP NNP B-DIAGNOSIS
@@ -2252,10 +2231,11 @@ myelitis NNP NNP I-DIAGNOSIS
 anti-dsDNA NN NN O
 Ab+Insulin NN NN O
 Dependant NN NN O
-DiabeticFungal NN NN O
-Esophagitis NN NN O
-Stage NN NN O
-IV NN NN O
+Diabetic NNP NNP B-DIAGNOSIS
+Fungal NNP NNP I-DIAGNOSIS
+Esophagitis NNP NNP I-DIAGNOSIS
+Stage NNP NNP I-DIAGNOSIS
+IV NNP NNP I-DIAGNOSIS
 ? NN NN O
 
 Urinary NNP NNP B-DIAGNOSIS
@@ -2266,13 +2246,10 @@ pseudomonas NNP NNP B-DIAGNOSIS
 & NN NN O
 enterococcus NNP NNP B-DIAGNOSIS
 
-70 NN NN O
-y/o NN NN O
+70 NNP NNP B-AGE
+y/o NNP NNP I-AGE
 with NN NN O
-<ST NNP NNP B-DIAGNOSIS
-ART_NER:DIAGNOSIS> NN NN O
-COPD NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+COPD NNP NNP B-DIAGNOSIS
 on NN NN O
 2.5-3.5L NN NN O
 O2 NN NN O
@@ -2285,11 +2262,7 @@ obesity NNP NNP B-DIAGNOSIS
 hypoventilation NNP NNP I-DIAGNOSIS
 syndrome NNP NNP I-DIAGNOSIS
 , NN NN O
-d NNP NNP B-DIAGNOSIS
-<S NNP NNP I-DIAGNOSIS
-TART_NER:DIAGNOSIS> NN NN O
-CHF NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+CHF NNP NNP B-DIAGNOSIS
 , NN NN O
 discharged NN NN O
 [**2132-8-24**] NN NN O
@@ -2298,9 +2271,9 @@ presents NN NN O
 with NN NN O
 agitation NNP NNP B-DIAGNOSIS
 and NN NN O
-altered NN NN O
-mental NN NN O
-status NN NN O
+altered NNP NNP B-DIAGNOSIS
+mental NNP NNP I-DIAGNOSIS
+status NNP NNP I-DIAGNOSIS
 with NN NN O
 hypoxia NNP NNP B-DIAGNOSIS
 and NN NN O
@@ -2327,9 +2300,9 @@ reported NN NN O
 increased NN NN O
 agitation NNP NNP B-DIAGNOSIS
 and NN NN O
-altered NN NN O
-mental NN NN O
-status NN NN O
+altered NNP NNP B-DIAGNOSIS
+mental NNP NNP I-DIAGNOSIS
+status NNP NNP I-DIAGNOSIS
 x NN NN O
 2-3 NN NN O
 days NN NN O
@@ -2346,8 +2319,8 @@ has NN NN O
 also NN NN O
 noted NN NN O
 increased NN NN O
-LE NN NN O
-edema NNP NNP B-DIAGNOSIS
+LE NNP NNP B-DIAGNOSIS
+edema NNP NNP I-DIAGNOSIS
 and NN NN O
 weight NNP NNP B-DIAGNOSIS
 gain NNP NNP I-DIAGNOSIS
@@ -2371,9 +2344,9 @@ daily NN NN O
 with NN NN O
 some NN NN O
 mild NN NN O
-improvement NN NN O
-in NN NN O
-edema NNP NNP B-DIAGNOSIS
+improvement NNP NNP B-DIAGNOSIS
+in NNP NNP I-DIAGNOSIS
+edema NNP NNP I-DIAGNOSIS
 . NN NN O
 
 She NN NN O
@@ -2390,38 +2363,38 @@ level NN NN O
 at NN NN O
 home NN NN O
 with NN NN O
-difficulty NN NN O
-with NN NN O
-ADLs NN NN O
+difficulty NNP NNP B-DIAGNOSIS
+with NNP NNP B-DIAGNOSIS
+ADLs NNP NNP I-DIAGNOSIS
 . NN NN O
 
-No NN NN O
-recent NN NN O
-history NN NN O
-of NN NN O
-fever NNP NNP B-DIAGNOSIS
-, NN NN O
-cough NNP NNP B-DIAGNOSIS
-, NN NN O
-chills NNP NNP B-DIAGNOSIS
-, NN NN O
-sputum NNP NNP B-DIAGNOSIS
-production NN NN O
-, NN NN O
-CP NN NN O
-, NN NN O
-abd NN NN O
-pain NNP NNP B-DIAGNOSIS
-, NN NN O
-or NN NN O
-other NN NN O
-complaints NN NN O
+No NNP NNP B-NEGATIVE
+recent NNP NNP I-NEGATIVE
+history NNP NNP I-NEGATIVE
+of NNP NNP I-NEGATIVE
+fever NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+cough NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+chills NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+sputum NNP NNP I-NEGATIVE
+production NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+CP NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+abd NN NN I-NEGATIVE
+pain NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+other NNP NNP I-NEGATIVE
+complaints NNP NNP I-NEGATIVE
 other NN NN O
 than NN NN O
 chronic NN NN O
-right NN NN O
-thigh NN NN O
-pain NNP NNP B-DIAGNOSIS
+right NNP NNP B-DIAGNOSIS
+thigh NNP NNP I-DIAGNOSIS
+pain NNP NNP I-DIAGNOSIS
 last NN NN O
 1-2 NN NN O
 months NN NN O
@@ -2447,7 +2420,7 @@ CAD NNP NNP B-DIAGNOSIS
 s/p NN NN O
 4 NN NN O
 vessel NN NN O
-CABG NN NN O
+CABG NNP NNP B-DIAGNOSIS
 in NN NN O
 [**2119**] NN NN O
 - NN NN O
@@ -2483,12 +2456,9 @@ hypothyroidism NNP NNP B-DIAGNOSIS
 - NN NN O
 schizophrenia NNP NNP B-DIAGNOSIS
 - NN NN O
-<ST NNP NNP B-DIAGNOSIS
-ART_NER:DIAGNOSIS> NN NN O
-COPD NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+COPD NNP NNP B-DIAGNOSIS
 - NN NN O
-Pneumona NN NN O
+Pneumona NNP NNP B-DIAGNOSIS
 treated NN NN O
 in NN NN O
 [**4-7**] NN NN O
@@ -2497,9 +2467,9 @@ at NN NN O
 ** NN NN O
 ] NN NN O
 
-70 NN NN O
-year-old NN NN O
-woman NN NN O
+70 NNP NNP B-AGE
+year-old NNP NNP I-AGE
+woman NNP NNP B-GENDER
 with NN NN O
 a NN NN O
 history NN NN O
@@ -2564,7 +2534,7 @@ and NN NN O
 is NN NN O
 worsened NN NN O
 with NN NN O
-coughing NN NN O
+coughing NNP NNP B-DIAGNOSIS
 . NN NN O
 
 CT NN NN O
@@ -2584,10 +2554,10 @@ x NN NN O
 7.5 NN NN O
 x NN NN O
 6.0-cm NN NN O
-heterogeneous NN NN O
-left NN NN O
-upper NN NN O
-abdominal NNP NNP B-DIAGNOSIS
+heterogeneous NNP NNP B-DIAGNOSIS
+left NNP NNP I-DIAGNOSIS
+upper NNP NNP I-DIAGNOSIS
+abdominal NNP NNP I-DIAGNOSIS
 mass NNP NNP I-DIAGNOSIS
 . NN NN O
 
@@ -2616,10 +2586,12 @@ of NN NN O
 pancreas NN NN O
 . NN NN O
 
-Splenic NN NN O
-flecture/pancreatic NN NN O
-tail NN NN O
-mass NN NN O
+Splenic NNP NNP B-DIAGNOSIS
+flecture NNP NNP I-DIAGNOSIS
+/ NN NN O
+pancreatic NNP NNP B-DIAGNOSIS
+tail NNP NNP I-DIAGNOSIS
+mass NNP NNP I-DIAGNOSIS
 was NN NN O
 also NN NN O
 seen NN NN O
@@ -2628,10 +2600,7 @@ CT NN NN O
 , NN NN O
 likely NN NN O
 diverticular NNP NNP B-DIAGNOSIS
-<START NNP NNP I-DIAGNOSIS
-_NER:DIAGNOSIS> NN NN O
-abscess NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+abscess NNP NNP I-DIAGNOSIS
 given NN NN O
 the NN NN O
 patients NN NN O
@@ -2646,9 +2615,9 @@ thought NN NN O
 to NN NN O
 be NN NN O
 an NN NN O
-infected NN NN O
-fluid NN NN O
-collection NN NN O
+infected NNP NNP B-DIAGNOSIS
+fluid NNP NNP I-DIAGNOSIS
+collection NNP NNP I-DIAGNOSIS
 or NN NN O
 abscess NNP NNP B-DIAGNOSIS
 . NN NN O
@@ -2689,7 +2658,7 @@ disease NNP NNP I-DIAGNOSIS
 with NN NN O
 history NN NN O
 of NN NN O
-angioplasty NN NN O
+angioplasty NNP NNP B-DIAGNOSIS
 in NN NN O
 [**State NN NN O
 108**] NN NN O
@@ -2709,10 +2678,10 @@ fibrillation NNP NNP I-DIAGNOSIS
 
 4 NN NN O
 . NN NN O
-Hyperlipemia5 NNP NNP B-DIAGNOSIS
+Hyperlipemia NNP NNP B-DIAGNOSIS
 . NN NN O
 
-Hypertension6 NNP NNP B-DIAGNOSIS
+Hypertension NNP NNP B-DIAGNOSIS
 . NN NN O
 
 Chronic NNP NNP B-DIAGNOSIS
@@ -2742,9 +2711,9 @@ in NN NN O
 [**3-17**] NN NN O
 ) NN NN O
 
-79 NN NN O
-yo NN NN O
-F NN NN O
+79 NNP NNP B-AGE
+yo NNP NNP I-AGE
+F NNP NNP B-GENDER
 with NN NN O
 multifactorial NN NN O
 chronic NN NN O
@@ -2755,10 +2724,7 @@ thought NN NN O
 due NN NN O
 to NN NN O
 diastolic NNP NNP B-DIAGNOSIS
-<S NNP NNP I-DIAGNOSIS
-TART_NER:DIAGNOSIS> NN NN O
-CHF NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+CHF NNP NNP I-DIAGNOSIS
 , NN NN O
 pulmonary NNP NNP B-DIAGNOSIS
 hypertension NNP NNP I-DIAGNOSIS
@@ -2816,7 +2782,7 @@ due NN NN O
 to NN NN O
 severe NN NN O
 dyspneic NNP NNP B-DIAGNOSIS
-symptomology NN NN O
+symptomology NNP NNP I-DIAGNOSIS
 preventing NN NN O
 outpatient NN NN O
 living NN NN O
@@ -2937,9 +2903,9 @@ CCY NN NN O
 Gallstone NNP NNP B-DIAGNOSIS
 pancreatitis NNP NNP I-DIAGNOSIS
 s/p NN NN O
-ERCP NN NN O
+ERCP NNP NNP B-DIAGNOSIS
 , NN NN O
-sphincterotomy NN NN O
+sphincterotomy NNP NNP B-DIAGNOSIS
 - NN NN O
 Elevated NN NN O
 alk NN NN O
@@ -2948,14 +2914,11 @@ secondary NN NN O
 to NN NN O
 amiodarone NN NN O
 
-64yo NN NN O
-woman NN NN O
+64yo NNP NNP B-AGE
+woman NNP NNP B-GENDER
 with NN NN O
 multiple NNP NNP B-DIAGNOSIS
-<START NNP NNP I-DIAGNOSIS
-_NER:DIAGNOSIS> NN NN O
-myeloma NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+myeloma NNP NNP I-DIAGNOSIS
 , NN NN O
 s/p NN NN O
 allogeneic NN NN O
@@ -2985,7 +2948,7 @@ ESRD NNP NNP B-DIAGNOSIS
 who NN NN O
 represents NN NN O
 for NN NN O
-malaise NN NN O
+malaise NNP NNP B-DIAGNOSIS
 , NN NN O
 weakness NNP NNP B-DIAGNOSIS
 , NN NN O
@@ -3068,12 +3031,12 @@ function NN NN O
 This NN NN O
 is NN NN O
 a NN NN O
-78 NN NN O
-year-old NN NN O
-male NN NN O
+78 NNP NNP B-AGE
+year-old NNP NNP I-AGE
+male NNP NNP B-GENDER
 with NN NN O
 h/o NN NN O
-BPH NN NN O
+BPH NNP NNP B-DIAGNOSIS
 s/p NN NN O
 multiple NN NN O
 urological NN NN O
@@ -3081,8 +3044,8 @@ procedures NN NN O
 , NN NN O
 including NN NN O
 s/p NN NN O
-Suprapubic NN NN O
-prostatectomy NN NN O
+Suprapubic NNP NNP B-DIAGNOSIS
+prostatectomy NNP NNP I-DIAGNOSIS
 . NN NN O
 
 He NN NN O
@@ -3129,10 +3092,7 @@ severe NN NN O
 2cm NN NN O
 bulbar NNP NNP B-DIAGNOSIS
 urethral NNP NNP I-DIAGNOSIS
-<START_N NNP NNP I-DIAGNOSIS
-ER:DIAGNOSIS> NN NN O
-stricture NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+stricture NNP NNP I-DIAGNOSIS
 . NN NN O
 
 They NN NN O
@@ -3211,16 +3171,16 @@ surgically NN NN O
 fixed NN NN O
 . NN NN O
 
-65 NN NN O
-yo NN NN O
-man NN NN O
+65 NNP NNP B-AGE
+yo NNP NNP I-AGE
+man NNP NNP B-GENDER
 with NN NN O
 history NN NN O
 of NN NN O
 CAD NNP NNP B-DIAGNOSIS
 and NN NN O
 prior NN NN O
-MI NN NN O
+MI NNP NNP B-DIAGNOSIS
 , NN NN O
 HLD NNP NNP B-DIAGNOSIS
 , NN NN O
@@ -3305,8 +3265,8 @@ the NN NN O
 patient NN NN O
 went NN NN O
 into NN NN O
-monomorphic NN NN O
-VT NN NN O
+monomorphic NNP NNP B-DIAGNOSIS
+VT NNP NNP I-DIAGNOSIS
 on NN NN O
 telemetry NN NN O
 . NN NN O
@@ -3363,10 +3323,7 @@ the NN NN O
 patient NN NN O
 feels NN NN O
 pre NNP NNP B-DIAGNOSIS
-<START NNP NNP I-DIAGNOSIS
-_NER:DIAGNOSIS> NN NN O
-syncope NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+syncope NNP NNP I-DIAGNOSIS
 and NN NN O
 nausea NNP NNP B-DIAGNOSIS
 , NN NN O
@@ -3391,8 +3348,8 @@ EPS NNP NNP B-DIAGNOSIS
 . NN NN O
 
 A NN NN O
-35-year-old NN NN O
-woman NN NN O
+35-year-old NNP NNP B-AGE
+woman NNP NNP B-GENDER
 presents NN NN O
 with NN NN O
 history NN NN O
@@ -3438,10 +3395,10 @@ finger NN NN O
 There NN NN O
 is NN NN O
 some NN NN O
-irregularity NN NN O
-in NN NN O
-her NN NN O
-menstrual NN NN O
+irregularity NNP NNP B-DIAGNOSIS
+in NNP NNP I-DIAGNOSIS
+her NNP NNP I-DIAGNOSIS
+menstrual NNP NNP I-DIAGNOSIS
 cycle NN NN O
 as NN NN O
 well NN NN O
@@ -3483,13 +3440,13 @@ by NN NN O
 confrontation NN NN O
 . NN NN O
 
-Hirsutism NN NN O
+Hirsutism NNP NNP B-DIAGNOSIS
 , NN NN O
-soft NN NN O
-tissue NN NN O
-thickening NN NN O
+soft NNP NNP B-DIAGNOSIS
+tissue NNP NNP I-DIAGNOSIS
+thickening NNP NNP I-DIAGNOSIS
 and NN NN O
-diaphoresis NN NN O
+diaphoresis NNP NNP B-DIAGNOSIS
 of NN NN O
 the NN NN O
 hands NN NN O
@@ -3565,14 +3522,11 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-57-year-old NN NN O
-man NN NN O
+57-year-old NNP NNP B-AGE
+man NNP NNP B-GENDER
 with NN NN O
 abdominal NNP NNP B-DIAGNOSIS
-<ST NNP NNP I-DIAGNOSIS
-ART_NER:DIAGNOSIS> NN NN O
-pain NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+pain NNP NNP I-DIAGNOSIS
 and NN NN O
 vomiting NNP NNP B-DIAGNOSIS
 . NN NN O
@@ -3619,10 +3573,10 @@ He NN NN O
 is NN NN O
 healthy NN NN O
 with NN NN O
-no NN NN O
-history NN NN O
-of NN NN O
-allergies NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+history NNP NNP I-NEGATIVE
+of NNP NNP I-NEGATIVE
+allergies NNP NNP I-NEGATIVE
 or NN NN O
 using NN NN O
 any NN NN O
@@ -3715,25 +3669,22 @@ of NN NN O
 Cross-sectional NN NN O
 imaging NN NN O
 was NN NN O
-negative NN NN O
-for NN NN O
-obstructive NN NN O
-pancreatitis NNP NNP B-DIAGNOSIS
+negative NNP NNP B-NEGATIVE
+for NNP NNP I-NEGATIVE
+obstructive NNP NNP I-NEGATIVE
+pancreatitis NNP NNP I-NEGATIVE
 . NN NN O
 
 The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-31-year-old NN NN O
-woman NN NN O
+31-year-old NNP NNP B-AGE
+woman NNP NNP B-GENDER
 complaining NN NN O
 of NN NN O
 abdominal NNP NNP B-DIAGNOSIS
-<ST NNP NNP I-DIAGNOSIS
-ART_NER:DIAGNOSIS> NN NN O
-pain NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+pain NNP NNP I-DIAGNOSIS
 . NN NN O
 
 The NN NN O
@@ -3797,8 +3748,8 @@ vital NN NN O
 signs NN NN O
 . NN NN O
 
-Focal NN NN O
-tenderness NNP NNP B-DIAGNOSIS
+Focal NNP NNP B-DIAGNOSIS
+tenderness NNP NNP I-DIAGNOSIS
 and NN NN O
 guarding NN NN O
 were NN NN O
@@ -3846,18 +3797,18 @@ the NN NN O
 presence NN NN O
 of NN NN O
 a NN NN O
-distended NN NN O
-appendix NN NN O
+distended NNP NNP B-DIAGNOSIS
+appendix NNP NNP I-DIAGNOSIS
 with NN NN O
 thickened NN NN O
 appendiceal NN NN O
 wall NN NN O
-without NN NN O
-perforation NNP NNP B-DIAGNOSIS
-, NN NN O
-abscess NNP NNP B-DIAGNOSIS
-or NN NN O
-gangrene NNP NNP B-DIAGNOSIS
+without NNP NNP B-NEGATIVE
+perforation NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+abscess NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+gangrene NNP NNP I-NEGATIVE
 . NN NN O
 
 She NN NN O
@@ -3873,8 +3824,8 @@ anesthesia NN NN O
 . NN NN O
 
 A NN NN O
-39-year-old NN NN O
-man NN NN O
+39-year-old NNP NNP B-AGE
+man NNP NNP B-AGE
 came NN NN O
 to NN NN O
 the NN NN O
@@ -4065,10 +4016,10 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-55 NN NN O
-year NN NN O
-old NN NN O
-man NN NN O
+55 NNP NNP B-AGE
+year NNP NNP I-AGE
+old NNP NNP I-AGE
+man NNP NNP B-GENDER
 visiting NN NN O
 his NN NN O
 primary NN NN O
@@ -4080,18 +4031,18 @@ urinary NN NN O
 tract NN NN O
 symptoms NN NN O
 including NN NN O
-frequency NN NN O
+frequency NNP NNP B-DIAGNOSIS
 , NN NN O
-urgency NN NN O
+urgency NNP NNP B-DIAGNOSIS
 , NN NN O
-weak NN NN O
-stream NN NN O
+weak NNP NNP B-DIAGNOSIS
+stream NNP NNP I-DIAGNOSIS
 , NN NN O
-incomplete NN NN O
-emptying NN NN O
+incomplete NNP NNP B-DIAGNOSIS
+emptying NNP NNP I-DIAGNOSIS
 and NN NN O
-intermittent NN NN O
-flow NN NN O
+intermittent NNP NNP B-DIAGNOSIS
+flow NNP NNP I-DIAGNOSIS
 for NN NN O
 the NN NN O
 past NN NN O
@@ -4212,10 +4163,10 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-42 NN NN O
-year-old NN NN O
+42 NNP NNP B-AGE
+year-old NNP NNP I-AGE
 postmenopausal NN NN O
-woman NN NN O
+woman NNP NNP B-GENDER
 who NN NN O
 had NN NN O
 a NN NN O
@@ -4224,7 +4175,7 @@ sonogram NN NN O
 which NN NN O
 revealed NN NN O
 an NN NN O
-abnormality NN NN O
+abnormality NNP NNP B-DIAGNOSIS
 in NN NN O
 the NN NN O
 right NN NN O
@@ -4233,9 +4184,9 @@ breast NN NN O
 
 She NN NN O
 had NN NN O
-no NN NN O
-palpable NN NN O
-masses NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+palpable NNP NNP I-NEGATIVE
+masses NNP NNP I-NEGATIVE
 on NN NN O
 breast NN NN O
 exam NN NN O
@@ -4337,7 +4288,7 @@ a NN NN O
 history NN NN O
 of NN NN O
 3 NN NN O
-pregnancies NN NN O
+pregnancies NNP NNP B-DIAGNOSIS
 and NN NN O
 live NN NN O
 births NN NN O
@@ -4351,8 +4302,8 @@ children NN NN O
 . NN NN O
 
 A NN NN O
-45-year-old NN NN O
-woman NN NN O
+45-year-old NNP NNP B-AGE
+woman NNP NNP B-GENDER
 was NN NN O
 referred NN NN O
 to NN NN O
@@ -4361,10 +4312,7 @@ emergency NN NN O
 department NN NN O
 with NN NN O
 abdominal NNP NNP B-DIAGNOSIS
-<ST NNP NNP I-DIAGNOSIS
-ART_NER:DIAGNOSIS> NN NN O
-pain NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+pain NNP NNP I-DIAGNOSIS
 lasting NN NN O
 about NN NN O
 4 NN NN O
@@ -4439,7 +4387,7 @@ children NN NN O
 and NN NN O
 she NN NN O
 is NN NN O
-menopausal NN NN O
+menopausal NNP NNP B-DIAGNOSIS
 . NN NN O
 
 She NN NN O
@@ -4510,8 +4458,8 @@ analysis NN NN O
 is NN NN O
 remarkable NN NN O
 for NN NN O
-elevated NN NN O
-ESR NN NN O
+elevated NNP NNP B-DIAGNOSIS
+ESR NNP NNP I-DIAGNOSIS
 and NN NN O
 leukocytosis NNP NNP B-DIAGNOSIS
 with NN NN O
@@ -4524,13 +4472,10 @@ The NN NN O
 ultrasound NN NN O
 revealed NN NN O
 several NN NN O
-<START_N NNP NNP B-DIAGNOSIS
-ER:DIAGNOSIS> NN NN O
-gallstones NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+gallstones NNP NNP B-DIAGNOSIS
 and NN NN O
-biliary NN NN O
-sludge NN NN O
+biliary NNP NNP B-DIAGNOSIS
+sludge NNP NNP I-DIAGNOSIS
 . NN NN O
 
 The NN NN O
@@ -4548,8 +4493,8 @@ cholecystectomy NN NN O
 . NN NN O
 
 A NN NN O
-53-year-old NN NN O
-man NN NN O
+53-year-old NNP NNP B-AGE
+man NNP NNP B-GENDER
 presents NN NN O
 with NN NN O
 chronic NN NN O
@@ -4623,15 +4568,15 @@ record NN NN O
 shows NN NN O
 previous NN NN O
 positive NN NN O
-HCV NN NN O
+HCV NNP NNP B-DIAGNOSIS
 RNA NN NN O
 tests NN NN O
 as NN NN O
 well NN NN O
 as NN NN O
-positive NN NN O
-enzyme NN NN O
-immunoassay NN NN O
+positive NNP NNP B-DIAGNOSIS
+enzyme NNP NNP I-DIAGNOSIS
+immunoassay NNP NNP I-DIAGNOSIS
 for NN NN O
 anti-HCV-antibodies NN NN O
 . NN NN O
@@ -4661,37 +4606,37 @@ hepatitis NNP NNP I-DIAGNOSIS
 
 There NN NN O
 is NN NN O
-no NN NN O
-evidence NN NN O
-of NN NN O
-alcoholic NNP NNP B-DIAGNOSIS
-liver NNP NNP I-DIAGNOSIS
-disease NNP NNP I-DIAGNOSIS
-, NN NN O
-bleeding NNP NNP B-DIAGNOSIS
-from NN NN O
-esophageal NNP NNP B-DIAGNOSIS
-varices NNP NNP I-DIAGNOSIS
-, NN NN O
-hemochromatosis NNP NNP B-DIAGNOSIS
-, NN NN O
-autoimmune NNP NNP B-DIAGNOSIS
-hepatitis NNP NNP I-DIAGNOSIS
-or NN NN O
-metabolic NNP NNP B-DIAGNOSIS
-liver NNP NNP I-DIAGNOSIS
-disease NNP NNP I-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+evidence NNP NNP I-NEGATIVE
+of NNP NNP I-NEGATIVE
+alcoholic NNP NNP I-NEGATIVE
+liver NNP NNP I-NEGATIVE
+disease NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+bleeding NNP NNP I-NEGATIVE
+from NNP NNP I-NEGATIVE
+esophageal NNP NNP I-NEGATIVE
+varices NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+hemochromatosis NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+autoimmune NNP NNP I-NEGATIVE
+hepatitis NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+metabolic NNP NNP I-NEGATIVE
+liver NNP NNP I-NEGATIVE
+disease NNP NNP I-NEGATIVE
 . NN NN O
 
 He NN NN O
 is NN NN O
 an NN NN O
 alert NN NN O
-male NN NN O
+male NNP NNP B-GENDER
 with NN NN O
-no NN NN O
-acute NN NN O
-distress NN NN O
+no NNP NNP B-NEGATIVE
+acute NNP NNP I-NEGATIVE
+distress NNP NNP I-NEGATIVE
 . NN NN O
 
 His NN NN O
@@ -4725,17 +4670,17 @@ extremities NN NN O
 are NN NN O
 normal NN NN O
 with NN NN O
-no NN NN O
-edema NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+edema NNP NNP I-NEGATIVE
 . NN NN O
 
 The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-60-year-old NN NN O
+60-year-old NNP NNP B-AGE
 Spanish NN NN O
-man NN NN O
+man NNP NNP B-GENDER
 presenting NN NN O
 with NN NN O
 shortness NNP NNP B-DIAGNOSIS
@@ -4844,11 +4789,11 @@ He NN NN O
 is NN NN O
 an NN NN O
 obese NNP NNP B-DIAGNOSIS
-man NN NN O
+man NNP NNP B-GENDER
 who NN NN O
 is NN NN O
-acutely NN NN O
-ill NN NN O
+acutely NNP NNP B-DIAGNOSIS
+ill NNP NNP I-DIAGNOSIS
 but NN NN O
 oriented NN NN O
 and NN NN O
@@ -4877,17 +4822,14 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-24-year-old NN NN O
-man NN NN O
+24-year-old NNP NNP B-AGE
+man NNP NNP B-GENDER
 who NN NN O
 has NN NN O
 had NN NN O
 type NNP NNP B-DIAGNOSIS
 1 NNP NNP I-DIAGNOSIS
-<START_ NNP NNP I-DIAGNOSIS
-NER:DIAGNOSIS> NN NN O
-diabetes NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+diabetes NNP NNP I-DIAGNOSIS
 for NN NN O
 11 NN NN O
 years NN NN O
@@ -4957,10 +4899,7 @@ diagnosis NN NN O
 with NN NN O
 type NNP NNP B-DIAGNOSIS
 1 NNP NNP I-DIAGNOSIS
-<START_ NNP NNP I-DIAGNOSIS
-NER:DIAGNOSIS> NN NN O
-diabetes NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+diabetes NNP NNP I-DIAGNOSIS
 he NN NN O
 was NN NN O
 hospitalized NN NN O
@@ -5064,16 +5003,16 @@ hyperglycemia NNP NNP B-DIAGNOSIS
 , NN NN O
 he NN NN O
 is NN NN O
-not NN NN O
-experiencing NN NN O
-any NN NN O
-nausea NNP NNP B-DIAGNOSIS
-, NN NN O
-vomiting NNP NNP B-DIAGNOSIS
-, NN NN O
-or NN NN O
-abdominal NN NN O
-discomfort NN NN O
+not NNP NNP B-NEGATIVE
+experiencing NNP NNP I-NEGATIVE
+any NNP NNP I-NEGATIVE
+nausea NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+vomiting NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+abdominal NNP NNP I-NEGATIVE
+discomfort NNP NNP I-NEGATIVE
 , NN NN O
 and NN NN O
 he NN NN O
@@ -5121,8 +5060,8 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-33-year-old NN NN O
-woman NN NN O
+33-year-old NNP NNP B-AGE
+woman NNP NNP B-GENDER
 complained NN NN O
 of NN NN O
 fatigue NNP NNP B-DIAGNOSIS
@@ -5131,16 +5070,16 @@ weight NNP NNP B-DIAGNOSIS
 gain NNP NNP I-DIAGNOSIS
 and NN NN O
 abnormal NNP NNP B-DIAGNOSIS
-spotting NN NN O
+spotting NNP NNP I-DIAGNOSIS
 between NN NN O
 menses NN NN O
 . NN NN O
 
-No NN NN O
-hirsutism NNP NNP B-DIAGNOSIS
-or NN NN O
-nipple NNP NNP B-DIAGNOSIS
-discharge NNP NNP I-DIAGNOSIS
+No NNP NNP B-NEGATIVE
+hirsutism NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+nipple NNP NNP I-NEGATIVE
+discharge NNP NNP I-NEGATIVE
 was NN NN O
 detected NN NN O
 . NN NN O
@@ -5157,9 +5096,9 @@ results NN NN O
 were NN NN O
 remarkable NN NN O
 for NN NN O
-high NN NN O
-TSH NN NN O
-level NN NN O
+high NNP NNP B-DIAGNOSIS
+TSH NNP NNP I-DIAGNOSIS
+level NNP NNP I-DIAGNOSIS
 ( NN NN O
 13 NN NN O
 mU/L NN NN O
@@ -5264,8 +5203,8 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-37-year-old NN NN O
-woman NN NN O
+37-year-old NNP NNP B-AGE
+woman NNP NNP B-GENDER
 who NN NN O
 came NN NN O
 to NN NN O
@@ -5293,7 +5232,7 @@ patient NN NN O
 tested NN NN O
 positive NN NN O
 for NN NN O
-HPV NN NN O
+HPV NNP NNP B-DIAGNOSIS
 
 16 NN NN O
 . NN NN O
@@ -5338,16 +5277,16 @@ hysterectomy NN NN O
 . NN NN O
 
 A NN NN O
-17 NN NN O
-year NN NN O
-old NN NN O
-boy NN NN O
+17 NNP NNP B-AGE
+year NNP NNP I-AGE
+old NNP NNP I-AGE
+boy NNP NNP B-GENDER
 complains NN NN O
 of NN NN O
 vomiting NNP NNP B-DIAGNOSIS
 , NN NN O
-non-bloody NN NN O
-diarrhea NNP NNP B-DIAGNOSIS
+non-bloody NNP NNP B-DIAGNOSIS
+diarrhea NNP NNP I-DIAGNOSIS
 , NN NN O
 abdominal NNP NNP B-DIAGNOSIS
 pain NNP NNP I-DIAGNOSIS
@@ -5461,10 +5400,10 @@ stools NN NN O
 
 He NN NN O
 has NN NN O
-no NN NN O
-other NN NN O
-underlying NN NN O
-disease NN NN O
+no NNP NNP B-NEGATIVE
+other NNP NNP B-NEGATIVE
+underlying NNP NNP B-NEGATIVE
+disease NNP NNP B-NEGATIVE
 and NN NN O
 he NN NN O
 is NN NN O
@@ -5475,9 +5414,9 @@ medications NN NN O
 . NN NN O
 
 A NN NN O
-42-year-old NN NN O
+42-year-old NNP NNP B-AGE
 healthy NN NN O
-woman NN NN O
+woman NNP NNP B-GENDER
 came NN NN O
 to NN NN O
 the NN NN O
@@ -5500,9 +5439,9 @@ rehab NN NN O
 center NN NN O
 and NN NN O
 has NN NN O
-no NN NN O
-underlying NN NN O
-disease NN NN O
+no NNP NNP B-NEGATIVE
+underlying NNP NNP I-NEGATIVE
+disease NNP NNP I-NEGATIVE
 . NN NN O
 
 It's NN NN O
@@ -5531,10 +5470,10 @@ contraception NN NN O
 . NN NN O
 
 Her NN NN O
-menstrual NN NN O
-cycle NN NN O
-is NN NN O
-irregular NN NN O
+menstrual NNP NNP B-DIAGNOSIS
+cycle NNP NNP I-DIAGNOSIS
+is NNP NNP I-DIAGNOSIS
+irregular NNP NNP I-DIAGNOSIS
 . NN NN O
 
 She NN NN O
@@ -5569,10 +5508,10 @@ week NN NN O
 
 She NN NN O
 has NN NN O
-no NN NN O
-history NN NN O
-of NN NN O
-allergies NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+history NNP NNP I-NEGATIVE
+of NNP NNP I-NEGATIVE
+allergies NNP NNP I-NEGATIVE
 to NN NN O
 any NN NN O
 food NN NN O
@@ -5599,9 +5538,9 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-47-year-old NN NN O
+47-year-old NNP NNP B-AGE
 Asian NN NN O
-woman NN NN O
+woman NNP NNP B-GENDER
 complaining NN NN O
 of NN NN O
 persistent NN NN O
@@ -5638,9 +5577,9 @@ weeks NN NN O
 
 She NN NN O
 also NN NN O
-lost NN NN O
-her NN NN O
-appetite NN NN O
+lost NNP NNP B-DIAGNOSIS
+her NNP NNP I-DIAGNOSIS
+appetite NNP NNP I-DIAGNOSIS
 , NN NN O
 which NN NN O
 led NN NN O
@@ -5658,9 +5597,9 @@ loss NNP NNP B-DIAGNOSIS
 of NNP NNP I-DIAGNOSIS
 energy NNP NNP I-DIAGNOSIS
 and NN NN O
-feelings NN NN O
-of NN NN O
-worthlessness NN NN O
+feelings NNP NNP B-DIAGNOSIS
+of NNP NNP I-DIAGNOSIS
+worthlessness NNP NNP I-DIAGNOSIS
 nearly NN NN O
 every NN NN O
 day NN NN O
@@ -5718,8 +5657,8 @@ She NN NN O
 also NN NN O
 has NN NN O
 some NN NN O
-digestive NN NN O
-issues NN NN O
+digestive NNP NNP B-DIAGNOSIS
+issues NNP NNP I-DIAGNOSIS
 recently NN NN O
 . NN NN O
 
@@ -5734,7 +5673,7 @@ children NN NN O
 
 She NN NN O
 is NN NN O
-menopausal NN NN O
+menopausal NNP NNP B-DIAGNOSIS
 . NN NN O
 
 Her NN NN O
@@ -5781,11 +5720,11 @@ Her NN NN O
 family NN NN O
 history NN NN O
 is NN NN O
-negative NN NN O
-for NN NN O
-any NN NN O
-psychologic NN NN O
-problems NN NN O
+negative NNP NNP B-NEGATIVE
+for NNP NNP I-NEGATIVE
+any NNP NNP I-NEGATIVE
+psychologic NNP NNP I-NEGATIVE
+problems NNP NNP I-NEGATIVE
 . NN NN O
 
 Her NN NN O
@@ -5799,10 +5738,10 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-15 NN NN O
-year NN NN O
-old NN NN O
-girl NN NN O
+15 NNP NNP B-AGE
+year NNP NNP B-AGE
+old NNP NNP B-AGE
+girl NNP NNP B-GENDER
 with NN NN O
 the NN NN O
 history NN NN O
@@ -5884,10 +5823,7 @@ diagnosed NN NN O
 with NN NN O
 the NN NN O
 migraine NNP NNP B-DIAGNOSIS
-<START_ NNP NNP I-DIAGNOSIS
-NER:DIAGNOSIS> NN NN O
-headache NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+headache NNP NNP I-DIAGNOSIS
 and NN NN O
 is NN NN O
 under NN NN O
@@ -5970,9 +5906,9 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-32-year-old NN NN O
+32-year-old NNP NNP B-AGE
 obese NNP NNP B-DIAGNOSIS
-woman NN NN O
+woman NNP NNP B-GENDER
 who NN NN O
 came NN NN O
 to NN NN O
@@ -6005,7 +5941,7 @@ apnea NNP NNP I-DIAGNOSIS
 , NN NN O
 PCO NNP NNP B-DIAGNOSIS
 and NN NN O
-dissatisfaction NN NN O
+dissatisfaction NNP NNP B-DIAGNOSIS
 with NN NN O
 her NN NN O
 body NN NN O
@@ -6037,9 +5973,9 @@ months NN NN O
 and NN NN O
 she NN NN O
 had NN NN O
-no NN NN O
-prior NN NN O
-pregnancies NN NN O
+no NNP NNP B-NEGATIVE
+prior NNP NNP I-NEGATIVE
+pregnancies NNP NNP I-NEGATIVE
 . NN NN O
 
 She NN NN O
@@ -6127,19 +6063,19 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-20 NN NN O
-year NN NN O
-old NN NN O
+20 NNP NNP B-AGE
+year NNP NNP I-AGE
+old NNP NNP I-AGE
 Caucasian NN NN O
-female NN NN O
+female NNP NNP B-GENDER
 presents NN NN O
 to NN NN O
 the NN NN O
 clinic NN NN O
 with NN NN O
-one-sided NN NN O
-vision NN NN O
-lost NN NN O
+one-sided NNP NNP B-DIAGNOSIS
+vision NNP NNP I-DIAGNOSIS
+lost NNP NNP I-DIAGNOSIS
 and NN NN O
 facial NNP NNP B-DIAGNOSIS
 weakness NNP NNP I-DIAGNOSIS
@@ -6165,10 +6101,10 @@ which NN NN O
 revealed NN NN O
 a NN NN O
 single NN NN O
-plaque NN NN O
-in NN NN O
-the NN NN O
-brainstem NN NN O
+plaque NNP NNP B-DIAGNOSIS
+in NNP NNP I-DIAGNOSIS
+the NNP NNP I-DIAGNOSIS
+brainstem NNP NNP I-DIAGNOSIS
 . NN NN O
 
 After NN NN O
@@ -6191,12 +6127,12 @@ second NN NN O
 MRI NN NN O
 revealed NN NN O
 another NN NN O
-lesion NN NN O
-in NN NN O
-the NN NN O
-left NN NN O
-cerebral NN NN O
-hemisphere NN NN O
+lesion NNP NNP B-DIAGNOSIS
+in NNP NNP I-DIAGNOSIS
+the NNP NNP I-DIAGNOSIS
+left NNP NNP I-DIAGNOSIS
+cerebral NNP NNP I-DIAGNOSIS
+hemisphere NNP NNP I-DIAGNOSIS
 . NN NN O
 
 The NN NN O
@@ -6306,14 +6242,14 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-35-year-old NN NN O
-woman NN NN O
+35-year-old NNP NNP B-AGE
+woman NNP NNP B-GENDER
 with NN NN O
 myasthenia NNP NNP B-DIAGNOSIS
 gravis NNP NNP I-DIAGNOSIS
-, NN NN O
-class NN NN O
-IIa NN NN O
+, NNP NNP I-DIAGNOSIS
+class NNP NNP I-DIAGNOSIS
+IIa NNP NNP I-DIAGNOSIS
 . NN NN O
 
 She NN NN O
@@ -6450,9 +6386,9 @@ for NN NN O
 pregnancy NN NN O
 
 A NN NN O
-3-day-old NN NN O
+3-day-old NNP NNP B-AGE
 Asian NN NN O
-female NN NN O
+female NNP NNP B-GENDER
 infant NN NN O
 presents NN NN O
 with NN NN O
@@ -6539,22 +6475,22 @@ cm NN NN O
 . NN NN O
 
 Her NN NN O
-sclera NN NN O
-are NN NN O
-yellow NN NN O
+sclera NN NN B-DIAGNOSIS
+are NNP NNP I-DIAGNOSIS
+yellow NNP NNP I-DIAGNOSIS
 and NN NN O
 her NN NN O
-body NN NN O
-is NN NN O
-icteric NN NN O
+body NNP NNP B-DIAGNOSIS
+is NNP NNP I-DIAGNOSIS
+icteric NNP NNP I-DIAGNOSIS
 . NN NN O
 
-No NN NN O
-murmurs NN NN O
-or NN NN O
-any NN NN O
-other NN NN O
-abnormalities NN NN O
+No NNP NNP B-NEGATIVE
+murmurs NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+any NNP NNP I-NEGATIVE
+other NNP NNP I-NEGATIVE
+abnormalities NNP NNP I-NEGATIVE
 are NN NN O
 detected NN NN O
 in NN NN O
@@ -6628,10 +6564,7 @@ diagnosed NN NN O
 with NN NN O
 uncomplicated NN NN O
 neonatal NNP NNP B-DIAGNOSIS
-<START_ NNP NNP I-DIAGNOSIS
-NER:DIAGNOSIS> NN NN O
-jaundice NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+jaundice NNP NNP I-DIAGNOSIS
 that NN NN O
 may NN NN O
 require NN NN O
@@ -6642,10 +6575,10 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-60 NN NN O
-year NN NN O
-old NN NN O
-man NN NN O
+60 NNP NNP B-AGE
+year NNP NNP I-AGE
+old NNP NNP I-AGE
+man NNP NNP B-GENDER
 complaining NN NN O
 of NN NN O
 frequent NN NN O
@@ -6655,8 +6588,8 @@ generalized NN NN O
 bone NNP NNP B-DIAGNOSIS
 pain NNP NNP I-DIAGNOSIS
 and NN NN O
-difficulty NN NN O
-chewing NN NN O
+difficulty NNP NNP B-DIAGNOSIS
+chewing NNP NNP I-DIAGNOSIS
 that NN NN O
 started NN NN O
 6 NN NN O
@@ -6722,10 +6655,10 @@ as NN NN O
 well NN NN O
 as NN NN O
 an NN NN O
-increase NN NN O
-in NN NN O
-urinary NN NN O
-pyridinoline NN NN O
+increase NNP NNP B-DIAGNOSIS
+in NNP NNP I-DIAGNOSIS
+urinary NNP NNP I-DIAGNOSIS
+pyridinoline NNP NNP I-DIAGNOSIS
 . NN NN O
 
 His NN NN O
@@ -6786,8 +6719,8 @@ therapy NN NN O
 . NN NN O
 
 A NN NN O
-57-year NN NN O
-old NN NN O
+57-year NNP NNP B-AGE
+old NNP NNP I-AGE
 farmer NN NN O
 was NN NN O
 diagnosed NN NN O
@@ -6913,13 +6846,13 @@ But NN NN O
 he NN NN O
 still NN NN O
 has NN NN O
-difficulty NN NN O
-initiating NN NN O
-movements NN NN O
+difficulty NNP NNP B-DIAGNOSIS
+initiating NNP NNP I-DIAGNOSIS
+movements NNP NNP I-DIAGNOSIS
 , NN NN O
-stiffness NN NN O
+stiffness NNP NNP B-DIAGNOSIS
 and NN NN O
-slowness NN NN O
+slowness NNP NNP B-DIAGNOSIS
 in NN NN O
 general NN NN O
 . NN NN O
@@ -6950,10 +6883,10 @@ illicit NN NN O
 drugs NN NN O
 . NN NN O
 
-19 NN NN O
-yo NN NN O
+19 NNP NNP B-AGE
+yo NNP NNP I-AGE
 Hispanic NN NN O
-female NN NN O
+female NNP NNP B-GENDER
 G1P1 NN NN O
 at NN NN O
 32+ NN NN O
@@ -7038,10 +6971,10 @@ complaining NN NN O
 of NN NN O
 fatigue NNP NNP B-DIAGNOSIS
 but NN NN O
-no NN NN O
-fever NNP NNP B-DIAGNOSIS
-or NN NN O
-chills NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+fever NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+chills NNP NNP I-NEGATIVE
 . NN NN O
 
 She NN NN O
@@ -7049,33 +6982,30 @@ is NN NN O
 also NN NN O
 suffering NN NN O
 of NN NN O
-<START_N NNP NNP B-DIAGNOSIS
-ER:DIAGNOSIS> NN NN O
-headache NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+headache NNP NNP B-DIAGNOSIS
 s NN NN O
 with NN NN O
-no NN NN O
-vision NN NN O
-changes NN NN O
+no NNP NNP B-NEGATIVE
+vision NNP NNP I-NEGATIVE
+changes NNP NNP I-NEGATIVE
 . NN NN O
 
-No NN NN O
-shortness NNP NNP B-DIAGNOSIS
-of NNP NNP I-DIAGNOSIS
-breath NNP NNP I-DIAGNOSIS
-, NN NN O
-cough NNP NNP B-DIAGNOSIS
-, NN NN O
-chest NNP NNP B-DIAGNOSIS
-pain NNP NNP I-DIAGNOSIS
-, NN NN O
-orthopnea NNP NNP B-DIAGNOSIS
-and NN NN O
-palpitations NNP NNP B-DIAGNOSIS
-or NN NN O
-skin NNP NNP B-DIAGNOSIS
-rash NNP NNP I-DIAGNOSIS
+No NNP NNP B-NEGATIVE
+shortness NNP NNP I-NEGATIVE
+of NNP NNP I-NEGATIVE
+breath NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+cough NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+chest NNP NNP I-NEGATIVE
+pain NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+orthopnea NNP NNP I-NEGATIVE
+and NNP NNP I-NEGATIVE
+palpitations NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+skin NNP NNP I-NEGATIVE
+rash NNP NNP I-NEGATIVE
 were NN NN O
 observed NN NN O
 . NN NN O
@@ -7084,49 +7014,49 @@ Her NN NN O
 physical NN NN O
 exam NN NN O
 was NN NN O
-negative NN NN O
-for NN NN O
-abdominal NNP NNP B-DIAGNOSIS
-pain NNP NNP I-DIAGNOSIS
-, NN NN O
-change NN NN O
-in NN NN O
-bowel NN NN O
-habits NN NN O
-, NN NN O
-nausea NNP NNP B-DIAGNOSIS
-, NN NN O
-vomiting NNP NNP B-DIAGNOSIS
-, NN NN O
-dysuria NNP NNP B-DIAGNOSIS
-, NN NN O
-frequency NN NN O
-, NN NN O
-hematuria NNP NNP B-DIAGNOSIS
-or NN NN O
-frothy NN NN O
-urine NN NN O
+negative NNP NNP B-NEGATIVE
+for NNP NNP I-NEGATIVE
+abdominal NNP NNP I-NEGATIVE
+pain NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+change NNP NNP I-NEGATIVE
+in NNP NNP I-NEGATIVE
+bowel NNP NNP I-NEGATIVE
+habits NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+nausea NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+vomiting NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+dysuria NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+frequency NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+hematuria NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+frothy NNP NNP I-NEGATIVE
+urine NNP NNP I-NEGATIVE
 . NN NN O
 
-Leg NN NN O
-swelling NN NN O
+Leg NNP NNP B-DIAGNOSIS
+swelling NNO NNP I-DIAGNOSIS
 was NN NN O
 observed NN NN O
 with NN NN O
-no NN NN O
-arthralgia NNP NNP B-DIAGNOSIS
-or NN NN O
-back NNP NNP B-DIAGNOSIS
-pain NNP NNP I-DIAGNOSIS
+no NN NN B-NEGATIVE
+arthralgia NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+back NNP NNP I-NEGATIVE
+pain NNP NNP I-NEGATIVE
 . NN NN O
 
 She NN NN O
 has NN NN O
-no NN NN O
-specific NN NN O
-past NN NN O
-medical NN NN O
-issues NN NN O
+no NNP NNP B-NEGATIVE
+specific NNP NNP I-NEGATIVE
+past NNP NNP I-NEGATIVE
+medical NNP NNP I-NEGATIVE
+issues NNP NNP I-NEGATIVE
 and NN NN O
 only NN NN O
 uses NN NN O
@@ -7155,13 +7085,13 @@ alcohol NN NN O
 consumer NN NN O
 with NN NN O
 the NN NN O
-negative NN NN O
-history NN NN O
-of NN NN O
-smoking NN NN O
-or NN NN O
-drug NN NN O
-use NN NN O
+negative NNP NNP B-NEGATIVE
+history NNP NNP I-NEGATIVE
+of NNP NNP I-NEGATIVE
+smoking NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+drug NNP NNP I-NEGATIVE
+use NNP NNP I-NEGATIVE
 . NN NN O
 
 She NN NN O
@@ -7219,12 +7149,12 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-60-year-old NN NN O
-woman NN NN O
+60-year-old NNP NNP B-AGE
+woman NNP NNP B-GENDER
 admitted NN NN O
 to NN NN O
 the NN NN O
-stroke NNP NNP B-DIAGNOSIS
+stroke NN NN O
 department NN NN O
 with NN NN O
 a NN NN O
@@ -7310,34 +7240,31 @@ must NN NN O
 were NN NN O
 positive NN NN O
 for NN NN O
-Clostridium NN NN O
-difficile NN NN O
-toxin NN NN O
+Clostridium NNP NNP B-DIAGNOSIS
+difficile NNP NNP I-DIAGNOSIS
+toxin NNP NNP I-DIAGNOSIS
 . NN NN O
 
 The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-14-year-old NN NN O
-boy NN NN O
+14-year-old NNP NNP B-AGE
+boy NNP NNP B-GENDER
 complaining NN NN O
 of NN NN O
 scoliosis NNP NNP B-DIAGNOSIS
 and NN NN O
 back NNP NNP B-DIAGNOSIS
-<ST NNP NNP I-DIAGNOSIS
-ART_NER:DIAGNOSIS> NN NN O
-pain NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+pain NNP NNP I-DIAGNOSIS
 . NN NN O
 
 He NN NN O
 has NN NN O
-no NN NN O
-other NN NN O
-medical NN NN O
-condition NN NN O
+no NNP NNP B-NEGATIVE
+other NNP NNP I-NEGATIVE
+medical NNP NNP I-NEGATIVE
+condition NNP NNP I-NEGATIVE
 . NN NN O
 
 He NN NN O
@@ -7417,7 +7344,7 @@ a NN NN O
 well-dressed NN NN O
 and NN NN O
 well-nourished NN NN O
-adolescent NN NN O
+adolescent NNP NNP B-AGE
 who NN NN O
 is NN NN O
 alert NN NN O
@@ -7464,10 +7391,10 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-34-year-old NN NN O
+34-year-old NNP NNP B-AGE
 African NN NN O
 American NN NN O
-man NN NN O
+man NNP NNP B-GENDER
 with NN NN O
 the NN NN O
 known NN NN O
@@ -7483,10 +7410,7 @@ clinic NN NN O
 with NN NN O
 severe NN NN O
 bone NNP NNP B-DIAGNOSIS
-<ST NNP NNP I-DIAGNOSIS
-ART_NER:DIAGNOSIS> NN NN O
-pain NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+pain NNP NNP I-DIAGNOSIS
 . NN NN O
 
 The NN NN O
@@ -7565,7 +7489,7 @@ modulators NN NN O
 The NN NN O
 patient NN NN O
 is NN NN O
-afebrile NN NN O
+afebrile NNP NNP B-DIAGNOSIS
 within NN NN O
 the NN NN O
 normal NN NN O
@@ -7585,12 +7509,12 @@ exam NN NN O
 
 He NN NN O
 has NN NN O
-no NN NN O
-positive NN NN O
-history NN NN O
-of NN NN O
-drug NNP NNP B-DIAGNOSIS
-allergy NNP NNP I-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+positive NNP NNP I-NEGATIVE
+history NNP NNP I-NEGATIVE
+of NNP NNP I-NEGATIVE
+drug NNP NNP I-NEGATIVE
+allergy NNP NNP I-NEGATIVE
 . NN NN O
 
 He NN NN O
@@ -7645,8 +7569,8 @@ Patient NN NN O
 A NN NN O
 is NN NN O
 a NN NN O
-30-year-old NN NN O
-male NN NN O
+30-year-old NNP NNP B-AGE
+male NNP NNP B-GENDER
 who NN NN O
 was NN NN O
 admitted NN NN O
@@ -7659,9 +7583,9 @@ days NN NN O
 of NN NN O
 cough NNP NNP B-DIAGNOSIS
 , NN NN O
-profuse NN NN O
-nocturnal NN NN O
-sweating NN NN O
+profuse NNP NNP B-DIAGNOSIS
+nocturnal NNP NNP I-DIAGNOSIS
+sweating NNP NNP I-DIAGNOSIS
 and NN NN O
 loss NNP NNP B-DIAGNOSIS
 of NNP NNP I-DIAGNOSIS
@@ -7774,8 +7698,8 @@ positive NN NN O
 sputum NN NN O
 culture NN NN O
 for NN NN O
-Mycobacterium NN NN O
-tuberculosis NN NN O
+Mycobacterium NNP NNP B-DIAGNOSIS
+tuberculosis NNP NNP I-DIAGNOSIS
 which NN NN O
 are NN NN O
 sensitive NN NN O
@@ -7839,23 +7763,23 @@ mg/dlESR NN NN O
 mm/hr NN NN O
 
 A NN NN O
-62-year-old NN NN O
+62-year-old NNP NNP B-AGE
 African-American NN NN O
-man NN NN O
+man NNP NNP B-GENDER
 presented NN NN O
 with NN NN O
 left NN NN O
 upper NN NN O
 and NN NN O
 lower NN NN O
-extremity NN NN O
-weakness NN NN O
+extremity NNP NNP B-DIAGNOSIS
+weakness NNP NNP I-DIAGNOSIS
 , NN NN O
 associated NN NN O
 with NN NN O
-dark NN NN O
-visual NN NN O
-spot NN NN O
+dark NNP NNP B-DIAGNOSIS
+visual NNP NNP I-DIAGNOSIS
+spot NNP NNP I-DIAGNOSIS
 in NN NN O
 right NN NN O
 eye NN NN O
@@ -7867,33 +7791,33 @@ numbness NNP NNP B-DIAGNOSIS
 facial NNP NNP B-DIAGNOSIS
 drop NNP NNP I-DIAGNOSIS
 and NN NN O
-slurred NN NN O
-speech NN NN O
+slurred NNP NNP B-DIAGNOSIS
+speech NNP NNP I-DIAGNOSIS
 . NN NN O
 
 He NN NN O
-denied NN NN O
-dyspnea NNP NNP B-DIAGNOSIS
-, NN NN O
-headache NNP NNP B-DIAGNOSIS
-, NN NN O
-palpitations NNP NNP B-DIAGNOSIS
-, NN NN O
-chest NNP NNP B-DIAGNOSIS
-pain NNP NNP I-DIAGNOSIS
-, NN NN O
-fever NNP NNP B-DIAGNOSIS
-, NN NN O
-dizziness NNP NNP B-DIAGNOSIS
-, NN NN O
-bowel NNP NNP B-DIAGNOSIS
-or NNP NNP I-DIAGNOSIS
-urinary NNP NNP B-DIAGNOSIS
-incontinence NNP NNP I-DIAGNOSIS
-, NN NN O
-loss NNP NNP B-DIAGNOSIS
-of NNP NNP I-DIAGNOSIS
-consciousness NNP NNP I-DIAGNOSIS
+denied NNP NNP B-NEGATIVE
+dyspnea NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+headache NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+palpitations NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+chest NNP NNP I-NEGATIVE
+pain NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+fever NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+dizziness NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+bowel NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+urinary NNP NNP I-NEGATIVE
+incontinence NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+loss NNP NNP I-NEGATIVE
+of NNP NNP I-NEGATIVE
+consciousness NNP NNP I-NEGATIVE
 . NN NN O
 
 His NN NN O
@@ -8004,10 +7928,10 @@ head NN NN O
 and NN NN O
 neck NN NN O
 reported NN NN O
-no NN NN O
-acute NN NN O
-intracranial NN NN O
-findings NN NN O
+no NNP NNP B-NEGATIVE
+acute NNP NNP I-NEGATIVE
+intracranial NNP NNP I-NEGATIVE
+findings NNP NNP I-NEGATIVE
 . NN NN O
 
 Intravenous NN NN O
@@ -8070,9 +7994,9 @@ ganglia NN NN O
 Fernandez NN NN O
 is NN NN O
 a NN NN O
-41 NN NN O
-year NN NN O
-man NN NN O
+41 NNP NNP B-AGE
+year NNP NNP I-AGE
+man NNP NNP B-GENDER
 who NN NN O
 is NN NN O
 a NN NN O
@@ -8095,9 +8019,9 @@ Physical NN NN O
 exam NN NN O
 revealed NN NN O
 localized NN NN O
-scaling NN NN O
+scaling NNP NNP B-DIAGNOSIS
 and NN NN O
-maceration NN NN O
+maceration NNP NNP B-DIAGNOSIS
 between NN NN O
 the NN NN O
 third NN NN O
@@ -8111,9 +8035,9 @@ toe NN NN O
 
 It NN NN O
 became NN NN O
-inflamed NN NN O
+inflamed NNP NNP B-DIAGNOSIS
 and NN NN O
-sore NN NN O
+sore NNP NNP B-DIAGNOSIS
 , NN NN O
 with NN NN O
 mild NN NN O
@@ -8133,10 +8057,10 @@ unaffected NN NN O
 
 There NN NN O
 is NN NN O
-no NN NN O
-pus NNP NNP B-DIAGNOSIS
-or NN NN O
-tearing NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+pus NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+tearing NNP NNP I-NEGATIVE
 in NN NN O
 the NN NN O
 affected NN NN O
@@ -8154,16 +8078,16 @@ the NN NN O
 lesion NN NN O
 and NN NN O
 has NN NN O
-no NN NN O
-positive NN NN O
-history NN NN O
-for NN NN O
-any NN NN O
-underlying NN NN O
-disease NN NN O
-such NN NN O
-as NN NN O
-DM NN NN O
+no NNP NNP B-NEGATIVE
+positive NNP NNP I-NEGATIVE
+history NNP NNP I-NEGATIVE
+for NNP NNP I-NEGATIVE
+any NNP NNP I-NEGATIVE
+underlying NNP NNP I-NEGATIVE
+disease NNP NNP I-NEGATIVE
+such NNP NNP I-NEGATIVE
+as NNP NNP I-NEGATIVE
+DM NNP NNP I-NEGATIVE
 . NN NN O
 
 He NN NN O
@@ -8191,7 +8115,7 @@ in NN NN O
 her NN NN O
 mother NN NN O
 and NN NN O
-MI NN NN O
+MI NNP NNP B-DIAGNOSIS
 in NN NN O
 her NN NN O
 father NN NN O
@@ -8234,9 +8158,9 @@ by NN NN O
 the NN NN O
 observation NN NN O
 of NN NN O
-segmented NN NN O
-fungal NN NN O
-hyphae NN NN O
+segmented NNP NNP B-DIAGNOSIS
+fungal NNP NNP I-DIAGNOSIS
+hyphae NNP NNP I-DIAGNOSIS
 during NN NN O
 a NN NN O
 microscopic NN NN O
@@ -8247,10 +8171,10 @@ examination NN NN O
 . NN NN O
 
 A NN NN O
-12 NN NN O
-year NN NN O
-old NN NN O
-girl NN NN O
+12 NNP NNP B-AGE
+year NNP NNP I-AGE
+old NNP NNP I-AGE
+girl NNP NNP B-GENDER
 came NN NN O
 to NN NN O
 the NN NN O
@@ -8330,9 +8254,9 @@ in NN NN O
 stage NN NN O
 1 NN NN O
 with NN NN O
-no NN NN O
-course NN NN O
-hair NN NN O
+no NNP NNP B-NEGATIVE
+course NNP NNP I-NEGATIVE
+hair NNP NNP I-NEGATIVE
 in NN NN O
 the NN NN O
 pubic NN NN O
@@ -8356,10 +8280,10 @@ study NN NN O
 . NN NN O
 
 A NN NN O
-5 NN NN O
-months NN NN O
-old NN NN O
-male NN NN O
+5 NNP NNP B-AGE
+months NNP NNP I-AGE
+old NNP NNP I-AGE
+male NNP NNP B-GENDER
 brought NN NN O
 to NN NN O
 the NN NN O
@@ -8370,17 +8294,17 @@ with NN NN O
 the NN NN O
 complaint NN NN O
 of NN NN O
-empty NN NN O
-scrotum NN NN O
-at NN NN O
-the NN NN O
-right NN NN O
-side NN NN O
+empty NNP NNP B-DIAGNOSIS
+scrotum NNP NNP I-DIAGNOSIS
+at NNP NNP I-DIAGNOSIS
+the NNP NNP I-DIAGNOSIS
+right NNP NNP I-DIAGNOSIS
+side NNP NNP I-DIAGNOSIS
 . NN NN O
 
 The NN NN O
 baby NN NN O
-boy NN NN O
+boy NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 first NN NN O
@@ -8390,9 +8314,9 @@ was NN NN O
 born NN NN O
 at NN NN O
 the NN NN O
-age NN NN O
-of NN NN O
-38 NN NN O
+age NNP NNP B-AGE
+of NNP NNP I-AGE
+38 NNP NNP I-AGE
 weeks NN NN O
 with NN NN O
 NVD NNP NNP B-DIAGNOSIS
@@ -8407,7 +8331,7 @@ mother NN NN O
 had NN NN O
 a NN NN O
 normal NN NN O
-pregnancy NN NN O
+pregnancy NNP NNP B-DIAGNOSIS
 with NN NN O
 no NN NN O
 complication NN NN O
@@ -8447,9 +8371,9 @@ cm NN NN O
 
 He NN NN O
 has NN NN O
-no NN NN O
-developmental NNP NNP B-DIAGNOSIS
-delay NNP NNP I-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+developmental NNP NNP I-NEGATIVE
+delay NNP NNP I-NEGATIVE
 in NN NN O
 the NN NN O
 physical NN NN O
@@ -8459,15 +8383,15 @@ assessment NN NN O
 There NN NN O
 is NN NN O
 a NN NN O
-palpable NN NN O
-testis NN NN O
+palpable NNP NNP B-DIAGNOSIS
+testis NNP NNP I-DIAGNOSIS
 is NN NN O
 the NN NN O
 left NN NN O
 scrotum NN NN O
 with NN NN O
-non-palpable NN NN O
-testis NN NN O
+non-palpable NNP NNP B-DIAGNOSIS
+testis NNP NNP I-DIAGNOSIS
 in NN NN O
 the NN NN O
 right NN NN O
@@ -8494,20 +8418,20 @@ diagnostic NN NN O
 laparoscopy NN NN O
 showed NN NN O
 an NN NN O
-abdominal NN NN O
-undescended NN NN O
-testis NN NN O
+abdominal NNP NNP B-DIAGNOSIS
+undescended NNP NNP I-DIAGNOSIS
+testis NNP NNP I-DIAGNOSIS
 . NN NN O
 
 The NN NN O
 patients NN NN O
 is NN NN O
 a NN NN O
-25-year-old NN NN O
+25-year-old NNP NNP B-AGE
 G1 NN NN O
 P1 NN NN O
-pregnant NN NN O
-woman NN NN O
+pregnant NNP NNP B-DIAGNOSIS
+woman NNP NNP B-GENDER
 who NN NN O
 is NN NN O
 24W3D NN NN O
@@ -8591,20 +8515,20 @@ angles NN NN O
 
 She NN NN O
 has NN NN O
-no NN NN O
-history NN NN O
-of NN NN O
-recurrent NN NN O
-UTI NNP NNP B-DIAGNOSIS
-prior NN NN O
-to NN NN O
-her NN NN O
-pregnancy NN NN O
-or NN NN O
-any NN NN O
-other NN NN O
-underlying NN NN O
-disease NN NN O
+no NNP NNP B-NEGATIVE
+history NNP NNP I-NEGATIVE
+of NNP NNP I-NEGATIVE
+recurrent NNP NNP I-NEGATIVE
+UTI NNP NNP I-NEGATIVE
+prior NNP NNP I-NEGATIVE
+to NNP NNP I-NEGATIVE
+her NNP NNP I-NEGATIVE
+pregnancy NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+any NNP NNP I-NEGATIVE
+other NNP NNP I-NEGATIVE
+underlying NNP NNP I-NEGATIVE
+disease NNP NNP I-NEGATIVE
 . NN NN O
 
 The NN NN O
@@ -8650,10 +8574,10 @@ count NN NN O
 . NN NN O
 
 A NN NN O
-34 NN NN O
-year NN NN O
-old NN NN O
-man NN NN O
+34 NNP NNP B-AGE
+year NNP NNP I-AGE
+old NNP NNP I-AGE
+man NNP NNP B-GENDER
 comes NN NN O
 to NN NN O
 the NN NN O
@@ -8729,8 +8653,8 @@ but NN NN O
 the NN NN O
 patient NN NN O
 has NN NN O
-no NN NN O
-fever NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+fever NNP NNP B-NEGATIVE
 . NN NN O
 
 Blood NN NN O
@@ -8803,8 +8727,8 @@ Negative NN NN O
 Patient NN NN O
 is NN NN O
 a NN NN O
-34-year-old NN NN O
-woman NN NN O
+34-year-old NNP NNP B-AGE
+woman NNP NNP B-GENDER
 from NN NN O
 Jordan NN NN O
 who NN NN O
@@ -8885,8 +8809,8 @@ PTH NN NN O
 ) NN NN O
 
 A NN NN O
-57-year-old NN NN O
-man NN NN O
+57-year-old NNP NNP B-AGE
+man NNP NNP B-GENDER
 was NN NN O
 admitted NN NN O
 to NN NN O
@@ -8911,15 +8835,15 @@ topography NN NN O
 showed NN NN O
 bilateral NN NN O
 multiple NN NN O
-infiltrates NN NN O
+infiltrates NNP NNP B-DIAGNOSIS
 in NN NN O
 the NN NN O
 upper NN NN O
 lobes NN NN O
 and NN NN O
-thickened NN NN O
-bronchial NN NN O
-walls NN NN O
+thickened NNP NNP B-DIAGNOSIS
+bronchial NNP NNP I-DIAGNOSIS
+walls NNP NNP I-DIAGNOSIS
 . NN NN O
 
 There NN NN O
@@ -8969,7 +8893,7 @@ ago NN NN O
 
 His NN NN O
 Birmingham NN NN O
-Vasculitis NNP NNP B-DIAGNOSIS
+Vasculitis NN NN O
 Activity NN NN O
 Score NN NN O
 ( NN NN O
@@ -9001,12 +8925,12 @@ showed NN NN O
 the NN NN O
 results NN NN O
 bellow:A NN NN O
-wellbeing NN NN O
+wellbeing NNP NNP B-DIAGNOSIS
 , NN NN O
-well-nourished NN NN O
+well-nourished NNP NNP B-DIAGNOSIS
 man NN NN O
 , NN NN O
-non-icteric NN NN O
+non-icteric NNP NNP B-DIAGNOSIS
 , NN NN O
 cooperative NN NN O
 and NN NN O
@@ -9057,9 +8981,9 @@ mm/hrMPO-ANCA NN NN O
 EU NN NN O
 
 A NN NN O
-22-year-old NN NN O
+22-year-old NNP NNP B-AGE
 Caucasian NN NN O
-man NN NN O
+man NNP NNP B-GENDER
 came NN NN O
 to NN NN O
 the NN NN O
@@ -9068,10 +8992,7 @@ with NN NN O
 a NN NN O
 history NN NN O
 of NN NN O
-<STAR NNP NNP B-DIAGNOSIS
-T_NER:DIAGNOSIS> NN NN O
-tremors NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+tremors NNP NNP B-DIAGNOSIS
 since NN NN O
 a NN NN O
 year NN NN O
@@ -9110,9 +9031,9 @@ rest NN NN O
 . NN NN O
 
 The NN NN O
-Kayser-Fleischer NN NN O
-' NN NN O
-ring NN NN O
+Kayser-Fleischer NNP NNP B-DIAGNOSIS
+' NNP NNP I-DIAGNOSIS
+ring NNP NNP I-DIAGNOSIS
 was NN NN O
 detected NN NN O
 in NN NN O
@@ -9209,8 +9130,8 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-41-year-old NN NN O
-man NN NN O
+41-year-old NNP NNP B-AGE
+man NNP NNP B-GENDER
 and NN NN O
 a NN NN O
 known NN NN O
@@ -9276,8 +9197,8 @@ brain NN NN O
 MRI NN NN O
 confirmed NN NN O
 the NN NN O
-residual NN NN O
-pituitary NNP NNP B-DIAGNOSIS
+residual NNP NNP B-DIAGNOSIS
+pituitary NNP NNP I-DIAGNOSIS
 tumor NNP NNP I-DIAGNOSIS
 . NN NN O
 
@@ -9289,7 +9210,7 @@ is NN NN O
 only NN NN O
 significant NN NN O
 for NN NN O
-acromegaly NN NN O
+acromegaly NNP NNP B-DIAGNOSIS
 due NN NN O
 to NN NN O
 pituitary NNP NNP B-DIAGNOSIS
@@ -9316,9 +9237,9 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-41-year-old NN NN O
+41-year-old NNP NNP B-AGE
 obese NNP NNP B-DIAGNOSIS
-woman NN NN O
+woman NNP NNP B-GENDER
 coming NN NN O
 to NN NN O
 the NN NN O
@@ -9326,10 +9247,7 @@ emergency NN NN O
 room NN NN O
 with NN NN O
 abdominal NNP NNP B-DIAGNOSIS
-<ST NNP NNP I-DIAGNOSIS
-ART_NER:DIAGNOSIS> NN NN O
-pain NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+pain NNP NNP I-DIAGNOSIS
 and NN NN O
 vomiting NNP NNP B-DIAGNOSIS
 . NN NN O
@@ -9367,10 +9285,10 @@ smoke NN NN O
 
 She NN NN O
 has NN NN O
-no NN NN O
-history NN NN O
-of NN NN O
-allergies NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+history NNP NNP I-NEGATIVE
+of NNP NNP I-NEGATIVE
+allergies NNP NNP I-NEGATIVE
 and NN NN O
 uses NN NN O
 only NN NN O
@@ -9466,7 +9384,7 @@ scan NN NN O
 revealed NN NN O
 acute NN NN O
 edematous NNP NNP B-DIAGNOSIS
-interstitial NNP NNP B-DIAGNOSIS
+interstitial NNP NNP I-DIAGNOSIS
 pancreatitis NNP NNP I-DIAGNOSIS
 with NN NN O
 enlarged NN NN O
@@ -9498,13 +9416,13 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-17-year-old NN NN O
-boy NN NN O
+17-year-old NNP NNP B-AGE
+boy NNP NNP B-GENDER
 complaining NN NN O
 of NN NN O
 severe NN NN O
-migratory NN NN O
-pain NNP NNP B-DIAGNOSIS
+migratory NNP NNP B-DIAGNOSIS
+pain NNP NNP I-DIAGNOSIS
 in NN NN O
 the NN NN O
 right NN NN O
@@ -9550,7 +9468,7 @@ was NN NN O
 elevated NN NN O
 with NN NN O
 dominant NN NN O
-neutrophils NN NN O
+neutrophils NNP NNP B-DIAGNOSIS
 . NN NN O
 
 CT NN NN O
@@ -9574,10 +9492,10 @@ laparoscopy NN NN O
 revealed NN NN O
 phlegmon NNP NNP B-DIAGNOSIS
 with NN NN O
-no NN NN O
-other NN NN O
-abdominal NNP NNP B-DIAGNOSIS
-abnormalities NNP NNP I-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+other NNP NNP I-NEGATIVE
+abdominal NNP NNP I-NEGATIVE
+abnormalities NNP NNP I-NEGATIVE
 . NN NN O
 
 He NN NN O
@@ -9598,8 +9516,8 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-15-year-old NN NN O
-boy NN NN O
+15-year-old NNP NNP B-AGE
+boy NNP NNP B-GENDER
 with NN NN O
 asthma NNP NNP B-DIAGNOSIS
 diagnosed NN NN O
@@ -9648,7 +9566,7 @@ diagnosis NN NN O
 of NN NN O
 severe NN NN O
 asthma NNP NNP B-DIAGNOSIS
-exacerbation NN NN O
+exacerbation NNP NNP I-DIAGNOSIS
 . NN NN O
 
 He NN NN O
@@ -9722,8 +9640,8 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-63-year-old NN NN O
-man NN NN O
+63-year-old NNP NNP B-AGE
+man NNP NNP B-GENDER
 presenting NN NN O
 to NN NN O
 the NN NN O
@@ -9748,8 +9666,8 @@ CT NN NN O
 scan NN NN O
 revealed NN NN O
 a NN NN O
-large NN NN O
-prostate NN NN O
+large NNP NNP B-DIAGNOSIS
+prostate NNP NNP I-DIAGNOSIS
 and NN NN O
 a NN NN O
 bladder NN NN O
@@ -9855,9 +9773,9 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-45-year-old NN NN O
+45-year-old NNP NNP B-AGE
 postmenopausal NN NN O
-woman NN NN O
+woman NNP NNP B-GENDER
 with NN NN O
 cytologically NN NN O
 confirmed NN NN O
@@ -9906,8 +9824,8 @@ CXR NN NN O
 was NN NN O
 remarkable NN NN O
 for NN NN O
-metastatic NN NN O
-lesions NN NN O
+metastatic NNP NNP B-DIAGNOSIS
+lesions NNP NNP I-DIAGNOSIS
 . NN NN O
 
 The NN NN O
@@ -9958,8 +9876,8 @@ chemotherapy NN NN O
 . NN NN O
 
 A NN NN O
-46-year-old NN NN O
-man NN NN O
+46-year-old NNP NNP B-AGE
+man NNP NNP B-GENDER
 presents NN NN O
 with NN NN O
 dizziness NNP NNP B-DIAGNOSIS
@@ -9977,22 +9895,22 @@ of NN NN O
 CAD NNP NNP B-DIAGNOSIS
 , NN NN O
 but NN NN O
-no NN NN O
-other NN NN O
-cardiovascular NN NN O
-risk NN NN O
-factors NN NN O
-such NN NN O
-as NN NN O
-smoking NN NN O
-, NN NN O
-high NN NN O
-blood NN NN O
-pressure NN NN O
-, NN NN O
-and NN NN O
-diabetes NNP NNP B-DIAGNOSIS
-mellitus NNP NNP I-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+other NNP NNP I-NEGATIVE
+cardiovascular NNP NNP I-NEGATIVE
+risk NNP NNP I-NEGATIVE
+factors NNP NNP I-NEGATIVE
+such NNP NNP I-NEGATIVE
+as NNP NNP I-NEGATIVE
+smoking NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+high NNP NNP I-NEGATIVE
+blood NNP NNP I-NEGATIVE
+pressure NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+and NNP NNP I-NEGATIVE
+diabetes NNP NNP I-NEGATIVE
+mellitus NNP NNP I-NEGATIVE
 and NN NN O
 is NN NN O
 physically NN NN O
@@ -10034,16 +9952,18 @@ normal NN NN O
 limits.The NN NN O
 patient NN NN O
 reported NN NN O
-no NN NN O
-use NN NN O
-of NN NN O
-lipid-lowering NN NN O
-medications.Neck NN NN O
+no NNP NNP B-NEGATIVE
+use NNP NNP I-NEGATIVE
+of NNP NNP I-NEGATIVE
+lipid-lowering NNP NNP I-NEGATIVE
+medications NNP NNP I-NEGATIVE
+. NN NN O
+Neck NN NN O
 auscultation NN NN O
 revealed NN NN O
 a NN NN O
-systolic NN NN O
-murmur NN NN O
+systolic NNP NNP B-DIAGNOSIS
+murmur NNP NNP I-DIAGNOSIS
 3+/6+ NN NN O
 in NN NN O
 the NN NN O
@@ -10062,8 +9982,8 @@ carotid NN NN O
 arteries NN NN O
 , NN NN O
 revealed NN NN O
-severe NN NN O
-stenosis NN NN O
+severe NNP NNP B-DIAGNOSIS
+stenosis NNP NNP I-DIAGNOSIS
 in NN NN O
 the NN NN O
 left NN NN O
@@ -10077,7 +9997,7 @@ as NN NN O
 well NN NN O
 as NN NN O
 moderate NN NN O
-stenosis NN NN O
+stenosis NNP NNP B-DIAGNOSIS
 in NN NN O
 the NN NN O
 right NN NN O
@@ -10130,7 +10050,7 @@ was NN NN O
 37.37 cm/s NN NN O
 . NN NN O
 
-Plaque NN NN O
+Plaque NNP NNP B-DIAGNOSIS
 was NN NN O
 observed NN NN O
 in NN NN O
@@ -10190,9 +10110,9 @@ surfaces NN NN O
 . NN NN O
 
 A NN NN O
-54-year-old NN NN O
+54-year-old NNP NNP B-AGE
 obese NNP NNP B-DIAGNOSIS
-woman NN NN O
+woman NNP NNP B-GENDER
 admitted NN NN O
 to NN NN O
 the NN NN O
@@ -10200,10 +10120,7 @@ emergency NN NN O
 department NN NN O
 with NN NN O
 abdominal NNP NNP B-DIAGNOSIS
-<ST NNP NNP I-DIAGNOSIS
-ART_NER:DIAGNOSIS> NN NN O
-pain NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+pain NNP NNP I-DIAGNOSIS
 that NN NN O
 started NN NN O
 4 NN NN O
@@ -10217,10 +10134,7 @@ vomiting NNP NNP B-DIAGNOSIS
 
 The NN NN O
 epigastric NNP NNP B-DIAGNOSIS
-<ST NNP NNP I-DIAGNOSIS
-ART_NER:DIAGNOSIS> NN NN O
-pain NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+pain NNP NNP I-DIAGNOSIS
 radiates NN NN O
 to NN NN O
 the NN NN O
@@ -10269,7 +10183,7 @@ children NN NN O
 and NN NN O
 she NN NN O
 is NN NN O
-menopausal NN NN O
+menopausal NNP NNP B-DIAGNOSIS
 . NN NN O
 
 She NN NN O
@@ -10318,9 +10232,9 @@ an NN NN O
 obese NNP NNP B-DIAGNOSIS
 woman NN NN O
 with NN NN O
-no NN NN O
-acute NN NN O
-distress NN NN O
+no NNP NNP B-NEGATIVE
+acute NNP NNP I-NEGATIVE
+distress NNP NNP I-NEGATIVE
 . NN NN O
 
 On NN NN O
@@ -10328,8 +10242,8 @@ palpation NN NN O
 , NN NN O
 she NN NN O
 experiences NN NN O
-epigastric NN NN O
-tenderness NNP NNP B-DIAGNOSIS
+epigastric NNP NNP B-DIAGNOSIS
+tenderness NNP NNP I-DIAGNOSIS
 and NN NN O
 tenderness NNP NNP B-DIAGNOSIS
 in NN NN O
@@ -10352,8 +10266,8 @@ analysis NN NN O
 is NN NN O
 remarkable NN NN O
 for NN NN O
-elevated NN NN O
-ESR NN NN O
+elevated NNP NNP B-DIAGNOSIS
+ESR NNP NNP B-DIAGNOSIS
 and NN NN O
 leukocytosis NNP NNP B-DIAGNOSIS
 with NN NN O
@@ -10368,11 +10282,11 @@ revealed NN NN O
 several NN NN O
 gallstones NNP NNP B-DIAGNOSIS
 , NN NN O
-biliary NN NN O
-sludge NN NN O
+biliary NNP NNP B-DIAGNOSIS
+sludge NNP NNP I-DIAGNOSIS
 and NN NN O
-CBD NN NN O
-stones NN NN O
+CBD NNP NNP B-DIAGNOSIS
+stones NNP NNP I-DIAGNOSIS
 . NN NN O
 
 The NN NN O
@@ -10386,8 +10300,8 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-55-year-old NN NN O
-man NN NN O
+55-year-old NNP NNP B-AGE
+man NNP NNP B-GENDER
 diagnosed NN NN O
 with NN NN O
 HCV NNP NNP B-DIAGNOSIS
@@ -10397,9 +10311,9 @@ ago NN NN O
 and NN NN O
 the NN NN O
 recent NN NN O
-coinfection NN NN O
-with NN NN O
-HBV NN NN O
+coinfection NNP NNP B-DIAGNOSIS
+with NNP NNP I-DIAGNOSIS
+HBV NNP NNP I-DIAGNOSIS
 . NN NN O
 
 His NN NN O
@@ -10446,25 +10360,25 @@ RNA NN NN O
 tests NN NN O
 and NN NN O
 a NN NN O
-positive NN NN O
-enzyme NN NN O
-immunoassay NN NN O
-for NN NN O
-anti NN NN O
-- NN NN O
-HCV NNP NNP B-DIAGNOSIS
-- NN NN O
-antibodies NN NN O
+positive NNP NNP B-DIAGNOSIS
+enzyme NNP NNP I-DIAGNOSIS
+immunoassay NNP NNP I-DIAGNOSIS
+for NNP NNP I-DIAGNOSIS
+anti NNP NNP I-DIAGNOSIS
+- NNP NNP I-DIAGNOSIS
+HCV NNP NNP I-DIAGNOSIS
+- NNP NNP I-DIAGNOSIS
+antibodies NNP NNP I-DIAGNOSIS
 . NN NN O
 
 The NN NN O
 recent NN NN O
 biopsy NN NN O
 was NN NN O
-negative NN NN O
-for NN NN O
-hepatocellular NNP NNP B-DIAGNOSIS
-carcinoma NNP NNP I-DIAGNOSIS
+negative NNP NNP B-NEGATIVE
+for NNP NNP I-NEGATIVE
+hepatocellular NNP NNP I-NEGATIVE
+carcinoma NNP NNP I-NEGATIVE
 and NN NN O
 was NN NN O
 only NN NN O
@@ -10482,38 +10396,38 @@ hepatitis NNP NNP I-DIAGNOSIS
 
 There NN NN O
 is NN NN O
-no NN NN O
-evidence NN NN O
-of NN NN O
-alcoholic NNP NNP B-DIAGNOSIS
-liver NNP NNP I-DIAGNOSIS
-disease NNP NNP I-DIAGNOSIS
-, NN NN O
-bleeding NNP NNP B-DIAGNOSIS
-from NN NN O
-esophageal NNP NNP B-DIAGNOSIS
-varices NNP NNP I-DIAGNOSIS
-, NN NN O
-hemochromatosis NNP NNP B-DIAGNOSIS
-, NN NN O
-autoimmune NNP NNP B-DIAGNOSIS
-hepatitis NNP NNP I-DIAGNOSIS
-, NN NN O
-or NN NN O
-metabolic NNP NNP B-DIAGNOSIS
-liver NNP NNP I-DIAGNOSIS
-disease NNP NNP I-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+evidence NNP NNP I-NEGATIVE
+of NNP NNP I-NEGATIVE
+alcoholic NNP NNP I-NEGATIVE
+liver NNP NNP I-NEGATIVE
+disease NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+bleeding NNP NNP I-NEGATIVE
+from NNP NNP I-NEGATIVE
+esophageal NNP NNP I-NEGATIVE
+varices NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+hemochromatosis NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+autoimmune NNP NNP I-NEGATIVE
+hepatitis NNP NNP I-NEGATIVE
+, NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+metabolic NNP NNP I-NEGATIVE
+liver NNP NNP I-NEGATIVE
+disease NNP NNP I-NEGATIVE
 . NN NN O
 
 He NN NN O
 is NN NN O
 an NN NN O
 alert NN NN O
-male NN NN O
+male NNP NNP B-GENDER
 with NN NN O
-no NN NN O
-acute NN NN O
-distress NN NN O
+no NNP NNP B-NEGATIVE
+acute NNP NNP I-NEGATIVE
+distress NNP NNP I-NEGATIVE
 . NN NN O
 
 His NN NN O
@@ -10535,10 +10449,10 @@ abdomen NN NN O
 is NN NN O
 soft NN NN O
 with NN NN O
-no NN NN O
-ascites NNP NNP B-DIAGNOSIS
-or NN NN O
-tenderness NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+ascites NNP NNP I-NEGATIVE
+or NNP NNP I-NEGATIVE
+tenderness NNP NNP I-NEGATIVE
 . NN NN O
 
 The NN NN O
@@ -10547,15 +10461,15 @@ extremities NN NN O
 are NN NN O
 normal NN NN O
 with NN NN O
-no NN NN O
-edema NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+edema NNP NNP I-NEGATIVE
 . NN NN O
 
 The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-25-year-old NN NN O
+25-year-old NNP NNP B-GENDER
 man NN NN O
 with NN NN O
 type NNP NNP B-DIAGNOSIS
@@ -10594,13 +10508,13 @@ climbing NN NN O
 3 NN NN O
 floors NN NN O
 , NN NN O
-no NN NN O
-dyspnea NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+dyspnea NNP NNP I-NEGATIVE
 at NN NN O
 rest NN NN O
 and NN NN O
-no NN NN O
-angina NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+angina NNP NNP B-NEGATIVE
 ( NN NN O
 New NN NN O
 York NN NN O
@@ -10693,8 +10607,8 @@ mg/dlHDL NN NN O
 mg/dl NN NN O
 
 A NN NN O
-16-year-old NN NN O
-girl NN NN O
+16-year-old NNP NNP B-AGE
+girl NNP NNP B-GENDER
 came NN NN O
 to NN NN O
 the NN NN O
@@ -10751,18 +10665,18 @@ results NN NN O
 were NN NN O
 remarkable NN NN O
 for NN NN O
-high NN NN O
-TSH NN NN O
-levels NN NN O
+high NNP NNP B-DIAGNOSIS
+TSH NNP NNP I-DIAGNOSIS
+levels NNP NNP I-DIAGNOSIS
 ( NN NN O
 15 NN NN O
 mU/L NN NN O
 ) NN NN O
 and NN NN O
-low NN NN O
-free NN NN O
-T4 NN NN O
-levels NN NN O
+low NNP NNP B-DIAGNOSIS
+free NNP NNP I-DIAGNOSIS
+T4 NNP NNP I-DIAGNOSIS
+levels NNP NNP I-DIAGNOSIS
 ( NN NN O
 0.18 NN NN O
 ng/dl NN NN O
@@ -10804,15 +10718,15 @@ Pap NN NN O
 smear NN NN O
 in NN NN O
 a NN NN O
-54-year-old NN NN O
-woman NN NN O
+54-year-old NNP NNP B-AGE
+woman NNP NNP B-GENDER
 revealed NN NN O
 abnormal NNP NNP B-DIAGNOSIS
 cervical NNP NNP I-DIAGNOSIS
 squamous NNP NNP I-DIAGNOSIS
 intraepithelial NNP NNP I-DIAGNOSIS
-/ NN NN O
-glandular NNP NNP B-DIAGNOSIS
+/ NNP NNP I-DIAGNOSIS
+glandular NNP NNP I-DIAGNOSIS
 lesion NNP NNP I-DIAGNOSIS
 . NN NN O
 
@@ -10820,7 +10734,7 @@ She NN NN O
 tested NN NN O
 positive NN NN O
 for NN NN O
-HPV NN NN O
+HPV NNP NNP B-DIAGNOSIS
 
 16 NN NN O
 . NN NN O
@@ -10839,7 +10753,7 @@ children NN NN O
 
 She NN NN O
 is NN NN O
-menopausal NN NN O
+menopausal NNP NNP B-DIAGNOSIS
 and NN NN O
 uses NN NN O
 no NN NN O
@@ -10870,8 +10784,8 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-23-year-old NN NN O
-man NN NN O
+23-year-old NNP NNP B-AGE
+man NNP NNP B-GENDER
 who NN NN O
 came NN NN O
 to NN NN O
@@ -10919,9 +10833,9 @@ His NN NN O
 blood NN NN O
 tests NN NN O
 revealed NN NN O
-elevated NN NN O
-lactate NN NN O
-dehydrogenase NN NN O
+elevated NNP NNP B-DIAGNOSIS
+lactate NNP NNP I-DIAGNOSIS
+dehydrogenase NNP NNP I-DIAGNOSIS
 and NN NN O
 reduced NN NN O
 human NN NN O
@@ -10961,14 +10875,13 @@ been NN NN O
 previously NN NN O
 vaccinated NN NN O
 with NN NN O
-meningococcal NNP NNP B-DIAGNOSIS
+meningococcal NN NN O
 group NN NN O
 ACWY NN NN O
 conjugate NN NN O
 vaccine NN NN O
 and NN NN O
 meningococcal NN NN O
-</END_NER:DIAGNOSIS> NN NN O
 group NN NN O
 B NN NN O
 vaccine NN NN O
@@ -10983,9 +10896,9 @@ ADAMTS13 NN NN O
 . NN NN O
 
 A NN NN O
-67-year-old NN NN O
+67-year-old NNP NNP B-AGE
 healthy NN NN O
-woman NN NN O
+woman NNP NNP B-GENDER
 came NN NN O
 to NN NN O
 the NN NN O
@@ -11008,9 +10921,9 @@ rehab NN NN O
 center NN NN O
 and NN NN O
 has NN NN O
-no NN NN O
-underlying NN NN O
-disease NN NN O
+no NNP NNP B-NEGATIVE
+underlying NNP NNP I-NEGATIVE
+disease NNP NNP I-NEGATIVE
 . NN NN O
 
 It NN NN O
@@ -11024,7 +10937,7 @@ year NN NN O
 
 she NN NN O
 is NN NN O
-menopausal NN NN O
+menopausal NNP NNP B-DIAGNOSIS
 and NN NN O
 has NN NN O
 4 NN NN O
@@ -11066,8 +10979,8 @@ week NN NN O
 
 She NN NN O
 has NN NN O
-no NN NN O
-allergies NNP NNP B-DIAGNOSIS
+no NNP NNP B-NEGATIVE
+allergies NNP NNP I-NEGATIVE
 to NN NN O
 any NN NN O
 food NN NN O
@@ -11076,9 +10989,9 @@ drugs NN NN O
 . NN NN O
 
 A NN NN O
-46-year-old NN NN O
+46-year-old NNP NNP B-AGE
 Asian NN NN O
-woman NN NN O
+woman NNP NNP B-GENDER
 with NN NN O
 MDD NNP NNP B-DIAGNOSIS
 complains NN NN O
@@ -11086,7 +10999,7 @@ of NN NN O
 persistent NN NN O
 feelings NN NN O
 of NN NN O
-sadness NN NN O
+sadness NNP NNP B-DIAGNOSIS
 and NN NN O
 loss NNP NNP B-DIAGNOSIS
 of NNP NNP I-DIAGNOSIS
@@ -11117,9 +11030,9 @@ loss NNP NNP B-DIAGNOSIS
 of NNP NNP I-DIAGNOSIS
 energy NNP NNP I-DIAGNOSIS
 and NN NN O
-feelings NN NN O
-of NN NN O
-worthlessness NN NN O
+feelings NNP NNP B-DIAGNOSIS
+of NNP NNP I-DIAGNOSIS
+worthlessness NNP NNP I-DIAGNOSIS
 nearly NN NN O
 every NN NN O
 day NN NN O
@@ -11184,8 +11097,8 @@ She NN NN O
 also NN NN O
 has NN NN O
 some NN NN O
-digestive NN NN O
-issues NN NN O
+digestive NNP NNP B-DIAGNOSIS
+issues NNP NNP I-DIAGNOSIS
 recently NN NN O
 . NN NN O
 
@@ -11200,7 +11113,7 @@ children NN NN O
 
 She NN NN O
 is NN NN O
-menopausal NN NN O
+menopausal NNP NNP B-DIAGNOSIS
 . NN NN O
 
 Her NN NN O
@@ -11231,11 +11144,11 @@ Her NN NN O
 family NN NN O
 history NN NN O
 is NN NN O
-negative NN NN O
-for NN NN O
-any NN NN O
-psychologic NN NN O
-problems NN NN O
+negative NNP NNP B-NEGATIVE
+for NNP NNP I-NEGATIVE
+any NNP NNP I-NEGATIVE
+psychologic NNP NNP I-NEGATIVE
+problems NNP NNP I-NEGATIVE
 . NN NN O
 
 Her NN NN O

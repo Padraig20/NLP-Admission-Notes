@@ -4,9 +4,9 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-34-year-old NN NN O
+34-year-old NNP NNP B-AGE
 obese NNP NNP B-DIAGNOSIS
-woman NN NN O
+woman NNP NNP B-GENDER
 who NN NN O
 comes NN NN O
 to NN NN O
@@ -43,7 +43,7 @@ she NN NN O
 unsuccessfully NN NN O
 used NN NN O
 anti NN NN O
-obesity NNP NNP B-DIAGNOSIS
+obesity NN NN O
 agents NN NN O
 and NN NN O
 appetite NN NN O
@@ -59,7 +59,7 @@ apnea NNP NNP I-DIAGNOSIS
 , NN NN O
 PCO NNP NNP B-DIAGNOSIS
 and NN NN O
-dissatisfaction NN NN O
+dissatisfaction NNP NNP B-DIAGNOSIS
 with NN NN O
 her NN NN O
 body NN NN O
@@ -95,9 +95,9 @@ months NN NN O
 and NN NN O
 she NN NN O
 had NN NN O
-no NN NN O
-prior NN NN O
-pregnancies NN NN O
+no NNP NNP B-NEGATIVE
+prior NNP NNP I-NEGATIVE
+pregnancies NNP NNP I-NEGATIVE
 . NN NN O
 
 She NN NN O
@@ -186,8 +186,8 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-16-year-old NN NN O
-girl NN NN O
+16-year-old NNP NNP B-AGE
+girl NNP NNP B-GENDER
 recently NN NN O
 diagnosed NN NN O
 with NN NN O
@@ -312,8 +312,8 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-3-day-old NN NN O
-female NN NN O
+3-day-old NNP NNP B-AGE
+female NNP NNP B-GENDER
 infant NN NN O
 with NN NN O
 jaundice NNP NNP B-DIAGNOSIS
@@ -410,7 +410,9 @@ spleen NN NN O
 are NN NN O
 normal NN NN O
 to NN NN O
-palpation.Laboratory NN NN O
+palpation NN NN O
+. NN NN O
+Laboratory NN NN O
 results NN NN O
 are NN NN O
 as NN NN O
@@ -460,15 +462,14 @@ count NN NN O
 within NN NN O
 the NN NN O
 normal NN NN O
-range.She NN NN O
+range NN NN O
+. NN NN O
+She NN NN O
 is NN NN O
 diagnosed NN NN O
 with NN NN O
 neonatal NNP NNP B-DIAGNOSIS
-<START_ NNP NNP I-DIAGNOSIS
-NER:DIAGNOSIS> NN NN O
-jaundice NN NN O
-</END_NER:DIAGNOSIS> NN NN O
+jaundice NNP NNP I-DIAGNOSIS
 that NN NN O
 may NN NN O
 require NN NN O
@@ -479,8 +480,8 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-53-year-old NN NN O
-man NN NN O
+53-year-old NNP NNP B-AGE
+man NNP NNP B-GENDER
 complaining NN NN O
 of NN NN O
 frequent NN NN O
@@ -490,8 +491,8 @@ generalized NN NN O
 bone NNP NNP B-DIAGNOSIS
 pain NNP NNP I-DIAGNOSIS
 and NN NN O
-difficulty NN NN O
-chewing NN NN O
+difficulty NNP NNP B-DIAGNOSIS
+chewing NNP NNP I-DIAGNOSIS
 that NN NN O
 started NN NN O
 6 NN NN O
@@ -558,10 +559,10 @@ as NN NN O
 well NN NN O
 as NN NN O
 an NN NN O
-increase NN NN O
-in NN NN O
-urinary NN NN O
-pyridinoline NN NN O
+increase NNP NNP B-DIAGNOSIS
+in NNP NNP I-DIAGNOSIS
+urinary NNP NNP I-DIAGNOSIS
+pyridinoline NNP NNP I-DIAGNOSIS
 . NN NN O
 
 The NN NN O
@@ -602,18 +603,18 @@ bone NNP NNP I-DIAGNOSIS
 when NN NN O
 she NN NN O
 was NN NN O
-52 NN NN O
-years NN NN O
-old NN NN O
+52 NNP NNP B-AGE
+years NNP NNP I-AGE
+old NNP NNP I-AGE
 . NN NN O
 
 The NN NN O
 diagnosis NN NN O
 of NN NN O
-Paget's NN NN O
-Disease NN NN O
-of NN NN O
-Bone NN NN O
+Paget's NNP NNP B-DIAGNOSIS
+Disease NNP NNP I-DIAGNOSIS
+of NNP NNP I-DIAGNOSIS
+Bone NNP NNP I-DIAGNOSIS
 is NN NN O
 confirmed NN NN O
 and NN NN O
@@ -630,8 +631,8 @@ The NN NN O
 patient NN NN O
 is NN NN O
 a NN NN O
-55-year-old NN NN O
-man NN NN O
+55-year-old NNP NNP B-AGE
+man NNP NNP B-GENDER
 who NN NN O
 was NN NN O
 recently NN NN O
@@ -704,10 +705,10 @@ diagnosis NN NN O
 He NN NN O
 complains NN NN O
 of NN NN O
-shaking NN NN O
+shaking NNP NNP B-DIAGNOSIS
 and NN NN O
-slow NN NN O
-movement NN NN O
+slow NNP NNP B-DIAGNOSIS
+movement NNP NNP I-DIAGNOSIS
 . NN NN O
 
 He NN NN O
@@ -751,7 +752,7 @@ an NN NN O
 alert NN NN O
 and NN NN O
 cooperative NN NN O
-man NN NN O
+man NNP NNP B-GENDER
 who NN NN O
 does NN NN O
 not NN NN O

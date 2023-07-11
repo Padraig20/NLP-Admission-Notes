@@ -47,10 +47,10 @@ entities_first_row = entities.select(first("result").alias("entities"))
 tokens_first_row = tokens.select(first("result").alias("tokens"))
 joined_result = entities_first_row.crossJoin(tokens_first_row)
 
-from pyspark.sql.functions import posexplode
+from pyspark.sql.functions import posexplode, asc
 
 exploded_entities = entities.select(posexplode(entities.result).alias("pos", "entity"))
 exploded_tokens = tokens.select(posexplode(tokens.result).alias("pos", "token"))
-joined_result = exploded_entities.join(exploded_tokens, "pos").drop("pos")
+joined_result = exploded_entities.join(exploded_tokens, "pos").sort(asc("pos")).drop("pos")
 
-joined_result.show()
+joined_result.show(2000, truncate=False)
