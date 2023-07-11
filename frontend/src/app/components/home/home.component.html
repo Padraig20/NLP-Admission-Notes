@@ -1,0 +1,80 @@
+<div class="fw-bold grid grid-cols-1 justify-items-center container mt-3 ml-3 text-in-button">
+  <div class="text-xl fw-bold mb-3 mt-3">Analyze Admission Note</div>
+</div>
+
+<div class="whitebox flex justify-center container mb-10">
+
+  <div class="container flex flex-col">
+    <div>
+      <div class="flex flex-col justify-content-center">
+        <div class="flex flex-col-reverse flex-1 mt-4">
+      <textarea #admissionModel="ngModel" [(ngModel)]="text"
+                [class]="admissionModel"
+                class="mr-5 h-10 mb-2 inputfield rounded border-0 min-h-auto min-h-[15rem]"
+                placeholder="Enter your admission note here">
+      </textarea>
+
+          <div class="flex flex-row flex-initial justify-content-center mt-4">
+            <button [disabled]="this.text === '' || analyzing" (click)="analyze()"
+                    class="{{buttonstyleAdmission()}} rounded w-35 p-2 h-10 text-white relative disabled:cursor-not-allowed disabled:opacity-60">
+              <span [ngClass]="{'invisible': analyzing}">Analyze Note</span>
+              <span *ngIf="analyzing" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                   viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+            </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-col" *ngIf="analyzed">
+          <div class="flex flex-row items-center mt-5 mb-2">
+            <div class="text-center fw-semibold text-xl">Results</div>
+            <a class="group relative dropdown cursor-pointer tracking-wide pb-2 flex flex-row">
+              <i class="bi-info-circle w-4 text-blue-950 ml-3 mt-2"></i>
+              <div
+                class="group-hover:cursor-text p-3 absolute border border-slate-100 top-6 z-10 w-96 hidden list-none overflow-hidden rounded-lg backdrop-blur-lg shadow-md group-hover:flex flex-row right gap-2">
+                <i class="text-red-600 bi bi-exclamation-circle flex-initial"></i>
+                <p class="text-justify text-xs text-slate-700 m-0">
+                  Please be advised that the NLP model employed here is currently in an experimental phase and necessitates further training and optimization. At present, its primary focus lies in extracting diagnoses, ages, negatives, and the gender of a patient. It is crucial to note that this model is domain-specific and tailored for admission notes, as evident from the training data it has been exposed to.
+                  <br>
+                  Nonetheless, it is of utmost importance to exercise caution as the model may produce erroneous information or inadvertently overlook vital details. <b>Hence, if deployed for professional purposes, it is highly recommended to conduct thorough verification and validation of the generated output, thereby ensuring its accuracy and reliability.</b>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div #admissionModel="ngModel" [(ngModel)]="text"
+               [class]="admissionModel"
+               class="mr-5 min-h-auto min-h-[5rem] bg-white border-0 rounded"
+               style="display: flex; flex-direction: column; height: 100%;">
+
+            <div class="p-2 hover:cursor-text rounded text-justify leading-loose"
+                 style="flex: 1; overflow: auto; width: 100%;"
+                 [innerHTML]="sanitizeHTML(analyzedText)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="text-l fw-light mb-3 text-justify text-in-button">The objective of this project is to develop an NLP model
+  capable of
+  extracting
+  <span class="fw-semibold">diagnoses, diseases and other related terms from admission notes</span>. Admission notes are created by doctors when a
+  patient is newly admitted
+  to a hospital and typically contain personal information such as <span class="fw-semibold">age, gender, and various medical conditions</span>.
+  However,
+  the process of entering this information into the hospital's medical system, such as the <span class="fw-semibold">Hospital Information System
+    (HIS)</span>,
+  can be time-consuming and challenging. Therefore, <span class="fw-semibold">the aim is to train an advanced NLP model that can efficiently and
+  accurately
+    extract relevant diagnoses and diseases from these admission notes</span>. The dataset containing pseudonymized admission
+  notes is publicly
+  available <a class="no-underline fw-semibold" href="http://trec-cds.org/topics2021.xml">here</a>.
+</div>
