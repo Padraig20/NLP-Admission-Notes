@@ -1,0 +1,5 @@
+Flask==2.3.2
+Flask-Cors==3.0.10
+pyspark==3.4.1
+spark-nlp==4.4.4
+gevent==22.10.2
