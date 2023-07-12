@@ -974,6 +974,749 @@ And some more Hyperparameter Tuning!
 
 Maybe Stemming will make a good comeback?
 
+### Hyperparameter Tuning cont'd cont'd
+
+That wasn't really spectacular. Whether with or without stemming, it produced the same results as before. However, I realized that the more
+epochs we have, the better our model would perform. But how much of that is overfitting? We would find out if we had more testing data... 
+Anyways, I let all parameters run through with 5 epochs. Then, I picked the best performing params, and let them have 30 epochs. I found
+an increase of performance in a range of 5% to 7% - quite remarkable, actually. Stemming would still slack behind, though. These are the results without stemming:
+
+f1-score: 0.920768469152548 | Learning Rate: 0.003 |Hidden Layers: 10 |Batch Size: 8 | Maximum Epochs: 30
+
+And with stemming:
+
+f1-score: 0.9022492993322529 | Learning Rate: 0.003 | Hidden Layers: 10 | Batch Size: 16 | Maximum Epochs: 30
+
+Eventually, the final model would perform quite well on test data:
+
+|token               |ground_truth|prediction |
+|-----:|-----------|-----------|
+|The                 |O           |O          |
+|patient             |O           |O          |
+|is                  |O           |O          |
+|a                   |O           |O          |
+|34-year-old         |B-AGE       |B-AGE      |
+|obese               |B-DIAGNOSIS |B-DIAGNOSIS|
+|woman               |B-GENDER    |B-GENDER   |
+|who                 |O           |O          |
+|comes               |O           |O          |
+|to                  |O           |O          |
+|the                 |O           |O          |
+|clinic              |O           |O          |
+|with                |O           |O          |
+|weight              |O           |B-DIAGNOSIS|
+|concerns            |O           |I-DIAGNOSIS|
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|is                  |O           |O          |
+|165                 |O           |O          |
+|cm                  |O           |O          |
+|tall                |O           |O          |
+|,                   |O           |O          |
+|and                 |O           |O          |
+|her                 |O           |O          |
+|weight              |O           |O          |
+|is                  |O           |O          |
+|113                 |O           |O          |
+|kg                  |O           |O          |
+|(                   |O           |O          |
+|BMI                 |O           |O          |
+|:                   |O           |O          |
+|41.5                |O           |O          |
+|).                  |O           |O          |
+|In                  |O           |O          |
+|the                 |O           |O          |
+|past                |O           |O          |
+|,                   |O           |O          |
+|she                 |B-GENDER    |B-GENDER   |
+|unsuccessfully      |O           |O          |
+|used                |O           |O          |
+|anti                |O           |O          |
+|obesity             |O           |O          |
+|agents              |O           |O          |
+|and                 |O           |O          |
+|appetite            |O           |O          |
+|suppressants        |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|is                  |O           |O          |
+|complaining         |O           |O          |
+|of                  |O           |O          |
+|sleep               |B-DIAGNOSIS |B-DIAGNOSIS|
+|apnea               |I-DIAGNOSIS |I-DIAGNOSIS|
+|,                   |O           |O          |
+|PCO                 |B-DIAGNOSIS |B-DIAGNOSIS|
+|and                 |O           |O          |
+|dissatisfaction     |B-DIAGNOSIS |B-DIAGNOSIS|
+|with                |O           |O          |
+|her                 |O           |O          |
+|body                |O           |O          |
+|shape               |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|is                  |O           |O          |
+|a                   |O           |O          |
+|high-school         |O           |O          |
+|teacher             |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|is                  |O           |O          |
+|married             |O           |O          |
+|for                 |O           |O          |
+|5                   |O           |O          |
+|years               |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|doesn't             |O           |O          |
+|use                 |O           |O          |
+|any                 |O           |O          |
+|contraceptive       |O           |O          |
+|methods             |O           |O          |
+|for                 |O           |O          |
+|the                 |O           |O          |
+|past                |O           |O          |
+|4                   |O           |O          |
+|months              |O           |O          |
+|and                 |O           |O          |
+|she                 |B-GENDER    |B-GENDER   |
+|had                 |O           |O          |
+|no                  |B-NEGATIVE  |B-NEGATIVE |
+|prior               |I-NEGATIVE  |I-NEGATIVE |
+|pregnancies         |I-NEGATIVE  |I-NEGATIVE |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|rarely              |O           |O          |
+|exercises           |O           |O          |
+|and                 |O           |O          |
+|movement            |O           |O          |
+|seems               |O           |O          |
+|to                  |O           |O          |
+|be                  |O           |O          |
+|hard                |O           |O          |
+|for                 |O           |O          |
+|her                 |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|is                  |O           |O          |
+|not                 |O           |O          |
+|able                |O           |O          |
+|to                  |O           |O          |
+|complete            |O           |O          |
+|the                 |O           |O          |
+|four-square         |O           |O          |
+|step                |O           |O          |
+|test                |O           |O          |
+|in                  |O           |O          |
+|less                |O           |O          |
+|than                |O           |O          |
+|15                  |O           |O          |
+|seconds             |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|does                |O           |O          |
+|not                 |O           |O          |
+|smoke               |O           |O          |
+|or                  |O           |O          |
+|use                 |O           |O          |
+|any                 |O           |O          |
+|drugs               |O           |O          |
+|.                   |O           |O          |
+|Her                 |O           |O          |
+|BP                  |O           |O          |
+|:                   |O           |O          |
+|130/80              |O           |O          |
+|,                   |O           |O          |
+|HR                  |O           |O          |
+|:                   |O           |O          |
+|195/min             |O           |O          |
+|and                 |O           |O          |
+|her                 |O           |O          |
+|BMI                 |O           |O          |
+|is                  |O           |O          |
+|:                   |O           |O          |
+|41.54               |O           |O          |
+|.                   |O           |O          |
+|Her                 |O           |O          |
+|lab                 |O           |O          |
+|results:FBS         |O           |O          |
+|:                   |O           |O          |
+|98                  |O           |O          |
+|mg/dlTG             |O           |O          |
+|:                   |O           |O          |
+|150                 |O           |O          |
+|mg/dlCholesterol    |O           |O          |
+|:                   |O           |O          |
+|180                 |O           |O          |
+|mg/dlLDL            |O           |O          |
+|:                   |O           |O          |
+|90                  |O           |O          |
+|mg/dlHDL            |O           |O          |
+|:                   |O           |O          |
+|35                  |O           |O          |
+|mg/dlShe            |O           |O          |
+|is                  |O           |O          |
+|considering         |O           |O          |
+|a                   |O           |O          |
+|laparoscopic        |O           |O          |
+|gastric             |O           |O          |
+|bypass              |O           |O          |
+|.                   |O           |O          |
+|The                 |O           |O          |
+|patient             |O           |O          |
+|is                  |O           |O          |
+|a                   |O           |O          |
+|16-year-old         |B-AGE       |B-AGE      |
+|girl                |B-GENDER    |B-GENDER   |
+|recently            |O           |O          |
+|diagnosed           |O           |O          |
+|with                |O           |O          |
+|myasthenia          |B-DIAGNOSIS |B-DIAGNOSIS|
+|gravis              |I-DIAGNOSIS |I-DIAGNOSIS|
+|class               |I-DIAGNOSIS |I-DIAGNOSIS|
+|IIa                 |I-DIAGNOSIS |I-DIAGNOSIS|
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|complains           |O           |O          |
+|of                  |O           |O          |
+|diplopia            |B-DIAGNOSIS |B-DIAGNOSIS|
+|and                 |O           |O          |
+|weakness            |B-DIAGNOSIS |B-DIAGNOSIS|
+|affecting           |O           |I-DIAGNOSIS|
+|in                  |O           |O          |
+|her                 |O           |O          |
+|upper               |O           |O          |
+|extremities         |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|had                 |O           |O          |
+|a                   |O           |O          |
+|positive            |O           |O          |
+|anti-AChR           |O           |O          |
+|antibody            |O           |O          |
+|test                |O           |O          |
+|,                   |O           |O          |
+|and                 |O           |O          |
+|her                 |O           |O          |
+|single              |O           |O          |
+|fiber               |O           |O          |
+|electromyography    |O           |O          |
+|(                   |O           |O          |
+|SFEMG               |O           |O          |
+|)                   |O           |O          |
+|was                 |O           |O          |
+|positive            |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|is                  |O           |O          |
+|on                  |O           |O          |
+|acetylcholinesterase|O           |O          |
+|inhibitor           |O           |O          |
+|treatment           |O           |O          |
+|combined            |O           |O          |
+|with                |O           |O          |
+|immunosuppressants  |O           |O          |
+|.                   |O           |O          |
+|But                 |O           |O          |
+|she                 |B-GENDER    |B-GENDER   |
+|still               |O           |O          |
+|has                 |O           |O          |
+|some                |O           |O          |
+|symptoms            |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|does                |O           |O          |
+|not                 |O           |O          |
+|smoke               |O           |O          |
+|or                  |O           |O          |
+|use                 |O           |O          |
+|illicit             |O           |O          |
+|drugs               |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|is                  |O           |O          |
+|not                 |O           |O          |
+|sexually            |O           |O          |
+|active              |O           |O          |
+|,                   |O           |O          |
+|and                 |O           |O          |
+|her                 |O           |O          |
+|menses              |O           |O          |
+|are                 |O           |O          |
+|regular             |O           |O          |
+|.                   |O           |O          |
+|Her                 |O           |O          |
+|physical            |O           |O          |
+|exam                |O           |O          |
+|and                 |O           |O          |
+|lab                 |O           |O          |
+|studies             |O           |O          |
+|are                 |O           |O          |
+|not                 |O           |O          |
+|remarkable          |O           |O          |
+|for                 |O           |O          |
+|any                 |O           |O          |
+|other               |O           |O          |
+|abnormalities.BP    |O           |O          |
+|:                   |O           |O          |
+|110/75Hgb           |O           |O          |
+|:                   |O           |O          |
+|11                  |O           |O          |
+|g/dlWBC             |O           |O          |
+|:                   |O           |O          |
+|8000                |O           |O          |
+|/mm3Plt             |O           |O          |
+|:                   |O           |O          |
+|300000              |O           |O          |
+|/mlCreatinine       |O           |O          |
+|:                   |O           |O          |
+|0.5                 |O           |O          |
+|mg/dlBUN            |O           |O          |
+|:                   |O           |O          |
+|10                  |O           |O          |
+|mg/dlBeta           |O           |O          |
+|hcg                 |O           |O          |
+|:                   |O           |O          |
+|negative            |O           |O          |
+|for                 |O           |O          |
+|pregnancy           |O           |O          |
+|The                 |O           |O          |
+|patient             |O           |O          |
+|is                  |O           |O          |
+|a                   |O           |O          |
+|3-day-old           |B-AGE       |B-AGE      |
+|female              |B-GENDER    |B-GENDER   |
+|infant              |O           |O          |
+|with                |O           |O          |
+|jaundice            |B-DIAGNOSIS |B-DIAGNOSIS|
+|that                |O           |O          |
+|started             |O           |O          |
+|one                 |O           |O          |
+|day                 |O           |O          |
+|ago                 |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|was                 |O           |O          |
+|born                |O           |O          |
+|at                  |O           |O          |
+|34w                 |O           |O          |
+|of                  |O           |O          |
+|gestation           |O           |O          |
+|and                 |O           |O          |
+|kept                |O           |O          |
+|in                  |O           |O          |
+|an                  |O           |O          |
+|incubator           |O           |O          |
+|due                 |O           |O          |
+|to                  |O           |O          |
+|her                 |O           |O          |
+|gestational         |O           |O          |
+|age                 |O           |O          |
+|.                   |O           |O          |
+|Vital               |O           |O          |
+|signs               |O           |O          |
+|were                |O           |O          |
+|reported            |O           |O          |
+|as                  |O           |O          |
+|:                   |O           |O          |
+|axillary            |O           |O          |
+|temperature         |O           |O          |
+|:                   |O           |O          |
+|36.3°C              |O           |O          |
+|,                   |O           |O          |
+|heart               |O           |O          |
+|rate                |O           |O          |
+|:                   |O           |O          |
+|154                 |O           |O          |
+|beats/min           |O           |O          |
+|,                   |O           |O          |
+|respiratory         |O           |O          |
+|rate                |O           |O          |
+|:                   |O           |O          |
+|37                  |O           |O          |
+|breaths/min         |O           |O          |
+|,                   |O           |O          |
+|and                 |O           |O          |
+|blood               |O           |O          |
+|pressure            |O           |O          |
+|:                   |O           |O          |
+|65/33               |O           |O          |
+|mm                  |O           |O          |
+|Hg                  |O           |O          |
+|.                   |O           |O          |
+|Her                 |O           |O          |
+|weight              |O           |O          |
+|is                  |O           |O          |
+|2.1                 |O           |O          |
+|kg                  |O           |O          |
+|,                   |O           |O          |
+|length              |O           |O          |
+|is                  |O           |O          |
+|45                  |O           |O          |
+|cm                  |O           |O          |
+|,                   |O           |O          |
+|and                 |O           |O          |
+|head                |O           |O          |
+|circumference       |O           |O          |
+|32                  |O           |O          |
+|cm                  |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|presents            |O           |O          |
+|with                |O           |O          |
+|yellow              |B-DIAGNOSIS |O          |
+|sclera              |I-DIAGNOSIS |B-DIAGNOSIS|
+|and                 |O           |O          |
+|icteric             |B-DIAGNOSIS |B-DIAGNOSIS|
+|body                |I-DIAGNOSIS |I-DIAGNOSIS|
+|.                   |O           |O          |
+|Her                 |O           |O          |
+|liver               |O           |O          |
+|and                 |O           |O          |
+|spleen              |O           |O          |
+|are                 |O           |O          |
+|normal              |O           |O          |
+|to                  |O           |O          |
+|palpation           |O           |O          |
+|.                   |O           |O          |
+|Laboratory          |O           |O          |
+|results             |O           |O          |
+|are                 |O           |O          |
+|as                  |O           |O          |
+|follows             |O           |O          |
+|:                   |O           |O          |
+|Serum               |O           |O          |
+|total               |O           |O          |
+|bilirubin           |O           |O          |
+|:                   |O           |O          |
+|21.02               |O           |O          |
+|mg/dLDirect         |O           |O          |
+|bilirubin           |O           |O          |
+|of                  |O           |O          |
+|2.04                |O           |O          |
+|mg/dLAST            |O           |O          |
+|:                   |O           |O          |
+|37                  |O           |O          |
+|U/LALT              |O           |O          |
+|:                   |O           |O          |
+|20                  |O           |O          |
+|U/LGGT              |O           |O          |
+|:                   |O           |O          |
+|745                 |O           |O          |
+|U/LAlkaline         |O           |O          |
+|phosphatase         |O           |O          |
+|:                   |O           |O          |
+|531                 |O           |O          |
+|U/LCreatinine       |O           |O          |
+|:                   |O           |O          |
+|0.3                 |O           |O          |
+|mg/dLUrea           |O           |O          |
+|:                   |O           |O          |
+|29                  |O           |O          |
+|mg/dLNa             |O           |O          |
+|:                   |O           |O          |
+|147                 |O           |O          |
+|mEq/LK              |O           |O          |
+|:                   |O           |O          |
+|4.5                 |O           |O          |
+|mEq/LCRP            |O           |O          |
+|:                   |O           |O          |
+|3                   |O           |O          |
+|mg/LComplete        |O           |O          |
+|blood               |O           |O          |
+|cell                |O           |O          |
+|count               |O           |O          |
+|within              |O           |O          |
+|the                 |O           |O          |
+|normal              |O           |O          |
+|range               |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|is                  |O           |O          |
+|diagnosed           |O           |O          |
+|with                |O           |O          |
+|neonatal            |B-DIAGNOSIS |O          |
+|jaundice            |I-DIAGNOSIS |B-DIAGNOSIS|
+|that                |O           |O          |
+|may                 |O           |O          |
+|require             |O           |O          |
+|phototherapy        |O           |O          |
+|.                   |O           |O          |
+|The                 |O           |O          |
+|patient             |O           |O          |
+|is                  |O           |O          |
+|a                   |O           |O          |
+|53-year-old         |B-AGE       |B-AGE      |
+|man                 |B-GENDER    |B-GENDER   |
+|complaining         |O           |O          |
+|of                  |O           |O          |
+|frequent            |O           |O          |
+|headaches           |B-DIAGNOSIS |B-DIAGNOSIS|
+|,                   |O           |O          |
+|generalized         |O           |O          |
+|bone                |B-DIAGNOSIS |B-DIAGNOSIS|
+|pain                |I-DIAGNOSIS |I-DIAGNOSIS|
+|and                 |O           |O          |
+|difficulty          |B-DIAGNOSIS |B-DIAGNOSIS|
+|chewing             |I-DIAGNOSIS |I-DIAGNOSIS|
+|that                |O           |O          |
+|started             |O           |O          |
+|6                   |O           |O          |
+|years               |O           |O          |
+|ago                 |O           |O          |
+|and                 |O           |O          |
+|is                  |O           |O          |
+|getting             |O           |O          |
+|worse               |O           |O          |
+|.                   |O           |O          |
+|Examination         |O           |O          |
+|shows               |O           |O          |
+|bilateral           |O           |O          |
+|swellings           |B-DIAGNOSIS |B-DIAGNOSIS|
+|around              |O           |O          |
+|the                 |O           |O          |
+|molars              |O           |O          |
+|.                   |O           |O          |
+|The                 |O           |O          |
+|swellings           |B-DIAGNOSIS |B-DIAGNOSIS|
+|have                |O           |O          |
+|increased           |O           |O          |
+|since               |O           |O          |
+|his                 |O           |O          |
+|last                |O           |O          |
+|examination         |O           |O          |
+|.                   |O           |O          |
+|Several             |O           |O          |
+|extraoral           |O           |O          |
+|lesions             |B-DIAGNOSIS |O          |
+|of                  |I-DIAGNOSIS |O          |
+|the                 |I-DIAGNOSIS |O          |
+|head                |I-DIAGNOSIS |O          |
+|and                 |I-DIAGNOSIS |O          |
+|face                |I-DIAGNOSIS |O          |
+|are                 |O           |O          |
+|detected            |O           |O          |
+|.                   |O           |O          |
+|The                 |O           |O          |
+|swellings           |B-DIAGNOSIS |B-DIAGNOSIS|
+|are                 |O           |O          |
+|non-tender          |O           |O          |
+|and                 |O           |O          |
+|attached            |O           |O          |
+|to                  |O           |O          |
+|the                 |O           |O          |
+|underlying          |O           |O          |
+|bone                |O           |O          |
+|.                   |O           |O          |
+|Further             |O           |O          |
+|evaluation          |O           |O          |
+|shows               |O           |O          |
+|increased           |O           |O          |
+|uptake              |O           |B-DIAGNOSIS|
+|of                  |O           |O          |
+|radioactive         |O           |O          |
+|substance           |O           |O          |
+|as                  |O           |O          |
+|well                |O           |O          |
+|as                  |O           |O          |
+|an                  |O           |O          |
+|increase            |B-DIAGNOSIS |B-DIAGNOSIS|
+|in                  |I-DIAGNOSIS |I-DIAGNOSIS|
+|urinary             |I-DIAGNOSIS |I-DIAGNOSIS|
+|pyridinoline        |I-DIAGNOSIS |I-DIAGNOSIS|
+|.                   |O           |O          |
+|The                 |O           |O          |
+|serum               |O           |O          |
+|alkaline            |O           |O          |
+|phosphatase         |O           |O          |
+|is                  |O           |O          |
+|300                 |O           |O          |
+|IU/L                |O           |O          |
+|(                   |O           |O          |
+|the                 |O           |O          |
+|normal              |O           |O          |
+|range               |O           |O          |
+|is                  |O           |O          |
+|44                  |O           |O          |
+|-                   |O           |O          |
+|147                 |O           |O          |
+|IU/L                |O           |O          |
+|).                  |O           |O          |
+|The                 |O           |O          |
+|patient's           |O           |O          |
+|sister              |O           |O          |
+|had                 |O           |O          |
+|the                 |O           |O          |
+|same                |O           |O          |
+|problems            |O           |O          |
+|.                   |O           |O          |
+|She                 |B-GENDER    |B-GENDER   |
+|was                 |O           |O          |
+|diagnosed           |O           |O          |
+|with                |O           |O          |
+|Paget's             |B-DIAGNOSIS |B-DIAGNOSIS|
+|disease             |I-DIAGNOSIS |I-DIAGNOSIS|
+|of                  |I-DIAGNOSIS |I-DIAGNOSIS|
+|bone                |I-DIAGNOSIS |I-DIAGNOSIS|
+|when                |O           |O          |
+|she                 |B-GENDER    |B-GENDER   |
+|was                 |O           |O          |
+|52                  |B-AGE       |O          |
+|years               |I-AGE       |O          |
+|old                 |I-AGE       |O          |
+|.                   |O           |O          |
+|The                 |O           |O          |
+|diagnosis           |O           |O          |
+|of                  |O           |O          |
+|Paget's             |B-DIAGNOSIS |B-DIAGNOSIS|
+|Disease             |I-DIAGNOSIS |I-DIAGNOSIS|
+|of                  |I-DIAGNOSIS |O          |
+|Bone                |I-DIAGNOSIS |O          |
+|is                  |O           |O          |
+|confirmed           |O           |O          |
+|and                 |O           |O          |
+|Bisphosphonate      |O           |O          |
+|will                |O           |O          |
+|be                  |O           |O          |
+|started             |O           |O          |
+|as                  |O           |O          |
+|first-line          |O           |O          |
+|therapy             |O           |O          |
+|.                   |O           |O          |
+|The                 |O           |O          |
+|patient             |O           |O          |
+|is                  |O           |O          |
+|a                   |O           |O          |
+|55-year-old         |B-AGE       |B-AGE      |
+|man                 |B-GENDER    |B-GENDER   |
+|who                 |O           |O          |
+|was                 |O           |O          |
+|recently            |O           |O          |
+|diagnosed           |O           |O          |
+|with                |O           |O          |
+|Parkinson's         |B-DIAGNOSIS |B-DIAGNOSIS|
+|disease             |I-DIAGNOSIS |I-DIAGNOSIS|
+|.                   |O           |O          |
+|He                  |B-GENDER    |B-GENDER   |
+|is                  |O           |O          |
+|complaining         |O           |O          |
+|of                  |O           |O          |
+|slowness            |B-DIAGNOSIS |B-DIAGNOSIS|
+|of                  |I-DIAGNOSIS |I-DIAGNOSIS|
+|movement            |I-DIAGNOSIS |I-DIAGNOSIS|
+|and                 |O           |O          |
+|tremors             |B-DIAGNOSIS |B-DIAGNOSIS|
+|.                   |O           |O          |
+|His                 |O           |O          |
+|disease             |O           |O          |
+|is                  |O           |O          |
+|ranked              |O           |O          |
+|as                  |O           |O          |
+|mild                |O           |O          |
+|,                   |O           |O          |
+|Hoehn-Yahr          |B-DIAGNOSIS |B-DIAGNOSIS|
+|Stage               |I-DIAGNOSIS |I-DIAGNOSIS|
+|I                   |I-DIAGNOSIS |I-DIAGNOSIS|
+|.                   |O           |O          |
+|His                 |O           |O          |
+|past                |O           |O          |
+|medical             |O           |O          |
+|history             |O           |O          |
+|is                  |O           |O          |
+|significant         |O           |O          |
+|for                 |O           |O          |
+|hypertension        |B-DIAGNOSIS |B-DIAGNOSIS|
+|and                 |O           |O          |
+|hypercholesterolemia|B-DIAGNOSIS |B-DIAGNOSIS|
+|.                   |O           |O          |
+|He                  |B-GENDER    |B-GENDER   |
+|lives               |O           |O          |
+|with                |O           |O          |
+|his                 |O           |O          |
+|wife                |O           |O          |
+|.                   |O           |O          |
+|They                |O           |O          |
+|have                |O           |O          |
+|three               |O           |O          |
+|children            |O           |O          |
+|.                   |O           |O          |
+|He                  |B-GENDER    |B-GENDER   |
+|used                |O           |O          |
+|to                  |O           |O          |
+|be                  |O           |O          |
+|active              |O           |O          |
+|with                |O           |O          |
+|gardening           |O           |O          |
+|before              |O           |O          |
+|his                 |O           |O          |
+|diagnosis           |O           |O          |
+|.                   |O           |O          |
+|He                  |B-GENDER    |B-GENDER   |
+|complains           |O           |O          |
+|of                  |O           |O          |
+|shaking             |B-DIAGNOSIS |B-DIAGNOSIS|
+|and                 |O           |I-DIAGNOSIS|
+|slow                |B-DIAGNOSIS |I-DIAGNOSIS|
+|movement            |I-DIAGNOSIS |I-DIAGNOSIS|
+|.                   |O           |O          |
+|He                  |B-GENDER    |B-GENDER   |
+|had                 |O           |O          |
+|difficulty          |O           |O          |
+|entering            |O           |O          |
+|through             |O           |O          |
+|a                   |O           |O          |
+|door                |O           |O          |
+|,                   |O           |O          |
+|as                  |O           |O          |
+|he                  |B-GENDER    |B-GENDER   |
+|was                 |O           |O          |
+|frozen              |O           |O          |
+|and                 |O           |O          |
+|needed              |O           |O          |
+|guidance            |O           |O          |
+|to                  |O           |O          |
+|step                |O           |O          |
+|in                  |O           |O          |
+|.                   |O           |O          |
+|His                 |O           |O          |
+|handwriting         |O           |O          |
+|is                  |O           |O          |
+|getting             |O           |O          |
+|smaller             |O           |O          |
+|.                   |O           |O          |
+|He                  |B-GENDER    |B-GENDER   |
+|is                  |O           |O          |
+|offered             |O           |O          |
+|Levodopa            |O           |O          |
+|and                 |O           |O          |
+|Trihexyphenidyl     |O           |O          |
+|.                   |O           |O          |
+|He                  |B-GENDER    |B-GENDER   |
+|is                  |O           |O          |
+|an                  |O           |O          |
+|alert               |O           |O          |
+|and                 |O           |O          |
+|cooperative         |O           |O          |
+|man                 |B-GENDER    |B-GENDER   |
+|who                 |O           |O          |
+|does                |O           |O          |
+|not                 |O           |O          |
+|have                |O           |O          |
+|any                 |O           |O          |
+|signs               |O           |O          |
+|of                  |O           |O          |
+|dementia            |B-DIAGNOSIS |B-DIAGNOSIS|
+|.                   |O           |O          |
+|He                  |B-GENDER    |B-GENDER   |
+|does                |O           |O          |
+|not                 |O           |O          |
+|smoke               |O           |O          |
+|or                  |O           |O          |
+|use                 |O           |O          |
+|any                 |O           |O          |
+|illicit             |O           |O          |
+|drugs               |O           |O          |
+|.                   |O           |O          |
+
 ### Future
 
 -> ???
