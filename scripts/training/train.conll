@@ -209,7 +209,7 @@ with NN NN O
 mild NN NN O
 MR NN NN O
 . NN NN O
-He NN NN O
+He NNP NNP B-GENDER
 was NN NN O
 sent NN NN O
 home NN NN O
@@ -222,7 +222,7 @@ and NN NN O
 BB NN NN O
 ( NN NN O
 which NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 did NN NN O
 not NN NN O
 tolerate NN NN O
@@ -311,7 +311,7 @@ ICA NNP NNP B-DIAGNOSIS
 stenosis NNP NNP I-DIAGNOSIS
 ). NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 also NN NN O
 underwent NN NN O
 a NN NN O
@@ -353,14 +353,14 @@ exploding NN NN O
 headache NNP NNP B-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 and NN NN O
 her NN NN O
 husband NN NN O
 report NN NN O
 that NN NN O
 yesterday NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 was NN NN O
 in NN NN O
 the NN NN O
@@ -383,7 +383,7 @@ cabinet NN NN O
 The NN NN O
 next NN NN O
 morning NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 developed NN NN O
 a NN NN O
 sudden NN NN O
@@ -393,7 +393,7 @@ exploding NN NN O
 headache NNP NNP B-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 came NN NN O
 to NN NN O
 the NN NN O
@@ -485,7 +485,7 @@ without NN NN O
 difficulty NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 was NN NN O
 discharged NN NN O
 to NN NN O
@@ -772,10 +772,10 @@ motor NNP NNP I-NEGATIVE
 defects NNP NNP I-NEGATIVE
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 recalls NN NN O
 that NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 might NN NN O
 have NN NN O
 had NN NN O
@@ -793,7 +793,7 @@ deficit NN NN O
 Prior NN NN O
 to NN NN O
 CABG NNP NNP B-DIAGNOSIS
-he NN NN O
+he NNP NNP B-GENDER
 only NN NN O
 had NN NN O
 diaphoresis NNP NNP B-DIAGNOSIS
@@ -828,7 +828,7 @@ pre NNP NNP B-DIAGNOSIS
 syncope NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 underwent NN NN O
 Carotid NN NN O
 U/S NN NN O
@@ -947,7 +947,7 @@ and NN NN O
 weakness NNP NNP B-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 has NN NN O
 a NN NN O
 history NN NN O
@@ -1061,7 +1061,7 @@ and NN NN O
 when NN NN O
 patient NN NN O
 improved NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 was NN NN O
 transitioned NN NN O
 to NN NN O
@@ -1106,7 +1106,7 @@ bleach NN NN O
 her NN NN O
 home NN NN O
 when NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 was NN NN O
 discharged NN NN O
 . NN NN O
@@ -1162,7 +1162,7 @@ a NN NN O
 fall NN NN O
 during NN NN O
 which NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 may NN NN O
 have NN NN O
 hit NN NN O
@@ -1264,13 +1264,13 @@ progression NN NN O
 of NN NN O
 cirrhosis NNP NNP B-DIAGNOSIS
 as NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 failed NN NN O
 interferon NN NN O
 twice NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 to NN NN O
 follow-up NN NN O
@@ -1323,7 +1323,7 @@ cell NNP NNP I-DIAGNOSIS
 transformation NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 presented NN NN O
 with NN NN O
 his NN NN O
@@ -1340,7 +1340,7 @@ and NN NN O
 LDH NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 was NN NN O
 without NN NN O
 any NN NN O
@@ -1353,7 +1353,7 @@ that NN NN O
 time NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 did NN NN O
 have NN NN O
 some NN NN O
@@ -1361,7 +1361,7 @@ bulky NN NN O
 lymphadenopathy NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 then NN NN O
 completed NN NN O
 four NN NN O
@@ -1371,14 +1371,14 @@ FCR NN NN O
 therapy NN NN O
 , NN NN O
 which NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 completed NN NN O
 back NN NN O
 in NN NN O
 09/[**2119**] NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 had NN NN O
 an NN NN O
 excellent NN NN O
@@ -1396,7 +1396,7 @@ two NN NN O
 years NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 then NN NN O
 presented NN NN O
 in NN NN O
@@ -1418,7 +1418,7 @@ elevated NNP NNP I-DIAGNOSIS
 LDH NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 also NN NN O
 had NN NN O
 some NN NN O
@@ -1428,7 +1428,7 @@ palpable NNP NNP I-DIAGNOSIS
 lymphadenopathy NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 then NN NN O
 received NN NN O
 four NN NN O
@@ -1456,13 +1456,13 @@ to NN NN O
 R-CVP NN NN O
 of NN NN O
 which NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 received NN NN O
 two NN NN O
 cycles NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 did NN NN O
 again NN NN O
 not NN NN O
@@ -1481,7 +1481,7 @@ performance NN NN O
 status NN NN O
 , NN NN O
 and NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 was NN NN O
 ultimately NN NN O
 switched NN NN O
@@ -1490,7 +1490,7 @@ Campath NN NN O
 therapy NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 did NN NN O
 have NN NN O
 resolution NN NN O
@@ -1526,7 +1526,7 @@ bulky NN NN O
 lymphadenopathy NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 then NN NN O
 eventually NN NN O
 had NN NN O
@@ -1644,7 +1644,7 @@ generalized NN NN O
 convulsion NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 had NN NN O
 a NN NN O
 second NN NN O
@@ -1657,7 +1657,7 @@ first NN NN O
 episode NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 was NN NN O
 maintained NN NN O
 on NN NN O
@@ -1676,7 +1676,7 @@ another NN NN O
 seizure NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 was NN NN O
 recently NN NN O
 tapered NN NN O
@@ -1797,7 +1797,7 @@ for NN NN O
 her NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 responded NN NN O
 well NN NN O
 to NN NN O
@@ -1850,7 +1850,7 @@ adverse NN NN O
 reaction NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 was NN NN O
 stabilized NN NN O
 on NN NN O
@@ -1868,7 +1868,7 @@ medical NN NN O
 floor NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 continued NN NN O
 on NN NN O
 her NN NN O
@@ -2040,7 +2040,7 @@ to NN NN O
 follow-up NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 remains NN NN O
 symptomatic NN NN O
 and NN NN O
@@ -2349,7 +2349,7 @@ in NNP NNP I-DIAGNOSIS
 edema NNP NNP I-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 has NN NN O
 had NN NN O
 decreased NNP NNP B-DIAGNOSIS
@@ -2499,7 +2499,7 @@ up NN NN O
 to NN NN O
 admission NN NN O
 , NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 has NN NN O
 been NN NN O
 experiencing NN NN O
@@ -2622,7 +2622,7 @@ or NN NN O
 abscess NNP NNP B-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 was NN NN O
 treated NN NN O
 with NN NN O
@@ -2961,7 +2961,7 @@ x NN NN O
 days NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 was NN NN O
 admitted NN NN O
 last NN NN O
@@ -3007,7 +3007,7 @@ of NN NN O
 her NN NN O
 myeloma NNP NNP B-DIAGNOSIS
 , NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 received NN NN O
 thalidomide NN NN O
 velcade NN NN O
@@ -3048,7 +3048,7 @@ Suprapubic NNP NNP B-DIAGNOSIS
 prostatectomy NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 was NN NN O
 noted NN NN O
 to NN NN O
@@ -3122,7 +3122,7 @@ eventually NN NN O
 came NN NN O
 out NN NN O
 but NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 continued NN NN O
 to NN NN O
 have NN NN O
@@ -3138,7 +3138,7 @@ performed NN NN O
 q4h NN NN O
 to NN NN O
 ensure NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 did NN NN O
 not NN NN O
 have NN NN O
@@ -3154,7 +3154,7 @@ when NN NN O
 patient NN NN O
 is NN NN O
 stable NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 will NN NN O
 have NN NN O
 to NN NN O
@@ -3203,7 +3203,7 @@ ventricular NNP NNP B-DIAGNOSIS
 arrhythmias NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 was NN NN O
 recently NN NN O
 discharged NN NN O
@@ -3369,7 +3369,7 @@ testosterone NN NN O
 levels NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 recently NN NN O
 noticed NN NN O
 gradual NN NN O
@@ -3408,7 +3408,7 @@ nipple NNP NNP B-DIAGNOSIS
 discharge NNP NNP I-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 also NN NN O
 has NN NN O
 positive NN NN O
@@ -3484,7 +3484,7 @@ no NN NN O
 invasion NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 on NN NN O
 stable NN NN O
@@ -3499,7 +3499,7 @@ was NN NN O
 confirmed NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 married NN NN O
 and NN NN O
@@ -3508,7 +3508,7 @@ has NN NN O
 children NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 using NN NN O
 IUD NN NN O
@@ -3552,7 +3552,7 @@ his NN NN O
 back NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 drinks NN NN O
 around NN NN O
 60 NN NN O
@@ -3569,7 +3569,7 @@ per NN NN O
 day NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 healthy NN NN O
 with NN NN O
@@ -3599,7 +3599,7 @@ and NN NN O
 sister NN NN O
 ). NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 lives NN NN O
 alone NN NN O
 and NN NN O
@@ -3698,7 +3698,7 @@ abdominal NNP NNP B-DIAGNOSIS
 discomfort NNP NNP I-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 had NN NN O
 poor NNP NNP B-DIAGNOSIS
 appetite NNP NNP I-DIAGNOSIS
@@ -3811,7 +3811,7 @@ or NNP NNP I-NEGATIVE
 gangrene NNP NNP I-NEGATIVE
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 candidate NN NN O
@@ -3845,7 +3845,7 @@ his NN NN O
 inhaler NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 had NN NN O
 these NN NN O
 symptoms NN NN O
@@ -3859,7 +3859,7 @@ past NN NN O
 weeks NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 doubled NN NN O
 his NN NN O
 oral NN NN O
@@ -3870,7 +3870,7 @@ past NN NN O
 week NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 chef NN NN O
@@ -3968,7 +3968,7 @@ the NN NN O
 summer NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 doesn't NN NN O
 smoke NN NN O
 or NN NN O
@@ -3991,7 +3991,7 @@ and NN NN O
 sister NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 currently NN NN O
 uses NN NN O
 inhaled NN NN O
@@ -4182,7 +4182,7 @@ right NN NN O
 breast NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 had NN NN O
 no NNP NNP B-NEGATIVE
 palpable NNP NNP I-NEGATIVE
@@ -4251,7 +4251,7 @@ was NN NN O
 unremarkable NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 using NN NN O
 “well NN NN O
@@ -4264,7 +4264,7 @@ other NN NN O
 medication NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 smokes NN NN O
 frequently NN NN O
 and NN NN O
@@ -4273,7 +4273,7 @@ alcohol NN NN O
 occasionally NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 in NN NN O
 a NN NN O
@@ -4294,7 +4294,7 @@ live NN NN O
 births NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 breastfed NN NN O
 all NN NN O
 three NN NN O
@@ -4379,18 +4379,18 @@ two NN NN O
 C/sections NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 has NN NN O
 2 NN NN O
 children NN NN O
 , NN NN O
 and NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 is NN NN O
 menopausal NNP NNP B-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 doesn't NN NN O
 smoke NN NN O
 , NN NN O
@@ -4403,7 +4403,7 @@ illicit NN NN O
 drugs NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 mildly NN NN O
 febrile NNP NNP B-DIAGNOSIS
@@ -4432,7 +4432,7 @@ RA NN NN O
 On NN NN O
 palpation NN NN O
 , NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 experiences NN NN O
 epigastric NN NN O
 tenderness NNP NNP B-DIAGNOSIS
@@ -4519,14 +4519,14 @@ inguinal NN NN O
 hernia NN NN O
 surgery NN NN O
 when NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 was NN NN O
 20 NN NN O
 years NN NN O
 old NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 on NN NN O
 IFN NN NN O
@@ -4628,7 +4628,7 @@ liver NNP NNP I-NEGATIVE
 disease NNP NNP I-NEGATIVE
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 an NN NN O
 alert NN NN O
@@ -4701,7 +4701,7 @@ progressively NN NN O
 worsened NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 known NN NN O
@@ -4726,7 +4726,7 @@ predicted NN NN O
 values NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 smokes NN NN O
 20 NN NN O
 cigarette NN NN O
@@ -4743,7 +4743,7 @@ remarkable NN NN O
 for NN NN O
 BPH NNP NNP B-DIAGNOSIS
 and NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 is NN NN O
 using NN NN O
 Flomax NN NN O
@@ -4785,7 +4785,7 @@ his NN NN O
 PBH NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 an NN NN O
 obese NNP NNP B-DIAGNOSIS
@@ -4835,7 +4835,7 @@ for NN NN O
 years NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 presents NN NN O
 to NN NN O
 the NN NN O
@@ -4863,7 +4863,7 @@ The NN NN O
 patient NN NN O
 reports NN NN O
 that NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 is NN NN O
 currently NN NN O
 homeless NN NN O
@@ -4900,7 +4900,7 @@ with NN NN O
 type NNP NNP B-DIAGNOSIS
 1 NNP NNP I-DIAGNOSIS
 diabetes NNP NNP I-DIAGNOSIS
-he NN NN O
+he NNP NNP B-GENDER
 was NN NN O
 hospitalized NN NN O
 with NN NN O
@@ -4915,7 +4915,7 @@ At NN NN O
 the NN NN O
 time NN NN O
 , NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 was NN NN O
 experiencing NN NN O
 polyuria NNP NNP B-DIAGNOSIS
@@ -4926,10 +4926,10 @@ and NN NN O
 polyphagia NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 reports NN NN O
 that NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 has NN NN O
 been NN NN O
 on NN NN O
@@ -4942,7 +4942,7 @@ his NN NN O
 diagnosis NN NN O
 , NN NN O
 and NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 has NN NN O
 never NN NN O
 been NN NN O
@@ -4957,7 +4957,7 @@ management NN NN O
 Most NN NN O
 recently NN NN O
 , NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 has NN NN O
 been NN NN O
 using NN NN O
@@ -4990,7 +4990,7 @@ ketoacidosis NNP NNP I-DIAGNOSIS
 , NN NN O
 for NN NN O
 which NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 was NN NN O
 hospitalized NN NN O
 . NN NN O
@@ -5001,7 +5001,7 @@ episode NN NN O
 of NN NN O
 hyperglycemia NNP NNP B-DIAGNOSIS
 , NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 is NN NN O
 not NNP NNP B-NEGATIVE
 experiencing NNP NNP I-NEGATIVE
@@ -5015,7 +5015,7 @@ abdominal NNP NNP I-NEGATIVE
 discomfort NNP NNP I-NEGATIVE
 , NN NN O
 and NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 appears NN NN O
 well NN NN O
 . NN NN O
@@ -5124,7 +5124,7 @@ high NN NN O
 IU/ml NN NN O
 ). NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 was NN NN O
 diagnosed NN NN O
 with NN NN O
@@ -5163,7 +5163,7 @@ are NN NN O
 normal NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 still NN NN O
 overweight NNP NNP B-DIAGNOSIS
@@ -5236,7 +5236,7 @@ HPV NNP NNP B-DIAGNOSIS
 
 16 NN NN O
 . NN NN O
-She NN NN O
+She NNP NNP B-GENDER
 has NN NN O
 three NN NN O
 sexual NN NN O
@@ -5246,13 +5246,13 @@ four NN NN O
 children NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 underwent NN NN O
 tubal NN NN O
 ligation NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 smokes NN NN O
 30 NN NN O
 packs/year NN NN O
@@ -5262,13 +5262,13 @@ alcohol NN NN O
 frequently NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 otherwise NN NN O
 healthy NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 was NN NN O
 offered NN NN O
 a NN NN O
@@ -5305,7 +5305,7 @@ past NN NN O
 days NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 ate NN NN O
 a NN NN O
 salad NN NN O
@@ -5398,14 +5398,14 @@ in NN NN O
 stools NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 has NN NN O
 no NNP NNP B-NEGATIVE
 other NNP NNP B-NEGATIVE
 underlying NNP NNP B-NEGATIVE
 disease NNP NNP B-NEGATIVE
 and NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 is NN NN O
 not NN NN O
 on NN NN O
@@ -5431,7 +5431,7 @@ early NN NN O
 October NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 works NN NN O
 in NN NN O
 a NN NN O
@@ -5455,7 +5455,7 @@ this NN NN O
 year NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 married NN NN O
 for NN NN O
@@ -5476,13 +5476,13 @@ is NNP NNP I-DIAGNOSIS
 irregular NNP NNP I-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 does NN NN O
 not NN NN O
 smoke NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 not NN NN O
 on NN NN O
@@ -5490,7 +5490,7 @@ any NN NN O
 medications NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 exercises NN NN O
 regularly NN NN O
 for NN NN O
@@ -5506,7 +5506,7 @@ a NN NN O
 week NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 has NN NN O
 no NNP NNP B-NEGATIVE
 history NNP NNP I-NEGATIVE
@@ -5528,7 +5528,7 @@ significant NN NN O
 for NN NN O
 tonsillectomy NN NN O
 and NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 is NN NN O
 otherwise NN NN O
 healthy NN NN O
@@ -5549,18 +5549,18 @@ of NN NN O
 sadness NNP NNP B-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 lost NN NN O
 interest NN NN O
 in NN NN O
 activities NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 used NN NN O
 to NN NN O
 enjoy NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 states NN NN O
 that NN NN O
 her NN NN O
@@ -5575,7 +5575,7 @@ past NN NN O
 weeks NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 also NN NN O
 lost NNP NNP B-DIAGNOSIS
 her NNP NNP I-DIAGNOSIS
@@ -5590,7 +5590,7 @@ weight NNP NNP B-DIAGNOSIS
 loss NNP NNP I-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 complains NN NN O
 of NN NN O
 loss NNP NNP B-DIAGNOSIS
@@ -5605,26 +5605,26 @@ every NN NN O
 day NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 not NN NN O
 using NN NN O
 any NN NN O
 drugs NN NN O
 and NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 does NN NN O
 not NN NN O
 smoke NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 doesn't NN NN O
 drink NN NN O
 alcohol NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 used NN NN O
 to NN NN O
 exercise NN NN O
@@ -5638,7 +5638,7 @@ min NN NN O
 . NN NN O
 
 But NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 doesn't NN NN O
 have NN NN O
 enough NN NN O
@@ -5653,7 +5653,7 @@ past NN NN O
 weeks NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 also NN NN O
 has NN NN O
 some NN NN O
@@ -5662,7 +5662,7 @@ issues NNP NNP I-DIAGNOSIS
 recently NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 married NN NN O
 and NN NN O
@@ -5671,7 +5671,7 @@ has NN NN O
 children NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 menopausal NNP NNP B-DIAGNOSIS
 . NN NN O
@@ -5685,7 +5685,7 @@ with NN NN O
 colon NNP NNP B-DIAGNOSIS
 cancer NNP NNP I-DIAGNOSIS
 and NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 is NN NN O
 starting NN NN O
 his NN NN O
@@ -5802,7 +5802,7 @@ and NN NN O
 photophobia NNP NNP B-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 recently NN NN O
 noticed NN NN O
 that NN NN O
@@ -5817,7 +5817,7 @@ menstrual NN NN O
 period NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 diagnosed NN NN O
 with NN NN O
@@ -5827,7 +5827,7 @@ headache NNP NNP I-DIAGNOSIS
 and NN NN O
 is NN NN O
 under NN NN O
-treatment.She NN NN O
+treatment.She NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 high-school NN NN O
@@ -5840,7 +5840,7 @@ both NN NN O
 parents NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 book NN NN O
@@ -5859,7 +5859,7 @@ her NN NN O
 home NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 also NN NN O
 interested NN NN O
@@ -5875,7 +5875,7 @@ in NN NN O
 English NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 rarely NN NN O
 does NN NN O
 exercise NN NN O
@@ -5919,7 +5919,7 @@ weight NN NN O
 concerns NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 165 NN NN O
 cm NN NN O
@@ -5932,7 +5932,7 @@ is NN NN O
 kg NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 complaining NN NN O
 of NN NN O
@@ -5948,7 +5948,7 @@ body NN NN O
 shape NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 high-school NN NN O
@@ -5959,7 +5959,7 @@ for NN NN O
 years NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 doesn't NN NN O
 use NN NN O
 any NN NN O
@@ -5971,14 +5971,14 @@ past NN NN O
 4 NN NN O
 months NN NN O
 and NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 had NN NN O
 no NNP NNP B-NEGATIVE
 prior NNP NNP I-NEGATIVE
 pregnancies NNP NNP I-NEGATIVE
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 doesn't NN NN O
 smoke NN NN O
 or NN NN O
@@ -5987,7 +5987,7 @@ any NN NN O
 drugs NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 likes NN NN O
 to NN NN O
 try NN NN O
@@ -5999,7 +5999,7 @@ lose NN NN O
 weight NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 completed NN NN O
 the NN NN O
 four NN NN O
@@ -6089,7 +6089,7 @@ for NN NN O
 day NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 visited NN NN O
 her NN NN O
 PCP NN NN O
@@ -6111,7 +6111,7 @@ After NN NN O
 few NN NN O
 months NN NN O
 , NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 experienced NN NN O
 lower NNP NNP B-DIAGNOSIS
 extremities NNP NNP I-DIAGNOSIS
@@ -6166,14 +6166,14 @@ C-section NN NN O
 years NN NN O
 ago NN NN O
 and NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 has NN NN O
 a NN NN O
 one NN NN O
 child NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 divorced NN NN O
 and NN NN O
@@ -6186,7 +6186,7 @@ sexual NN NN O
 relationship NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 smokes NN NN O
 10 NN NN O
 cigarettes NN NN O
@@ -6198,7 +6198,7 @@ alcohol NN NN O
 occasionally NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 working NN NN O
 as NN NN O
@@ -6209,11 +6209,11 @@ a NN NN O
 publisher NN NN O
 company NN NN O
 and NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 is NN NN O
 happy NN NN O
 that NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 can NN NN O
 keep NN NN O
 working NN NN O
@@ -6225,7 +6225,7 @@ the NN NN O
 time NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 under NN NN O
 the NN NN O
@@ -6252,7 +6252,7 @@ class NNP NNP I-DIAGNOSIS
 IIa NNP NNP I-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 complains NN NN O
 of NN NN O
 diplopia NNP NNP B-DIAGNOSIS
@@ -6268,7 +6268,7 @@ upper NN NN O
 limbs NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 had NN NN O
 a NN NN O
 positive NN NN O
@@ -6288,7 +6288,7 @@ was NN NN O
 positive NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 takes NN NN O
 pyridostigmine NN NN O
 60 NN NN O
@@ -6300,7 +6300,7 @@ day NN NN O
 . NN NN O
 
 But NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 still NN NN O
 has NN NN O
 some NN NN O
@@ -6312,7 +6312,7 @@ her NN NN O
 job NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 research NN NN O
@@ -6330,7 +6330,7 @@ has NN NN O
 hypertension NNP NNP B-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 does NN NN O
 not NN NN O
 smoke NN NN O
@@ -6340,7 +6340,7 @@ illicit NN NN O
 drugs NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 drinks NN NN O
 alcohol NN NN O
 occasionally NN NN O
@@ -6400,7 +6400,7 @@ day NN NN O
 ago NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 was NN NN O
 born NN NN O
 at NN NN O
@@ -6558,7 +6558,7 @@ count NN NN O
 within NN NN O
 the NN NN O
 normal NN NN O
-range.She NN NN O
+range.She NNP NNP B-GENDER
 is NN NN O
 diagnosed NN NN O
 with NN NN O
@@ -6732,7 +6732,7 @@ year NN NN O
 ago NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 experiences NN NN O
 slowness NNP NNP B-DIAGNOSIS
 of NNP NNP I-DIAGNOSIS
@@ -6753,7 +6753,7 @@ and NN NN O
 hypercholesterolemia NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 lives NN NN O
 with NN NN O
 his NN NN O
@@ -6766,7 +6766,7 @@ three NN NN O
 children NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 used NN NN O
 to NN NN O
 be NN NN O
@@ -6795,7 +6795,7 @@ slow NNP NNP I-DIAGNOSIS
 movement NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 had NN NN O
 difficulty NN NN O
 entering NN NN O
@@ -6804,7 +6804,7 @@ a NN NN O
 door NN NN O
 , NN NN O
 as NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 was NN NN O
 frozen NN NN O
 and NN NN O
@@ -6822,7 +6822,7 @@ getting NN NN O
 smaller NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 on NN NN O
 Levodopa NN NN O
@@ -6830,7 +6830,7 @@ and NN NN O
 Trihexyphenidyl NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 stated NN NN O
 his NN NN O
 medications NN NN O
@@ -6843,7 +6843,7 @@ movement NNP NNP I-DIAGNOSIS
 . NN NN O
 
 But NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 still NN NN O
 has NN NN O
 difficulty NNP NNP B-DIAGNOSIS
@@ -6857,13 +6857,13 @@ in NN NN O
 general NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 an NN NN O
 alert NN NN O
 and NN NN O
 cooperative NN NN O
-man NN NN O
+man NNP NNP B-GENDER
 who NN NN O
 doesn't NN NN O
 have NN NN O
@@ -6873,7 +6873,7 @@ of NN NN O
 dementia NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 doesn't NN NN O
 smoke NN NN O
 or NN NN O
@@ -6965,7 +6965,7 @@ transaminase NN NN O
 levels NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 complaining NN NN O
 of NN NN O
@@ -6977,7 +6977,7 @@ or NNP NNP I-NEGATIVE
 chills NNP NNP I-NEGATIVE
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 also NN NN O
 suffering NN NN O
@@ -7050,7 +7050,7 @@ back NNP NNP I-NEGATIVE
 pain NNP NNP I-NEGATIVE
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 has NN NN O
 no NNP NNP B-NEGATIVE
 specific NNP NNP I-NEGATIVE
@@ -7077,7 +7077,7 @@ and NN NN O
 HTN NNP NNP B-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 social NN NN O
@@ -7094,7 +7094,7 @@ drug NNP NNP I-NEGATIVE
 use NNP NNP I-NEGATIVE
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 only NN NN O
 have NN NN O
@@ -7125,7 +7125,7 @@ the NN NN O
 first NN NN O
 visit NN NN O
 when NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 was NN NN O
 at NN NN O
 6 NN NN O
@@ -7135,7 +7135,7 @@ gestational NN NN O
 age NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 getting NN NN O
 weight NN NN O
@@ -7172,7 +7172,7 @@ aspiration NNP NNP B-DIAGNOSIS
 pneumonia NNP NNP I-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 febrile NNP NNP B-DIAGNOSIS
 and NN NN O
@@ -7216,7 +7216,7 @@ bowel NNP NNP I-DIAGNOSIS
 sounds NNP NNP I-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 febrile NNP NNP B-DIAGNOSIS
 ( NN NN O
@@ -7259,7 +7259,7 @@ back NNP NNP B-DIAGNOSIS
 pain NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 has NN NN O
 no NNP NNP B-NEGATIVE
 other NNP NNP I-NEGATIVE
@@ -7267,7 +7267,7 @@ medical NNP NNP I-NEGATIVE
 condition NNP NNP I-NEGATIVE
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 used NN NN O
 to NN NN O
 be NN NN O
@@ -7284,7 +7284,7 @@ soccer NN NN O
 , NN NN O
 however NN NN O
 , NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 recently NN NN O
 has NN NN O
 problem NN NN O
@@ -7307,7 +7307,7 @@ physical NN NN O
 activities NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 prefer NN NN O
 lying NN NN O
 down NN NN O
@@ -7317,7 +7317,7 @@ the NN NN O
 time NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 not NN NN O
 happy NN NN O
@@ -7448,7 +7448,7 @@ since NN NN O
 childhood NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 also NN NN O
 had NN NN O
 the NN NN O
@@ -7507,7 +7507,7 @@ physical NN NN O
 exam NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 has NN NN O
 no NNP NNP B-NEGATIVE
 positive NNP NNP I-NEGATIVE
@@ -7517,7 +7517,7 @@ drug NNP NNP I-NEGATIVE
 allergy NNP NNP I-NEGATIVE
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 won't NN NN O
 smoke NN NN O
 or NN NN O
@@ -7592,7 +7592,7 @@ of NNP NNP I-DIAGNOSIS
 appetite NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 had NN NN O
 traveled NN NN O
 to NN NN O
@@ -7611,12 +7611,12 @@ TB NN NN O
 vaccination NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 previously NN NN O
 healthy NN NN O
-man NN NN O
+man NNP NNP B-GENDER
 , NN NN O
 working NN NN O
 as NN NN O
@@ -7629,7 +7629,7 @@ tech NN NN O
 company NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 doesn't NN NN O
 smoke NN NN O
 o NN NN O
@@ -7639,7 +7639,7 @@ illicit NN NN O
 drugs NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 was NN NN O
 febrile NNP NNP B-DIAGNOSIS
 ( NN NN O
@@ -7795,7 +7795,7 @@ slurred NNP NNP B-DIAGNOSIS
 speech NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 denied NNP NNP B-NEGATIVE
 dyspnea NNP NNP I-NEGATIVE
 , NNP NNP I-NEGATIVE
@@ -7833,7 +7833,7 @@ and NN NN O
 hypothyroidism NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 smokes NN NN O
 cigarette NN NN O
 1 NN NN O
@@ -7855,7 +7855,7 @@ per NN NN O
 week NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 not NN NN O
 aware NN NN O
@@ -7865,7 +7865,7 @@ family NN NN O
 history NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 using NN NN O
 Levothyroxine NN NN O
@@ -8005,7 +8005,7 @@ soccer NN NN O
 player NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 came NN NN O
 to NN NN O
 the NN NN O
@@ -8067,7 +8067,7 @@ affected NN NN O
 area NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 didn't NN NN O
 use NN NN O
 ant NN NN O
@@ -8090,7 +8090,7 @@ as NNP NNP I-NEGATIVE
 DM NNP NNP I-NEGATIVE
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 smokes NN NN O
 15 NN NN O
 cigarettes NN NN O
@@ -8121,7 +8121,7 @@ her NN NN O
 father NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 in NN NN O
 relation NN NN O
@@ -8210,7 +8210,7 @@ Turner NNP NNP B-DIAGNOSIS
 syndrome NNP NNP I-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 treating NN NN O
 with NN NN O
@@ -8232,7 +8232,7 @@ ideal NN NN O
 height NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 an NN NN O
 obese NNP NNP B-DIAGNOSIS
@@ -8351,7 +8351,7 @@ of NN NN O
 cm NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 breast NN NN O
 feeding NN NN O
@@ -8369,7 +8369,7 @@ of NN NN O
 cm NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 has NN NN O
 no NNP NNP B-NEGATIVE
 developmental NNP NNP I-NEGATIVE
@@ -8407,7 +8407,7 @@ shape NN NN O
 and NN NN O
 size NN NN O
 and NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 is NN NN O
 not NN NN O
 circumcised NN NN O
@@ -8454,7 +8454,7 @@ and NN NN O
 vomiting NNP NNP B-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 also NN NN O
 complains NN NN O
 of NN NN O
@@ -8465,7 +8465,7 @@ and NN NN O
 frequency NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 also NN NN O
 reports NN NN O
 some NN NN O
@@ -8513,7 +8513,7 @@ costovertebral NN NN O
 angles NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 has NN NN O
 no NNP NNP B-NEGATIVE
 history NNP NNP I-NEGATIVE
@@ -8592,7 +8592,7 @@ since NN NN O
 yesterday NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 has NN NN O
 returned NN NN O
 from NN NN O
@@ -8615,7 +8615,7 @@ a NN NN O
 month NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 developed NN NN O
 abdominal NNP NNP B-DIAGNOSIS
 pain NNP NNP I-DIAGNOSIS
@@ -8633,7 +8633,7 @@ movements NN NN O
 . NN NN O
 
 Soon NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 was NN NN O
 having NN NN O
 profuse NN NN O
@@ -8681,7 +8681,7 @@ HR NN NN O
 is NN NN O
 110 NN NN O
 and NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 looks NN NN O
 ill NN NN O
 with NN NN O
@@ -8746,7 +8746,7 @@ joints NNP NNP I-DIAGNOSIS
 pain NNP NNP B-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 married NN NN O
 and NN NN O
@@ -8878,7 +8878,7 @@ for NN NN O
 him NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 treating NN NN O
 with NN NN O
@@ -8928,7 +8928,7 @@ bellow:A NN NN O
 wellbeing NNP NNP B-DIAGNOSIS
 , NN NN O
 well-nourished NNP NNP B-DIAGNOSIS
-man NN NN O
+man NNP NNP B-GENDER
 , NN NN O
 non-icteric NNP NNP B-DIAGNOSIS
 , NN NN O
@@ -9057,7 +9057,7 @@ upper NN NN O
 limbs NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 had NN NN O
 a NN NN O
 constant NN NN O
@@ -9068,7 +9068,7 @@ face NN NN O
 , NN NN O
 however NN NN O
 , NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 has NN NN O
 aggressive NNP NNP B-DIAGNOSIS
 behavior NNP NNP I-DIAGNOSIS
@@ -9147,7 +9147,7 @@ months NN NN O
 ago NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 came NN NN O
 to NN NN O
 the NN NN O
@@ -9224,7 +9224,7 @@ surgery NN NN O
 After NN NN O
 his NN NN O
 surgery NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 takes NN NN O
 only NN NN O
 vitamin NN NN O
@@ -9273,7 +9273,7 @@ her NN NN O
 back NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 drinks NN NN O
 alcohol NN NN O
 frequently NN NN O
@@ -9283,7 +9283,7 @@ not NN NN O
 smoke NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 has NN NN O
 no NNP NNP B-NEGATIVE
 history NNP NNP I-NEGATIVE
@@ -9308,7 +9308,7 @@ her NN NN O
 mother NN NN O
 ). NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 lives NN NN O
 with NN NN O
 her NN NN O
@@ -9406,7 +9406,7 @@ test NN NN O
 is NN NN O
 negative NN NN O
 and NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 is NN NN O
 not NN NN O
 breastfeeding NN NN O
@@ -9448,7 +9448,7 @@ and NN NN O
 vomiting NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 was NN NN O
 febrile NNP NNP B-DIAGNOSIS
 with NN NN O
@@ -9498,7 +9498,7 @@ abdominal NNP NNP I-NEGATIVE
 abnormalities NNP NNP I-NEGATIVE
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 now NN NN O
 a NN NN O
@@ -9526,7 +9526,7 @@ year NN NN O
 ago NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 presents NN NN O
 with NN NN O
 shortness NNP NNP B-DIAGNOSIS
@@ -9544,7 +9544,7 @@ to NN NN O
 his NN NN O
 mother NN NN O
 , NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 didn't NN NN O
 respond NN NN O
 to NN NN O
@@ -9554,7 +9554,7 @@ corticosteroid NN NN O
 inhaler NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 was NN NN O
 admitted NN NN O
 to NN NN O
@@ -9569,7 +9569,7 @@ asthma NNP NNP B-DIAGNOSIS
 exacerbation NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 candidate NN NN O
@@ -9622,7 +9622,7 @@ his NN NN O
 uncle NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 used NN NN O
 to NN NN O
 be NN NN O
@@ -9676,7 +9676,7 @@ with NN NN O
 urine NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 candidate NN NN O
@@ -9838,7 +9838,7 @@ iron NN NN O
 supplements NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 does NN NN O
 not NN NN O
 smoke NN NN O
@@ -9847,7 +9847,7 @@ consume NN NN O
 alcohol NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 not NN NN O
 sexually NN NN O
@@ -9858,7 +9858,7 @@ no NN NN O
 children NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 candidate NN NN O
@@ -9886,7 +9886,7 @@ frequent NN NN O
 headaches NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 has NN NN O
 a NN NN O
 family NN NN O
@@ -10175,18 +10175,18 @@ and NN NN O
 NVDs NNP NNP B-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 has NN NN O
 2 NN NN O
 children NN NN O
 , NN NN O
 and NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 is NN NN O
 menopausal NNP NNP B-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 does NN NN O
 not NN NN O
 smoke NN NN O
@@ -10200,7 +10200,7 @@ illicit NN NN O
 drugs NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 mildly NN NN O
 febrile NNP NNP B-DIAGNOSIS
@@ -10226,11 +10226,11 @@ on NN NN O
 RA NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 an NN NN O
 obese NNP NNP B-DIAGNOSIS
-woman NN NN O
+woman NNP NNP B-GENDER
 with NN NN O
 no NNP NNP B-NEGATIVE
 acute NNP NNP I-NEGATIVE
@@ -10240,7 +10240,7 @@ distress NNP NNP I-NEGATIVE
 On NN NN O
 palpation NN NN O
 , NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 experiences NN NN O
 epigastric NNP NNP B-DIAGNOSIS
 tenderness NNP NNP I-DIAGNOSIS
@@ -10324,7 +10324,7 @@ is NN NN O
 non-significant NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 on NN NN O
 IFN NN NN O
@@ -10419,7 +10419,7 @@ liver NNP NNP I-NEGATIVE
 disease NNP NNP I-NEGATIVE
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 an NN NN O
 alert NN NN O
@@ -10470,7 +10470,7 @@ patient NN NN O
 is NN NN O
 a NN NN O
 25-year-old NNP NNP B-GENDER
-man NN NN O
+man NNP NNP B-GENDER
 with NN NN O
 type NNP NNP B-DIAGNOSIS
 1 NNP NNP I-DIAGNOSIS
@@ -10484,7 +10484,7 @@ years NN NN O
 ago NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 presents NN NN O
 to NN NN O
 the NN NN O
@@ -10499,7 +10499,7 @@ during NN NN O
 activities NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 claims NN NN O
 mild NN NN O
 dyspnea NNP NNP B-DIAGNOSIS
@@ -10524,7 +10524,7 @@ class NN NN O
 2 NN NN O
 ). NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 diagnosed NN NN O
 with NN NN O
@@ -10629,7 +10629,7 @@ was NN NN O
 24 NN NN O
 , NN NN O
 but NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 has NN NN O
 gained NN NN O
 5 NN NN O
@@ -10641,7 +10641,7 @@ few NN NN O
 weeks NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 gets NN NN O
 tired NN NN O
 more NN NN O
@@ -10693,7 +10693,7 @@ high NN NN O
 IU/ml NN NN O
 ). NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 was NN NN O
 diagnosed NN NN O
 with NN NN O
@@ -10701,12 +10701,12 @@ Hashimoto NNP NNP B-DIAGNOSIS
 disease NNP NNP I-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 does NN NN O
 not NN NN O
 smoke NN NN O
 and NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 is NN NN O
 not NN NN O
 sexually NN NN O
@@ -10730,7 +10730,7 @@ glandular NNP NNP I-DIAGNOSIS
 lesion NNP NNP I-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 tested NN NN O
 positive NN NN O
 for NN NN O
@@ -10738,7 +10738,7 @@ HPV NNP NNP B-DIAGNOSIS
 
 16 NN NN O
 . NN NN O
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 sexually NN NN O
 active NN NN O
@@ -10751,7 +10751,7 @@ has NN NN O
 children NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 menopausal NNP NNP B-DIAGNOSIS
 and NN NN O
@@ -10760,7 +10760,7 @@ no NN NN O
 contraception NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 smokes NN NN O
 and NN NN O
 drinks NN NN O
@@ -10768,13 +10768,13 @@ alcohol NN NN O
 frequently NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 otherwise NN NN O
 healthy NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 was NN NN O
 offered NN NN O
 conization NN NN O
@@ -10804,7 +10804,7 @@ of NN NN O
 septicemia NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 developed NN NN O
 respiratory NNP NNP B-DIAGNOSIS
 failure NNP NNP I-DIAGNOSIS
@@ -10849,7 +10849,7 @@ coagulation NN NN O
 profile NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 was NN NN O
 diagnosed NN NN O
 with NN NN O
@@ -10859,7 +10859,7 @@ uremic NNP NNP I-DIAGNOSIS
 syndrome NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 was NN NN O
 treated NN NN O
 with NN NN O
@@ -10869,7 +10869,7 @@ and NN NN O
 corticosteroids NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 has NN NN O
 been NN NN O
 previously NN NN O
@@ -10913,7 +10913,7 @@ early NN NN O
 October NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 works NN NN O
 at NN NN O
 a NN NN O
@@ -10935,7 +10935,7 @@ this NN NN O
 year NN NN O
 . NN NN O
 
-she NN NN O
+she NNP NNP B-GENDER
 is NN NN O
 menopausal NNP NNP B-DIAGNOSIS
 and NN NN O
@@ -10944,13 +10944,13 @@ has NN NN O
 children NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 does NN NN O
 not NN NN O
 some NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 takes NN NN O
 daily NN NN O
 multivitamins NN NN O
@@ -10961,7 +10961,7 @@ hypertensive NNP NNP B-DIAGNOSIS
 drugs NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 exercises NN NN O
 regularly NN NN O
 for NN NN O
@@ -10977,7 +10977,7 @@ a NN NN O
 week NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 has NN NN O
 no NNP NNP B-NEGATIVE
 allergies NNP NNP I-NEGATIVE
@@ -11009,7 +11009,7 @@ daily NN NN O
 activities NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 states NN NN O
 that NN NN O
 her NN NN O
@@ -11023,7 +11023,7 @@ the NN NN O
 days NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 complains NN NN O
 of NN NN O
 loss NNP NNP B-DIAGNOSIS
@@ -11038,7 +11038,7 @@ every NN NN O
 day NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 on NN NN O
 anti-depressants NN NN O
@@ -11056,7 +11056,7 @@ still NN NN O
 present NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 does NN NN O
 not NN NN O
 drink NN NN O
@@ -11065,7 +11065,7 @@ or NN NN O
 smoke NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 used NN NN O
 to NN NN O
 exercise NN NN O
@@ -11078,7 +11078,7 @@ least NN NN O
 min NN NN O
 ., NN NN O
 but NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 doesn't NN NN O
 have NN NN O
 enough NN NN O
@@ -11093,7 +11093,7 @@ past NN NN O
 weeks NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 also NN NN O
 has NN NN O
 some NN NN O
@@ -11102,7 +11102,7 @@ issues NNP NNP I-DIAGNOSIS
 recently NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 married NN NN O
 and NN NN O
@@ -11111,7 +11111,7 @@ has NN NN O
 children NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 menopausal NNP NNP B-DIAGNOSIS
 . NN NN O

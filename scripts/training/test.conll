@@ -17,7 +17,7 @@ weight NN NN O
 concerns NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 165 NN NN O
 cm NN NN O
@@ -39,7 +39,7 @@ In NN NN O
 the NN NN O
 past NN NN O
 , NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 unsuccessfully NN NN O
 used NN NN O
 anti NN NN O
@@ -50,7 +50,7 @@ appetite NN NN O
 suppressants NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 complaining NN NN O
 of NN NN O
@@ -66,14 +66,14 @@ body NN NN O
 shape NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 a NN NN O
 high-school NN NN O
 teacher NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 married NN NN O
 for NN NN O
@@ -81,7 +81,7 @@ for NN NN O
 years NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 doesn't NN NN O
 use NN NN O
 any NN NN O
@@ -93,14 +93,14 @@ past NN NN O
 4 NN NN O
 months NN NN O
 and NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 had NN NN O
 no NNP NNP B-NEGATIVE
 prior NNP NNP I-NEGATIVE
 pregnancies NNP NNP I-NEGATIVE
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 rarely NN NN O
 exercises NN NN O
 and NN NN O
@@ -113,7 +113,7 @@ for NN NN O
 her NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 not NN NN O
 able NN NN O
@@ -130,7 +130,7 @@ than NN NN O
 seconds NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 does NN NN O
 not NN NN O
 smoke NN NN O
@@ -197,7 +197,7 @@ class NN NN I-DIAGNOSIS
 IIa NN NN I-DIAGNOSIS
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 complains NN NN O
 of NN NN O
 diplopia NNP NNP B-DIAGNOSIS
@@ -210,7 +210,7 @@ upper NN NN O
 extremities NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 had NN NN O
 a NN NN O
 positive NN NN O
@@ -230,7 +230,7 @@ was NN NN O
 positive NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 on NN NN O
 acetylcholinesterase NN NN O
@@ -242,14 +242,14 @@ immunosuppressants NN NN O
 . NN NN O
 
 But NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 still NN NN O
 has NN NN O
 some NN NN O
 symptoms NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 does NN NN O
 not NN NN O
 smoke NN NN O
@@ -259,7 +259,7 @@ illicit NN NN O
 drugs NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 not NN NN O
 sexually NN NN O
@@ -324,7 +324,7 @@ day NN NN O
 ago NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 was NN NN O
 born NN NN O
 at NN NN O
@@ -393,7 +393,7 @@ circumference NN NN O
 cm NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 presents NN NN O
 with NN NN O
 yellow NNP NNP B-DIAGNOSIS
@@ -464,7 +464,7 @@ the NN NN O
 normal NN NN O
 range NN NN O
 . NN NN O
-She NN NN O
+She NNP NNP B-GENDER
 is NN NN O
 diagnosed NN NN O
 with NN NN O
@@ -592,7 +592,7 @@ same NN NN O
 problems NN NN O
 . NN NN O
 
-She NN NN O
+She NNP NNP B-GENDER
 was NN NN O
 diagnosed NN NN O
 with NN NN O
@@ -601,7 +601,7 @@ disease NNP NNP I-DIAGNOSIS
 of NNP NNP I-DIAGNOSIS
 bone NNP NNP I-DIAGNOSIS
 when NN NN O
-she NN NN O
+she NNP NNP B-GENDER
 was NN NN O
 52 NNP NNP B-AGE
 years NNP NNP I-AGE
@@ -642,7 +642,7 @@ Parkinson's NNP NNP B-DIAGNOSIS
 disease NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 complaining NN NN O
 of NN NN O
@@ -677,7 +677,7 @@ and NN NN O
 hypercholesterolemia NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 lives NN NN O
 with NN NN O
 his NN NN O
@@ -690,7 +690,7 @@ three NN NN O
 children NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 used NN NN O
 to NN NN O
 be NN NN O
@@ -702,7 +702,7 @@ his NN NN O
 diagnosis NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 complains NN NN O
 of NN NN O
 shaking NNP NNP B-DIAGNOSIS
@@ -711,7 +711,7 @@ slow NNP NNP B-DIAGNOSIS
 movement NNP NNP I-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 had NN NN O
 difficulty NN NN O
 entering NN NN O
@@ -720,7 +720,7 @@ a NN NN O
 door NN NN O
 , NN NN O
 as NN NN O
-he NN NN O
+he NNP NNP B-GENDER
 was NN NN O
 frozen NN NN O
 and NN NN O
@@ -738,7 +738,7 @@ getting NN NN O
 smaller NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 offered NN NN O
 Levodopa NN NN O
@@ -746,7 +746,7 @@ and NN NN O
 Trihexyphenidyl NN NN O
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 is NN NN O
 an NN NN O
 alert NN NN O
@@ -763,7 +763,7 @@ of NN NN O
 dementia NNP NNP B-DIAGNOSIS
 . NN NN O
 
-He NN NN O
+He NNP NNP B-GENDER
 does NN NN O
 not NN NN O
 smoke NN NN O

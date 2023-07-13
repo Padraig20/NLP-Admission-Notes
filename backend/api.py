@@ -7,22 +7,17 @@ from sparknlp.base import *
 from sparknlp.annotator import *
 from pyspark.ml import Pipeline
 import sparknlp
+import sys
 
 def handle_request(text):
-    loaded_model = PipelineModel.load("../scripts/training/temporary")
-
     data = spark.createDataFrame([[text]]).toDF("text")
+
+    tokenizer = Tokenizer().setInputCols(["document"]).setOutputCol("token").fit(data)
+    pipeline = Pipeline().setStages([documentAssembler, sentence, tokenizer]).fit(data)
 
     import pyspark.sql.functions as F
     #data = data.withColumn("text", F.lower(data["text"]))
 
-    documentAssembler = DocumentAssembler().setInputCol("text").setOutputCol("document")
-    sentence = SentenceDetector()\
-        .setInputCols(["document"])\
-        .setOutputCol("sentence")
-    tokenizer = Tokenizer().setInputCols(["document"]).setOutputCol("token").fit(data)
-
-    pipeline = Pipeline().setStages([documentAssembler, sentence, tokenizer]).fit(data)
     tokenized = pipeline.transform(data)
 
     inputData = tokenized.drop("text")
@@ -36,9 +31,24 @@ def handle_request(text):
 
     return tokens, entities
 
+
+if len(sys.argv) == 2:
+    model_path = sys.argv[1]
+else:
+    print("Usage: python api.py model_path")
+    sys.exit(1)
+
 app = Flask(__name__)
 CORS(app)  # Initialize CORS
 spark = sparknlp.start()
+
+loaded_model = PipelineModel.load(model_path)
+
+documentAssembler = DocumentAssembler().setInputCol("text").setOutputCol("document")
+sentence = SentenceDetector()\
+    .setInputCols(["document"])\
+    .setOutputCol("sentence")
+print("Serving API now...")
 
 @app.route('/extract_entities', methods=['POST'])
 def main():
