@@ -78,7 +78,7 @@ nerTagger = NerDLApproach()\
               .setLabelColumn("label")\
               .setUseBestModel(True)\
               .setOutputCol("ner")\
-              .setMaxEpochs(20)\
+              .setMaxEpochs(30)\
               .setLr(0.003)\
               .setBatchSize(8)\
               .setRandomSeed(0)\

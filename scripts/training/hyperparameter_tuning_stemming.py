@@ -181,10 +181,10 @@ bestBatchSize = 0
 bestMaxEpochs = 0
 
 # pre-defined search space
-for lr in [0.003, 0.001]:
-    for hiddenLayers in [10, 20]:
-        for batchSize in [8, 16]:
-            for maxEpochs in [7, 10]:
+for lr in [0.003]:
+    for hiddenLayers in [10]:
+        for batchSize in [16]:
+            for maxEpochs in [20]:
                 f1_score = pipeline_tuning(lr, hiddenLayers, batchSize, maxEpochs)
                 if maxScore < f1_score:
                     maxScore = f1_score
