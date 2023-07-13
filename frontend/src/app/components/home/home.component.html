@@ -1,14 +1,14 @@
-<h1 class="w-fit mx-auto my-10 text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-500 dark:from-sky-300 to-sky-800 dark:to-sky-600 tracking-wider">Admission Note Analyzer</h1>
+<h1 class="w-fit mx-auto my-4 sm:my-8 md:my-10 text-2xl sm:text-3xl md:text-5xl md:h-14 text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-500 dark:from-sky-300 to-sky-800 dark:to-sky-600 tracking-wider">Admission Note Analyzer</h1>
 
-<main class="max-w-5xl mx-auto my-10 flex flex-col">
-  <textarea rows="5" placeholder="Paste your desired admission note here."
+<main class="max-w-5xl mx-auto my-4 sm:my-8 md:my-10 flex flex-col">
+  <textarea rows="5" placeholder="Enter your admission note here"
             class="w-full rounded text-sky-800 dark:text-sky-200 placeholder-slate-400 dark:placeholder-slate-500 bg-white dark:bg-slate-800 disabled:opacity-60 border-0 ring-2 ring-inset ring-slate-300 dark:ring-slate-700 focus:ring-2 focus:ring-inset focus:ring-sky-600 dark:focus:ring-sky-400 caret-sky-700 dark:caret-sky-300"></textarea>
 
-  <button type="submit" class="self-end w-fit mt-4 shadow-lg shadow-sky-300/50 dark:shadow-sky-700/60 text-right px-4 py-2 rounded text-sky-100 dark:text-sky-900 bg-sky-800 hover:bg-sky-900 dark:bg-sky-400 dark:hover:bg-sky-500 disabled:opacity-60 disabled:cursor-not-allowed uppercase font-semibold">
+  <button type="submit" class="sm:self-end w-full sm:w-fit mt-2 sm:mt-4 md:mt-6 md:shadow-lg shadow-sky-300/50 md:dark:shadow-sky-700/60 text-center sm:text-right px-4 py-2 rounded text-sky-100 dark:text-sky-900 bg-sky-800 hover:bg-sky-900 dark:bg-sky-400 dark:hover:bg-sky-500 disabled:opacity-60 disabled:cursor-not-allowed uppercase font-semibold">
     Analyze Note
   </button>
 
-  <div class="w-full p-4 mt-12 mx-auto flex flex-col gap-4 rounded shadow text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-800 leading-[23px]" id="rendered-output">
+  <div class="w-full p-4 mt-4 sm:mt-10 md:mt-12 mx-auto flex flex-col gap-4 rounded shadow text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-800 leading-[23px]" id="rendered-output">
     <div class="flex flex-row gap-2 items-center">
       <h2 class="w-fit text-slate-800 dark:text-slate-200 text-lg font-medium">Result</h2>
       <div class="inline-block relative group hover:cursor-help">
@@ -30,9 +30,9 @@
       </div>
     </div>
 
-    <div>
+    <p class="text-justify">
       Patient is a <mark class="highlight blue">45-year-old<span class="descriptor">AGE</span></mark> <mark class="highlight yellow">man<span class="descriptor">GENDER</span></mark> with a history of <mark class="highlight green">anaplastic astrocytoma<span class="descriptor">DIAGNOSIS</span></mark> of the spine complicated by severe <mark class="highlight green">lower extremity weakness<span class="descriptor">DIAGNOSIS</span></mark> and <mark class="highlight green">urinary retention<span class="descriptor">DIAGNOSIS</span></mark> s/p Foley catheter , high-dose steroids , <mark class="highlight green">hypertension<span class="descriptor">DIAGNOSIS</span></mark> , and <mark class="highlight green">chronic pain<span class="descriptor">DIAGNOSIS</span></mark> . The <mark class="highlight green">tumor<span class="descriptor">DIAGNOSIS</span></mark> is located in the T-L spine , unresectable <mark class="highlight green">anaplastic astrocytoma<span class="descriptor">DIAGNOSIS</span></mark> s/p radiation . Complicated by progressive <mark class="highlight green">lower extremity weakness<span class="descriptor">DIAGNOSIS</span></mark> and <mark class="highlight green">urinary retention<span class="descriptor">DIAGNOSIS</span></mark> . Patient initially presented with <mark class="highlight green">RLE<span class="descriptor">DIAGNOSIS</span></mark> weakness where his right knee gave out with <mark class="highlight green">difficulty walking<span class="descriptor">DIAGNOSIS</span></mark> and right anterior thigh <mark class="highlight green">numbness<span class="descriptor">DIAGNOSIS</span></mark> . MRI showed a <mark class="highlight green">spinal cord conus mass<span class="descriptor">DIAGNOSIS</span></mark> which was biopsied and found to be <mark class="highlight green">anaplastic astrocytoma<span class="descriptor">DIAGNOSIS</span></mark> . Therapy included field radiation t10-l1 followed by 11 cycles of temozolomide 7 days on and 7 days off . This was followed by CPT-11 Weekly x4 with Avastin Q2 weeks/ 2 weeks rest and repeat cycle .
-    </div>
+    </p>
   </div>
 </main>
 
