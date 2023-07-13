@@ -1,1 +1,38 @@
-<p>home works!</p>
+<h1 class="w-fit mx-auto my-10 text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-500 dark:from-sky-300 to-sky-800 dark:to-sky-600 tracking-wider">Admission Note Analyzer</h1>
+
+<main class="max-w-5xl mx-auto my-10 flex flex-col">
+  <textarea rows="5" placeholder="Paste your desired admission note here."
+            class="w-full rounded text-sky-800 dark:text-sky-200 placeholder-slate-400 dark:placeholder-slate-500 bg-white dark:bg-slate-800 disabled:opacity-60 border-0 ring-2 ring-inset ring-slate-300 dark:ring-slate-700 focus:ring-2 focus:ring-inset focus:ring-sky-600 dark:focus:ring-sky-400 caret-sky-700 dark:caret-sky-300"></textarea>
+
+  <button type="submit" class="self-end w-fit mt-4 shadow-lg shadow-sky-300/50 dark:shadow-sky-700/60 text-right px-4 py-2 rounded text-sky-100 dark:text-sky-900 bg-sky-800 hover:bg-sky-900 dark:bg-sky-400 dark:hover:bg-sky-500 disabled:opacity-60 disabled:cursor-not-allowed uppercase font-semibold">
+    Analyze Note
+  </button>
+
+  <div class="w-full p-4 mt-12 mx-auto flex flex-col gap-4 rounded shadow text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-800 leading-[23px]" id="rendered-output">
+    <div class="flex flex-row gap-2 items-center">
+      <h2 class="w-fit text-slate-800 dark:text-slate-200 text-lg font-medium">Result</h2>
+      <div class="inline-block relative group hover:cursor-help">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-sky-700 dark:text-sky-300">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+        </svg>
+        <div class="hidden group-hover:block absolute left-0 w-[30rem] backdrop-blur-xl bg-opacity-60 p-2 shadow-xl border border-slate-300 dark:border-slate-600 rounded z-10">
+          <div class="flex flex-row gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-red-600 dark:text-red-500 flex-shrink-0">
+              <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+            </svg>
+            <p class="flex-grow text-sm text-slate-600 dark:text-slate-300">
+              Please be advised that the NLP model employed here is currently in an experimental phase and necessitates further training and optimization. At present, its primary focus lies in extracting diagnoses, ages, negatives, and the gender of a patient. It is crucial to note that this model is domain-specific and tailored for admission notes, as evident from the training data it has been exposed to.
+              <br>
+              Nonetheless, it is of utmost importance to exercise caution as the model may produce erroneous information or inadvertently overlook vital details. <b>Hence, if deployed for professional purposes, it is highly recommended to conduct thorough verification and validation of the generated output, thereby ensuring its accuracy and reliability.</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      Patient is a <mark class="highlight blue">45-year-old<span class="descriptor">AGE</span></mark> <mark class="highlight yellow">man<span class="descriptor">GENDER</span></mark> with a history of <mark class="highlight green">anaplastic astrocytoma<span class="descriptor">DIAGNOSIS</span></mark> of the spine complicated by severe <mark class="highlight green">lower extremity weakness<span class="descriptor">DIAGNOSIS</span></mark> and <mark class="highlight green">urinary retention<span class="descriptor">DIAGNOSIS</span></mark> s/p Foley catheter , high-dose steroids , <mark class="highlight green">hypertension<span class="descriptor">DIAGNOSIS</span></mark> , and <mark class="highlight green">chronic pain<span class="descriptor">DIAGNOSIS</span></mark> . The <mark class="highlight green">tumor<span class="descriptor">DIAGNOSIS</span></mark> is located in the T-L spine , unresectable <mark class="highlight green">anaplastic astrocytoma<span class="descriptor">DIAGNOSIS</span></mark> s/p radiation . Complicated by progressive <mark class="highlight green">lower extremity weakness<span class="descriptor">DIAGNOSIS</span></mark> and <mark class="highlight green">urinary retention<span class="descriptor">DIAGNOSIS</span></mark> . Patient initially presented with <mark class="highlight green">RLE<span class="descriptor">DIAGNOSIS</span></mark> weakness where his right knee gave out with <mark class="highlight green">difficulty walking<span class="descriptor">DIAGNOSIS</span></mark> and right anterior thigh <mark class="highlight green">numbness<span class="descriptor">DIAGNOSIS</span></mark> . MRI showed a <mark class="highlight green">spinal cord conus mass<span class="descriptor">DIAGNOSIS</span></mark> which was biopsied and found to be <mark class="highlight green">anaplastic astrocytoma<span class="descriptor">DIAGNOSIS</span></mark> . Therapy included field radiation t10-l1 followed by 11 cycles of temozolomide 7 days on and 7 days off . This was followed by CPT-11 Weekly x4 with Avastin Q2 weeks/ 2 weeks rest and repeat cycle .
+    </div>
+  </div>
+</main>
+

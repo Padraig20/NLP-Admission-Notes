@@ -1,12 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  prefix: '',
-  purge: {
-    content: [
-      './src/**/*.{html,ts}',
-    ]
-  },
-  darkMode: 'class', // or 'media' or 'class'
+  content: [
+    './src/**/*.{html,ts}',
+  ],
   theme: {
     extend: {
       colors:{
@@ -36,7 +32,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    require("@tailwindcss/forms"),
     require('@tailwindcss/typography'),
   ],
 };
