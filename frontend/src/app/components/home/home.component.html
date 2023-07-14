@@ -1,14 +1,30 @@
 <h1 class="w-fit mx-auto my-4 sm:my-8 md:my-10 text-2xl sm:text-3xl md:text-5xl md:h-14 text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-500 dark:from-sky-300 to-sky-800 dark:to-sky-600 tracking-wider">Admission Note Analyzer</h1>
 
 <main class="max-w-5xl mx-auto my-4 sm:my-8 md:my-10 flex flex-col">
-  <textarea rows="5" placeholder="Enter your admission note here"
+  <textarea [(ngModel)]="text" rows="5" placeholder="Enter your admission note here" autofocus
             class="w-full rounded text-sky-800 dark:text-sky-200 placeholder-slate-400 dark:placeholder-slate-500 bg-white dark:bg-slate-800 disabled:opacity-60 border-0 ring-2 ring-inset ring-slate-300 dark:ring-slate-700 focus:ring-2 focus:ring-inset focus:ring-sky-600 dark:focus:ring-sky-400 caret-sky-700 dark:caret-sky-300"></textarea>
 
-  <button type="submit" class="sm:self-end w-full sm:w-fit mt-2 sm:mt-4 md:mt-6 md:shadow-lg shadow-sky-300/50 md:dark:shadow-sky-700/60 text-center sm:text-right px-4 py-2 rounded text-sky-100 dark:text-sky-900 bg-sky-800 hover:bg-sky-900 dark:bg-sky-400 dark:hover:bg-sky-500 disabled:opacity-60 disabled:cursor-not-allowed uppercase font-semibold">
-    Analyze Note
-  </button>
+  <div class="flex flex-col sm:flex-row-reverse sm:justify-between sm:items-start">
+    <button type="submit" [disabled]="text === '' || analyzing" (click)="analyzeNote()"
+            class="relative w-full sm:w-fit mt-2 sm:mt-4 md:mt-6 md:shadow-lg shadow-sky-300/50 md:dark:shadow-sky-700/60 text-center sm:text-right px-4 py-2 rounded text-sky-100 dark:text-sky-900 bg-sky-800 enabled:hover:bg-sky-900 dark:bg-sky-400 dark:enabled:hover:bg-sky-500 disabled:opacity-75 disabled:cursor-not-allowed uppercase font-semibold">
+      <span [ngClass]="{'invisible': analyzing}">Analyze Note</span>
+      <span *ngIf="analyzing" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <svg class="animate-spin h-5 w-5 text-inherit" xmlns="http://www.w3.org/2000/svg" fill="none"
+           viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+      </svg>
+    </span>
+    </button>
 
-  <div class="w-full p-4 mt-4 sm:mt-10 md:mt-12 mx-auto flex flex-col gap-4 rounded shadow text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-800 leading-[23px]" id="rendered-output">
+    <button type="submit" *ngIf="text.length === 0" (click)="loadExample()"
+            class="relative w-full sm:w-fit mt-2 sm:mt-4 md:mt-6 md:shadow-lg shadow-sky-300/50 md:dark:shadow-sky-700/60 text-center sm:text-right px-4 py-2 rounded text-sky-800 enabled:text-sky-900 dark:text-sky-400 enabled:dark:text-sky-500 ring-2 ring-inset ring-sky-800 enabled:hover:border-sky-900 dark:ring-sky-400 dark:enabled:hover:border-sky-500 disabled:opacity-75 disabled:cursor-not-allowed uppercase font-semibold">
+      <span>Example Note</span>
+    </button>
+  </div>
+
+  <div *ngIf='analyzed && analyzedText.length > 0' class="w-full p-4 mt-4 sm:mt-10 md:mt-12 mx-auto flex flex-col gap-4 rounded shadow text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-800 leading-[23px]" id="rendered-output">
     <div class="flex flex-row gap-2 items-center">
       <h2 class="w-fit text-slate-800 dark:text-slate-200 text-lg font-medium">Result</h2>
       <div class="inline-block relative group hover:cursor-help">
@@ -30,12 +46,10 @@
       </div>
     </div>
 
-    <p class="text-justify">
-      Patient is a <mark class="highlight blue">45-year-old<span class="descriptor">AGE</span></mark> <mark class="highlight yellow">man<span class="descriptor">GENDER</span></mark> with a history of <mark class="highlight green">anaplastic astrocytoma<span class="descriptor">DIAGNOSIS</span></mark> of the spine complicated by severe <mark class="highlight green">lower extremity weakness<span class="descriptor">DIAGNOSIS</span></mark> and <mark class="highlight green">urinary retention<span class="descriptor">DIAGNOSIS</span></mark> s/p Foley catheter , high-dose steroids , <mark class="highlight green">hypertension<span class="descriptor">DIAGNOSIS</span></mark> , and <mark class="highlight green">chronic pain<span class="descriptor">DIAGNOSIS</span></mark> . The <mark class="highlight green">tumor<span class="descriptor">DIAGNOSIS</span></mark> is located in the T-L spine , unresectable <mark class="highlight green">anaplastic astrocytoma<span class="descriptor">DIAGNOSIS</span></mark> s/p radiation . Complicated by progressive <mark class="highlight green">lower extremity weakness<span class="descriptor">DIAGNOSIS</span></mark> and <mark class="highlight green">urinary retention<span class="descriptor">DIAGNOSIS</span></mark> . Patient initially presented with <mark class="highlight green">RLE<span class="descriptor">DIAGNOSIS</span></mark> weakness where his right knee gave out with <mark class="highlight green">difficulty walking<span class="descriptor">DIAGNOSIS</span></mark> and right anterior thigh <mark class="highlight green">numbness<span class="descriptor">DIAGNOSIS</span></mark> . MRI showed a <mark class="highlight green">spinal cord conus mass<span class="descriptor">DIAGNOSIS</span></mark> which was biopsied and found to be <mark class="highlight green">anaplastic astrocytoma<span class="descriptor">DIAGNOSIS</span></mark> . Therapy included field radiation t10-l1 followed by 11 cycles of temozolomide 7 days on and 7 days off . This was followed by CPT-11 Weekly x4 with Avastin Q2 weeks/ 2 weeks rest and repeat cycle .
-    </p>
+    <p class="text-justify" [innerHTML]="sanitizeHTML(analyzedText)"></p>
   </div>
 
-  <p class="w-full mt-4 sm:mt-10 md:mt-12 text-justify text-sm text-slate-600">
+  <p class="w-full mt-4 sm:mt-10 md:mt-12 text-justify text-sm text-slate-600 dark:text-slate-400">
     The objective of this project is to develop an NLP model capable of extracting <b>diagnoses, diseases and other
     related terms from admission notes</b>. Admission notes are created by doctors when a patient is newly admitted to a
     hospital and typically contain personal information such as <b>age, gender, and various medical conditions</b>.

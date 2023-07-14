@@ -6,7 +6,11 @@ import {AppComponent} from './app.component';
 import {RouterOutlet} from "@angular/router";
 import {HomeComponent} from './components/home/home.component';
 import {HeaderComponent} from './components/header/header.component';
-import {NgOptimizedImage} from "@angular/common";
+import {NgIf, NgOptimizedImage} from "@angular/common";
+import {HttpClientModule} from "@angular/common/http";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {ToastrModule} from "ngx-toastr";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -14,12 +18,17 @@ import {NgOptimizedImage} from "@angular/common";
     HomeComponent,
     HeaderComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterOutlet,
-    NgOptimizedImage,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        ToastrModule.forRoot(),
+        BrowserAnimationsModule,
+        RouterOutlet,
+        NgOptimizedImage,
+        FormsModule,
+        NgIf,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
