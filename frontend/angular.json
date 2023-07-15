@@ -3,123 +3,99 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sepm-group-phase": {
-      "root": "",
-      "sourceRoot": "src",
+    "frontend": {
       "projectType": "application",
-      "prefix": "app",
-      "i18n": {
-        "sourceLocale": "en-US",
-        "locales": {
-          "de-AT": {
-            "translation": "src/locale/messages.de.xlf"
-          }
-        }
-      },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize": ["de-AT"],
-            "outputPath": "dist/sepm-group-phase",
+            "outputPath": "dist/frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.app.json",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.css",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
+              "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.slim.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
-            ],
-            "vendorChunk": true,
-            "extractLicenses": false,
-            "buildOptimizer": false,
-            "sourceMap": true,
-            "optimization": false,
-            "namedChunks": true
+            "scripts": []
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
                 }
-              ]
+              ],
+              "outputHashing": "all"
             },
-            "de-AT": {
-              "localize": ["de-AT"]
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "sepm-group-phase:build"
-          },
           "configurations": {
             "production": {
-              "browserTarget": "sepm-group-phase:build:production"
+              "browserTarget": "frontend:build:production"
             },
-            "de-AT": {
-              "browserTarget": "sepm-group-phase:build:development,de-AT"
+            "development": {
+              "browserTarget": "frontend:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sepm-group-phase:build",
-            "format": "xlf",
-            "outputPath": "src/locale"
+            "browserTarget": "frontend:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.spec.json",
-            "karmaConfig": "src/karma.conf.js",
-            "styles": [
-              "src/styles.scss"
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
             ],
-            "scripts": [],
+            "tsConfig": "tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
-            ]
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": []
           }
         },
         "lint": {
@@ -135,6 +111,8 @@
     }
   },
   "cli": {
-    "analytics": false
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
